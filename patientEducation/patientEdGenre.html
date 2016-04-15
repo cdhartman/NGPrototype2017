@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>MCTN | Patient Education</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link href="../favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-1.min.js"></script>
+	<script type="text/javascript" src="../js/HEWXMLWrapper.js"></script>
+	<script type="text/javascript" src="../js/HEWCommands.js"></script>
+	<script type="text/javascript" src="../js/HEWAlert.js"></script>
+	<script type="text/javascript" src="../js/modExtras.js"></script>
+	<script type="text/javascript" src="../js/patientEd/getPatEdSubCategory.js"></script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+	<div class="container" id="container">
+		<div style="position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
+			<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
+		</div>
+		<!-- <img src="../images/screens/sectionPE-SD.gif" id="splashScreen" alt="" /> -->
+		<div class="title" id="title">Patient Education</div>
+		<div id="navBarLeft" class="navBarLeft" onclick="navBarLeftFunction('');"></div>
+		<div id="categoriesTop" class="categoriesTop"></div>
+		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Titles, please wait...</div></div>
+		
+		<div id="navBar"></div>
+		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" onclick="searchPE();" /></div>
+		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	var genreID = getURLParameter('genreID',''), genre = decodeURI(getURLParameter('genre','')), subGenre = decodeURI(getURLParameter('subGenre','')), section = getURLParameter('section',''),
+		subGenreID = getURLParameter('subGenreID',''), start = getURLParameter('start','1'), quickPlay = getURLParameter('quickPlay','0'),
+		category = getURLParameter('category','Patient Education'), screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), 
+		view = getURLParameter('view','All'), titleFormat = getURLParameter('titleFormat','short'), site = getSite(), node2;
+	genre = genre.replace(' and ',' & ');
+
+	getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
+
+	// load CSS and SplashScreen
+	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
+	
+	/* load primary content */
+	if (section !== 'mci') { 
+		$('#categoriesTop').load('../includes/peNavBar' + screenFormat + '.html');
+	} else {
+		$( "#categoriesTop" ).removeClass( 'categoriesTop' );
+	}
+	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
+	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
+	// setChaserStyle ('pe', settopid, screenFormat);
+	
+	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
+	$( document ).ready(function() {
+		/* highlight Patient Education nav bar set focus on first link */
+		setTimeout(function(){
+		// navBarLeftFunction('');
+		// $('[tabindex=1]').focus();
+		// addClass('navbar4','navbarActive');
+		// onHoverDiv('#line0','left');
+		// ("#line0").toggleClass("hovered");
+		adjustScreenHeightWidth();
+		}, 1900);
+	});
+</script>

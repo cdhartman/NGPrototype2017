@@ -1,0 +1,72 @@
+html, body {
+	font-family: "Arial", "Arial Bold", "verdana", "arial rounded mt bold", "sans-serif";
+	color: #e6e6e6;
+	font-size: 14pt;
+	background-color: #000;
+}
+
+a {
+   outline: 0;
+   text-decoration: none;
+   color: #dfdfdf;
+   
+   _noFocusLine: expression(this.hideFocus=true);
+}
+a:hover, a:active, a:focus {outline: 0;}
+a.white {color: #eee;}
+a.lineItemsNB {font-weight: bold;}
+
+img {border: 0; -ms-interpolation-mode:bicubic;}
+
+#location, #preferences {color: #eee; position: absolute; font-weight: bold; }
+hr { border: 0; height: 1px; background: #2A2A2A; }
+
+div {border: none;}
+div.box {position: absolute;}
+div.box:hover, div.box:active , div.box:focus { border: 1px solid white; cursor: pointer; }
+div.categoriesTop {background-color: #444;}
+div.ch999preferences { background-color: #e1ecf5;}
+div.errorMsg {color: #c7668b;}
+div.fvBottom {position: absolute; display: none;}
+div.header { left: 80px; font-size: 36px; font-weight: bold; display: inline;}
+div.line:hover, div.line:active, div.line:focus {cursor: pointer;}
+div.navbarTopCategory:hover  > a.lineItemsNB  {padding: 0;}
+div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive {
+    color: #111; text-decoration: none; cursor: pointer; padding: 2px}
+div.roomTimeWeather {position: absolute; color: #eee; text-align: right;}
+div.title {position: absolute;}
+div.titlePE {position: absolute; color: #efefef; font-weight: bold; }
+#homeButtonImage { opacity:.60; filter: alpha(opacity=60);}
+span.detailVideoTitle {display: block; font-weight: bold; text-align: left;}
+img.splashImageCategory, #splashImageCategory  { opacity:.60; filter: alpha(opacity=60);}
+
+
+
+
+
+
+
+
+/* white trial */
+
+html, body{color: #111;} a.lineItemsNB {color: #444;} a.lineItemsNBInActive {color: #111;}
+
+div.navbar2blankPE  {background-color: #668bc9;}
+.detailVideoTitle {color: #3663b4;}
+
+
+
+
+
+/* end: white trial */
+
+/* dark trial */
+/*
+div.categoriesTop, span.languageIcon  {background-color: #444;}
+div.navbar2blankPE {background-color: #282828;}
+a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus {background-color: #111;}
+div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive{background-color: #111;}
+span.timeTempSeperator {color: #555;}
+div.preferredCategoriesLabel {color: #dfdfdf; background-color: #444;}
+* /
+/* end: dark trial */

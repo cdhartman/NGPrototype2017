@@ -1,0 +1,420 @@
+html, body {
+	margin: 0; padding: 0;
+}
+
+a.lineItemsNB {font-size: 28px;}
+
+div.container {position: absolute; text-align: left; margin: auto; background-color: #111; top: 0; left: 0; }
+
+/* Launcher */
+div.box, a.homeBtn, img.transparentBtn {width: 290px; height: 205px;}
+div.box1 {display: block; top: 120px; left: 25px; background-image: url("images/launcher/peActive.gif"); z-Index: 100;}	/* patient ed */
+div.box2 {top: 120px; left: 335px;}	/* patient services */
+div.box3 {top: 120px; left: 640px;}	/* patient safety */
+div.box4 {top: 376px; left: 25px;}	/* movies */
+div.box5 {top: 376px; left: 335px;}	/* mayo information */
+div.box6 {top: 376px; left: 640px;}	/* watch tv */
+#location {top: 58px; left: 146px; font-size: 18px; width: 700px; text-align: left;}
+#preferences {top: 86px; left: 156px; font-size: 15px; width: 700px; text-align: left;}
+#legend {position: absolute; top: 622px; left: 0; width: 956px; font-size: 16px; color: #aaa; height: 38px; vertical-align: middle; text-align: center; padding-top: 4px;}
+/* Launcher */
+
+/* content loading messages */
+div.ajaxLoader {position: absolute; top: 260px; width: 946px; height: 80px; font-size: 20px; color: #555; vertical-align: middle; text-align: center;}
+div.ajaxLoaderMovies {position: absolute; top: 260px; width: 946px; height: 80px; font-size: 20px; color: #ccc; vertical-align: middle; text-align: center;}
+img.ajaxLoaderIcon {vertical-align: middle; margin-left: 40px;}
+div.errorMsg {color: maroon;}
+/* content loading messages */
+
+#innerContainer { height: 540px; top: 58px;}
+/* #innerContainer { height: 540px; top: 42px;} */
+#genres {position: absolute; top: 0; left: 0;}
+img.patientServicesStaticImage {width: 956px; height: 558px; margin: 49px 0 0 0; }
+#error {position: absolute; top: 100px; left: 20px; width: 900px;}
+div.videoMetaData {position: absolute; top: 545px; left: 12px; width: 900px; font-size: 18px; color: #666;}
+#playBtnDiv {position: absolute; left: 16px; top: 320px;}
+#loaderPosterImage { width: 130px; height: 195px;}
+span.languageIcon {background-color: #668BC9; font-size: 16px; padding: 1px 2px; color: #073f9d;}
+span.languageIconLarge { color: #317ec8; font-size: 22px; margin-left: 3px; padding: 2px 4px; }
+span.channelLabel { font-size: 14px;}
+span.videoCount {color:#555; font-size: 13px; padding-left: 6px; vertical-align: middle;}
+
+/* search */
+.results {border: none; 
+	left: 10px; top: 160px; width: 940px; min-height: 100px; max-height: 439px; height: 430px;
+	overflow: scroll; overflow-x: auto; overflow-y: auto; font-size: 20px; }
+.results a {font-size: 26px;}
+* html div#results { 
+   height: expression( this.scrollHeight > 455 ? "455px" : "auto" ); /* sets max-height for IE */
+}
+#searchForm {left: 10px; top: 110px; font-size: 20px; width: 550px;}
+#searchBox {font-size: 26px; width: 930px;}
+/* end: search */
+
+div.roomTimeWeather {
+	color: #fff;
+	float: left;
+	left: 690px;
+	width: 260px;
+	top: 12px;
+	font-size: 20px;
+	font-weight: bold;
+}
+div.timeMain {
+	position: absolute;
+	text-align: right;
+	color: #eee;
+	float: left;
+	left: 802px;
+	width: 120px;
+	top: 58px;
+	font-size: 18px;
+	font-weight: bold;
+}
+div.roomTimeWeatherMain {
+	position: absolute;
+	color: #999;
+	float: left;
+	left: 157px;
+	width: 420px;
+	top: 58px;
+	font-size: 19px;
+	font-weight: bold;
+}
+div.boxBlank {position: absolute; width: 290px; height: 230px; background-color: #111;}
+div.boxsideLogo {position: absolute; left: 870px; top: 70px; width: 50px;}
+div.boxsideLogoPE {position: absolute; left: 870px; top: 124px; width: 50px;}
+div.boxsideLogoPEAlwaysDisplay1 {position: absolute; left: 870px; top: 70px; width: 50px;}
+div.box1side {position: absolute; left: 870px; top: 155px;}
+div.box1sidePEAlwaysDisplay1 {position: absolute; left: 870px; top: 150px;}
+div.box1sidePE {position: absolute; left: 870px; top: 205px;}
+.description {width: 650px; font-weight: normal; display:block; font-size: 30px;}
+
+div.box2Side img{ opacity:.50; filter: alpha(opacity=50); width: 50px;}
+img.splashImageMayoLogo{ width: 60px;}
+div.box2side {position: absolute; left: 750px; top: 50px; display: none;}
+div.box2Side img{ opacity:.50; filter: alpha(opacity=50);}
+div.box3side {position: absolute; left: 40px; top: 26px; width: 80px; height: 76px; display: block; background-color: #111; display: none; }
+div.box3Side img{ display: block; margin-left: 24px; }
+div.box1Side img {
+	opacity: .75;
+	filter:alpha(opacity=75);
+}
+#splashImage2 {width: 68px;}
+div.div_backgrndimg
+{
+	position: absolute;
+	top: 616px;
+	left: 0;
+	width: 956px;
+	height: 41px;
+	opacity: .2;
+	filter: alpha(opacity=20);
+    background-repeat: repeat-x;
+    background-image: url("../images/icons/DPAMtiles.jpg");
+}
+
+
+div.section1 {position: absolute; left: 0; top: 48px; padding: 16px; width: 925px; height: 525px;}
+
+/* password */
+div.password {position: absolute; top: 248px; left: 300px; padding: 16px; width: 280px; height: 225px; vertical-align: middle; text-align: middle;}
+.passwordDigit {font-size: 20px;}
+
+
+
+div.title {left: 10px; top: 4px; font-size: 26px; font-weight: bold; width: 800px; padding: 4px; }
+div.screenBulletIndicator { position: absolute; top: 526px; width: 956px; left: 0; text-align: center;}
+div.screenBulletIndicatorPE { position: absolute; top: 582px; width: 956px; left: 0; text-align: center;}
+div.itemCount { position: absolute; font-size: 18px; top: 580px; width: 940px; left: 0; text-align: right;}
+div.nextScreenChaser { position: absolute;top: 580px; width: 40px; left: 20px;}
+div.favLegend {position: absolute; top: 584px; width: 440px; font-size: 11px; color: #888; left: 10px; text-align: left; vertical-align: bottom; display: none;}
+div.favLegend993 {position: absolute; top: 554px; width: 440px; font-size: 11px; color: #888; left: 10px; text-align: left; vertical-align: bottom; display: none;}
+img.favLegend993 {opacity:.50; filter:alpha(opacity=50);}
+/* movies */
+#category {position: absolute; top: 335px; left: 20px; font-weight: normal;}
+#runTime {position: absolute; top: 315px; left: 20px; font-weight: normal;}
+#creationDate{position: absolute; top: 335px; left: 850px; width: 75px; color: #999; font-weight: normal; font-size: 12pt; text-align: right;}
+.detailVideoTitle {font-size: 30px;}
+div.plot {position: absolute; top: 8px; left: 280px; width: 655px; font-size: 18px; font-weight: bold; }
+div.moreDetailsButton { display: none; }
+
+div.movieDetailBlock {position: absolute; top: 330px; left: 280px; width: 220px; font-size: 15px; font-weight: bold;}
+div.movieDetailBlockDirector {position: absolute; top: 330px; left: 512px; width: 212px; font-size: 15px; font-weight: bold;}
+div.movieDetailBlockCast {position: absolute; top: 330px; left: 737px; width: 210px; font-size: 15px; font-weight: bold;}
+div.movieDetailBlockSingle {position: absolute; top: 404px; left: 15px; float: left; padding: 0; font-size: 15px; font-weight: bold;}
+span.studio {font-size: 12px; font-weight: normal; color: #999;}
+#categoryTitlePhotos {margin-bottom: 4px; color: #aaa; font-size: 15px; }
+#Tomatoes {position: absolute; top: 566px; left: 10px; float: left; padding: 0 4px; font-size: 15px;}
+
+#rating {position: absolute; top: 20px; left: 900px;}
+div.col-xs-3-photo1 {position: absolute; left: 0px;}
+div.col-xs-3-photo2 {position: absolute; left: 230px;}
+div.col-xs-3-photo3 {position: absolute; left: 455px;}
+span.movieDetailBlockHeader {color: #888; font-weight: bold;}
+p.description {font-size: 22px; font-weight: normal;}
+
+img.posterArt {padding: 3px;}
+img.posterArtHighlight {padding: 0; border: 3px solid #bbb;}
+div.movieDetailPoster {position: absolute; top: 15px; left: 15px;}
+div.movieBox {position: absolute; width: 150px; height: 210px; margin: auto; font-size: 17px; text-align: center; font-weight: bold;}
+div.movieBox:hover, div.movieBox:active , div.movieBox:focus {cursor: pointer;}
+div.movieTitle {height: 10px; padding-top: 5px;color: #e6e6e6; }
+div.movieBoxRow1 {top: 10px;}
+div.movieBoxRow2 {top: 260px;}
+div.movieBoxRow3 {top: 510px;}
+div.movieBoxRow4 {top: 760px;}
+div.movieBoxRow5 {top: 1010px;}
+div.movieBoxRow6 {top: 1260px;}
+div.movieBoxRow7 {top: 1510px;}
+div.movieBoxRow8 {top: 1760px;}
+div.movieBoxRow9 {top: 2010px;}
+div.movieBox1 {left: 20px;}
+div.movieBox2 {left: 205px;}
+div.movieBox3{left: 400px;}
+div.movieBox4 {left: 595px;}
+div.movieBox5 {left: 790px;}
+div.movieBox6 {left: 795px;}
+div.movieBox7 {left: 833px;}
+div.movieBox8 {left: 971px;}
+.movieDetailTitle {font-size: 20pt; color: #ddd;}
+#tagline {position: absolute; top: 150px; left: 135px; width: 400px; height: 100px;}
+div.section2 {position: absolute; top: 480px; left: 280px; width: 545px; font-size: 16px; font-weight: bold; color: #ccc;}
+
+/* end: movies */
+
+
+
+
+/* Patient Education */
+div.titlePE {
+	position: absolute;
+	left: 14px;
+	top: 9px;
+	font-size: 26px;
+	font-weight: bold;
+	width: 700px;
+	color: white;
+}
+div.categoriesTop {position: absolute; width: 956px; top: 49px; left: 0; height: 56px;}
+div.favoritesTop {position: absolute; width: 956px; top: 92px; left: 0; background-color: #dae7f2; height: 36px;}
+div.fvBottom {width: 956px; top: 564px; left: 0; height: 44px;}
+div.navbarTopCategory {position: relative; color: #111; font-size: 14px; top: 3px; text-align: center; float: left; padding: 0; height: 53px; border-top: 1px solid #B6CDE1; border-left: 1px solid #B6CDE1; border-right: 1px solid #B6CDE1;}
+div.navbarTopCategory1 {left: 10px; width: 230px;}
+div.navbarTopCategory2 {left: 20px; width: 200px;}
+div.navbarTopCategory3 {left: 30px; width: 320px;}
+div.navbarTopCategory4 {left: 40px; width: 135px;}
+div.navbarTopCategory5 {left: 50px; width: 85px;}
+a.white { color: white;}
+div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive
+{
+	padding: 0;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #aaa;
+    height: 1px;
+    display: block;
+}
+hr.movies {
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid #333;
+    height: 1px;
+    display: block;
+}
+div.seperatorHR{ position: absolute; left: 0; width: 940px; top: 9px;}
+/* Patient Education */
+
+
+
+
+
+
+div.line {
+	position: absolute;
+	left: 20px;
+	width: 800px;
+	padding: 2px 0;
+	color: #111;
+	font-size: 22px;
+}
+
+a.lineItems, a.lineItemsMain {
+	vertical-align: middle;
+	text-decoration: none;
+	padding: 1px 2px;
+	border: 0px solid #111;
+	/* font-size: 23px;
+	letter-spacing: -.3px; */
+	font-size: 28px;
+	font-weight: bold;
+}
+a.lineItemsLarge{
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 2px 6px;
+}
+
+/* Patient Education */
+div.lineColumn {position: absolute; color: #111; height: 26px; font-size: 17pt; z-index: 2;}
+div.lineColumnIndent {margin-left: 40px;}
+div.lineColumn1 {left: 10px; width: 315px;}
+div.lineColumn2 {left: 325px; width: 330px;}
+div.lineColumn3 {left: 655px; width: 300px;}
+
+div.lineColumnWide1{left: 10px; width: 750px;}
+div.lineColumnWide2{left: 650px; width: 600px;}
+a.lineColumnItems {
+	vertical-align: middle;
+	font-size: 26px;
+	color: #eee;
+	text-decoration: none;
+	padding: 4px 10px;
+	border: 0;
+}
+
+div.lineColumnLarge {
+	position: absolute;
+	color: #eee;
+	height: 30px;
+	font-size: 18pt;
+}
+
+
+
+div.lineLarge {position: absolute; left: 15px; width: 900px;}
+div.lineLarge0 {top: 70px;}
+div.lineLarge1 {top: 113px;}
+div.lineLarge2 {top: 156px;}
+div.lineLarge3 {top: 199px;}
+div.lineLarge4 {top: 242px;}
+div.lineLarge5{top: 285px;}
+div.lineLarge6 {top: 328px;}
+div.lineLarge7 {top: 371px;}
+div.lineLarge8 {top: 414px;}
+div.lineLarge9 {top: 457px;}
+div.lineLarge10 {top: 500px;}
+div.lineLarge11 {top: 543px;}
+div.lineLarge12 {top: 586px;}
+div.lineLarge13 {top: 629px;}
+div.lineLarge14 {top: 772px;}
+div.lineLarge15 {top: 815px;}
+
+/* div.line1 {top: 60px;} */
+div.line1, div.linePatEd1, div.linePE1 {top: 95px;}
+div.line2, div.linePatEd2, div.linePE2{top: 131px;}
+div.line3, div.linePatEd3, div.linePE3 {top: 167px;}
+div.line4, div.linePatEd4, div.linePE4{top: 203px;}
+div.line5, div.linePatEd5, div.linePE5 {top: 239px;}
+div.line6, div.linePatEd6, div.linePE6 {top: 275px;}
+div.line7, div.linePatEd7, div.linePE7 {top: 311px;}
+div.line8, div.linePatEd8, div.linePE8 {top: 347px;}
+div.line9, div.linePatEd9, div.linePE9 {top: 383px;}
+div.line10, div.linePatEd10, div.linePE10 {top: 419px;}
+div.line11, div.linePatEd11, div.linePE11 {top: 455px;}
+div.line12, div.linePatEd12, div.linePE12 {top: 491px;}
+div.line13, div.linePatEd13, div.linePE13{top: 527px;}
+div.line14, div.linePatEd14 {top: 564px;}
+
+/* Patient Education */
+div.lineColumnMain {position: absolute; color: #111; height: 26px; font-size: 17pt;}
+div.lineColumnMainIndent {margin-left: 40px;}
+div.lineColumnMain1 {left: 10px; width: 340px;}
+div.lineColumnMain2 {left: 325px; width: 325px;}
+div.lineColumnMain3 {left: 655px; width: 295px;}
+div.lineColumnFVMain1 {left: 10px; width: 230px;}
+div.lineColumnFVMain2 {left: 180px; width: 230px;}
+div.lineColumnFVMain3 {left: 470px; width: 230px;}
+div.lineColumnFVMain4 {left: 720px; width: 230px;}
+div.lineColumnFVMain1, div.lineColumnFVMain2, div.lineColumnFVMain3, div.lineColumnFVMain4  {text-align: left;}
+
+
+
+div.lineCategoriesMain1, div.linePatEdFV1 {top: 105px;}
+div.lineCategoriesMain2, div.linePatEdFV2{top: 149px;}
+div.lineCategoriesMain3, div.linePatEdFV3 {top: 193px;}
+div.lineCategoriesMain4, div.linePatEdFV4 {top: 237px;}
+div.lineCategoriesMain5, div.linePatEdFV5{top: 281px;}
+div.lineCategoriesMain6, div.linePatEdFV6 {top: 325px;}
+div.lineCategoriesMain7, div.linePatEdFV7 {top: 369px;}
+div.lineCategoriesMain8, div.linePatEdFV8 {top: 413px;}
+div.lineCategoriesMain9, div.linePatEdFV9 {top: 457px;}
+div.lineCategoriesMain10, div.linePatEdFV10 {top: 501px;}
+div.lineCategoriesMain11, div.linePatEdFV11 {top: 545px;}
+div.lineCategoriesMain12, div.linePatEdFV12 {top: 590px;}
+div.lineCategoriesMain13, div.linePatEdFV13 {top: 660px;}
+div.lineCategoriesMain14, div.linePatEdFV14 {top: 710px;}
+div.lineCategoriesMain15, div.linePatEdFV15 {top: 760px;}
+div.lineCategoriesFVMain1 {top: 4px;}
+
+
+a.lineItemsMainWide {
+	vertical-align: middle;
+	font-size: 26px;
+	text-decoration: none;
+	padding: 2px;
+	border: 0px solid #111;
+	letter-spacing: 0px;
+	font-weight: bold;
+	color: #111;
+}
+
+div.lineColumnMainWide {position: absolute; color: #111; height: 34px; font-size: 30px;}
+div.lineColumnMainWide{left: 10px; width: 900px;}
+div.lineColumnMainWide1{left: 10px; width: 450px;}
+div.lineColumnMainWide2{left: 465px; width: 450px;}
+div.lineCategoriesMainWide1 {top: 120px;}
+div.lineCategoriesMainWide2 {top: 162px;}
+div.lineCategoriesMainWide3 {top: 204px;}
+div.lineCategoriesMainWide4 {top: 246px;}
+div.lineCategoriesMainWide5{top: 286px;}
+div.lineCategoriesMainWide6 {top: 330px;}
+div.lineCategoriesMainWide7 {top: 372px;}
+div.lineCategoriesMainWide8 {top: 414px;}
+div.lineCategoriesMainWide9 {top: 456px;}
+div.lineCategoriesMainWide10 {top: 498px;}
+div.lineCategoriesMainWide11 {top: 540px;}
+
+div.lineColumnMainPreferred {
+	position: absolute;
+	height: 43px;
+	padding-left: 6px;
+	width: 440px;
+	background-color: #C8DAEA;
+}
+div.preferredCategoriesLabel {font-size: 18px; width: 440px; height: 30px; padding-left: 8px;}
+
+.preferredCategory {background-color: #C8DAEA; z-Index: 100;}
+
+div.descriptionLegend {
+	position: absolute;
+	top: 580px;
+	width: 940px;
+	font-size: 18px;
+	left: 14px;
+}
+/* end: Patient Education */
+
+/* navbar */
+div.navbar { position: absolute; top: 611px; text-align: center; vertical-align: middle; text-decoration: none; height: 34px; padding-top: 4px;}
+div.navbarActive{ border-top: 2px solid white; border-bottom: 2px solid white; border-radius: 3px;}
+div.navbar1 {left: 0; width: 150px;}
+div.navbar1blankPE {left: 4px; width: 154px; background-color: #668BC9;}
+div.navbar2 {left: 164px; width: 146px;}
+div.navbar2blank {left: 164px; width: 156px; background-color: #262626; display: none;}
+div.navbar2blankPE {left: 164px; width: 154px; display: none;}
+div.navbar3 {left: 391px; width: 130px;}	/* home */
+div.navbar4 {left: 540px; width: 220px;}	/* pe */
+div.navbar5 {left: 781px; width: 90px;}	/* movies */
+div.navbar6 {left: 813px; width: 76px;}	/* safety */
+div.navbar7 {left: 890px; width: 48px;}	/* tv */
+
+a.buttons, a.buttonsPE, a.buttonsPENav { padding: 2px 6px; color: #dedede; font-weight: bold;}
+a.buttons, a.buttonsPE { font-size: 24px;}
+a.buttonsPENav { font-size: 29px;}
+/* end: navbar */

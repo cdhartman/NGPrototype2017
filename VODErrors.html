@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+  <title>VOD Errors</title>
+
+
+  <script language="JavaScript" for="window">
+var errortext;
+var nvpair;
+function GoBack()
+{
+history.go(-1);
+}
+function GetError()
+{
+/**
+* Read infomation from URL *
+* The URL looks like:
+* status=<statusString>&bookmarkassetid=<assetid>&bookmarkvalue=<bookmark> */
+var vodParams = location.search;
+//Get pairs of parameters
+var vodParamsArray = vodParams.split("&");
+//Create arrays to keep parameter's names and values
+paramNames = new Array(vodParamsArray.length);
+paramValues = new Array(vodParamsArray.length);
+var index=0;
+while (index < vodParamsArray.length)
+{
+//Get parameter names and values
+pair = vodParamsArray[index].split("=");
+paramNames[index] = pair[0];
+paramValues[index] = pair[1];
+index++;
+}
+DisplayError();
+}
+function DisplayError()
+{
+var errorPage;
+// if ((paramValues[0] == "VSE_UNKNOWN") || (paramValues[0] == "SessionEnded") || (paramValues[0] == "MovieAtEnd") || (paramValues[0] == "UserTerminated"))
+// {
+// errorPage = "Your video has completed or you pressed the stop button.";
+// document.writeln(errorPage);
+GoBack();
+//window.location = "http://10.238.241.101:8080/PatientEd_Channel_Prod/index.html";
+// }
+// else
+// {
+// errorPage = "An error occured while playing the video: " + paramValues[0];
+// document.writeln(errorPage);
+// errorPage = "<P>Press 'Exit' to go back to the menu.<P>";
+// document.writeln(errorPage);
+// }
+}
+  </script>
+</head>
+
+
+<body onload="GetError()">
+
+<br>
+
+<!-- Insert HTML here -->
+<!-- Insert HTML here -->
+</body>
+</html>

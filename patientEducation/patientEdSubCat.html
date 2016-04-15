@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>MCTN | Patient Education</title>
+	<link href="../favicon.ico" rel="shortcut icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+
+	<script type="text/javascript" src="../js/jQuery/jquery-1.min.js"></script>
+	<script type="text/javascript" src="../js/HEWXMLWrapper.js"></script>
+	<script type="text/javascript" src="../js/HEWCommands.js"></script>
+	<script type="text/javascript" src="../js/HEWAlert.js"></script>
+	<script type="text/javascript" src="../js/modExtras.js"></script>
+	<script type="text/javascript" src="../js/patientEd/getPatEdCategory.js"></script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+	<div style="position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
+	</div>
+	<div class="container" id="container">
+		<div id="navBarLeft" class="navBarLeft" onclick="navBarLeftFunction('');"></div>
+		<div class="title" id="title">Patient Education</div>
+		<div id="categoriesTop" class="categoriesTop"></div>
+		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div></div>
+		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
+		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" onclick="searchPE();" /></div>
+		<div id="navBar"></div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	var genreId = getURLParameter('genreID',''), genre = decodeURI(getURLParameter('genre','')),
+		subGenreId = getURLParameter('genreID',''), subGenre = decodeURI(getURLParameter('subGenre','')), section = getURLParameter('section',''),
+		start = getURLParameter('start','1'), quickPlay = getURLParameter('quickPlay','0'), view = getURLParameter('view','All'),
+		screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), site = getSite();
+
+	// load CSS and SplashScreen
+	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
+
+	/* load primary content */
+	getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
+	if (section !== 'mci') { 
+		$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
+	} else {
+		$( "#navBarLeft" ).removeClass( 'categoriesTop' );
+	}
+	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
+
+	$( document ).ready(function() {
+		/* highlight Patient Education nav bar */
+		setTimeout(function(){ 
+			// addClass('navbar4','navbarActive'); 
+			// document.getElementById('link1').focus();
+			// navBarLeftFunction('', 'true');
+			adjustScreenHeightWidth();
+		}, 900);
+	});
+
+	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
+	roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
+	// setChaserStyle ('pe', settopid, screenFormat);
+	
+</script>

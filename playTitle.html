@@ -1,0 +1,109 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<HTML>
+<HEAD>
+</HEAD>
+<BODY text="White" bgcolor="Black" link="Blue" ACTIVE="#00FFFF" VISITED="#FFFF80" onLoad="StartVod()" background="black">
+
+<script type="text/javascript" src="js/HEWXMLWrapper.js">
+</script>
+
+<SCRIPT LANGUAGE="JavaScript" for="window">
+<!--
+// ICTV requires using the above HEWXMLWrapper.js file when using ICTV XML commands.  
+// This js file creates a single DOM Document interface for developers to use 
+// in both Internet Explorer 5.0+ (Windows) and Mozilla (The Mozilla browser 
+// itself, or Netscape 6.1+). This interface will use both IE's ActiveX approach 
+// as well as Mozilla's standards-compliant approach. 
+// Because the IE implementation uses ActiveX technology, 
+// this will not work on IE for the Mac.
+
+var MsgIdSent;
+
+// create messaged shell strings to assemble an ICTV command message
+
+MsgShellStartVod= "<HEW_COMMAND><COMMAND_NAME>START_HEW_VOD</COMMAND_NAME>";
+MsgShellPreMovie= "<IDENTIFIER>";
+MsgShellPostMovie= "</IDENTIFIER>";
+MsgShellPreStartType= "<START_TYPE>";
+MsgShellPostStartType= "</START_TYPE>";
+MsgShellPreBookmark= "<BOOKMARK>";
+MsgShellPostBookmark= "</BOOKMARK>";
+MsgShell3 = "</HEW_COMMAND>";
+
+var Offering;
+var strOffering;
+ 
+function StartVod () 
+{	
+   //Get the parameter passed to this html form (It should be the offering number)
+   nvpair = location.search;
+   nvarray = nvpair.split("=");
+   offering = nvarray[1];
+   strOffering = offering.toString();
+
+  // blank out any previous result in the output fields
+  //  document.inputForm.OutFieldTextBox.value = "";
+  // MsgId will be used as the message Id value for each ICTV command message
+  var MsgId = new Date();
+  // save the message Id (MsgId)
+  MsgIdSent=MsgId.valueOf();
+  // Assemble the ICTV command message
+  XMLCommand =  MsgShellStartVod
+  			+ MsgShellPreMovie
+  			+ ReplaceSpecialChars (strOffering)
+  			+ MsgShellPostMovie
+		   	+ MsgShellPreStartType
+          + ReplaceSpecialChars ("CONTINUE")
+          + MsgShellPostStartType
+          + MsgShellPreBookmark
+          + ReplaceSpecialChars (267)
+          + MsgShellPostBookmark
+          + MsgShell3;
+  // alert(XMLCommand);
+  SendHEWCommand(MsgIdSent, XMLCommand,"GenericCallBack");  
+}
+
+SUCCESS="SUCCESS";
+
+function GenericCallBack (MessageId, XMLString) {
+	if (MessageId != MsgIdSent) {
+		alert ("Message Id received (" + MessageId + ")  NOT EQUAL  to Message Id sent (" + MsgIdSent + ")");
+		return;
+	}		
+
+	var xmlDoc = jsXML.createDOMDocument(XMLString);
+
+	var StatusList 		= xmlDoc.getElementsByTagName("STATUS");
+	var FunctionList 	= xmlDoc.getElementsByTagName("RESPONSE");
+
+	
+	if ((StatusList.length != 1) || (FunctionList.length != 1)) {
+		alert ("Message Id " + MsgIdSent + " received an invalid formatted response");
+		return;
+	}
+	
+	if (StatusList[0].firstChild.nodeValue != SUCCESS) {
+		alert("Message Id " + MsgIdSent + " received an error <STATUS> = " + StatusList[0].firstChild.nodeValue);
+		return;
+	}
+	GoBack();
+}
+
+// DebugCallBack is a optional function 
+// It will be called when certain errors
+// occur or when the Callback function name
+// is not available on the HTML page
+function DebugCallBack (Response) {
+	alert ("DebugCallBack: Response = " + Response);
+}
+
+function GoBack()
+{
+  history.go(-1);
+}
+
+// -->
+</SCRIPT>
+
+</BODY>
+</html>

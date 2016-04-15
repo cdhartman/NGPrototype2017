@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>MCTN</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="../favicon.ico" rel="shortcut icon" />
+<style>
+	a, a:visited {color : #336699;} 
+	a:hover, a:active {color : #336699 ;text-decoration : none;}
+	body {margin: 0; padding: 0; background-color: #111; font-family: verdana; font-size: 13px; color: #fff; text-align: center;}
+</style>
+<script>
+	screenNumber = 1;
+	numberOfScreens = 4;
+	document.onkeydown = function(e) { // alert(e.keyCode);
+    switch (e.keyCode) {
+			case 37:
+				sectionNextStaticScreen('sectionStaticScreenID', '-')
+				break;
+			case 39:
+				sectionNextStaticScreen('sectionStaticScreenID', '+')
+				break;
+			case 13:
+				sectionNextStaticScreen('sectionStaticScreenID', '+')
+				break;
+		}
+	};
+</script>
+<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
+<script type="text/javascript" src="../js/modExtras.js"></script>
+</head>
+
+<body>
+	<div style="position: absolute; left: 10px; top: 10px; width: 34px; height: 30px; background-color: black; z-index: 100; opacity: .30; border-radius: 6px; padding: 4px;">
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" /></a>
+	</div>
+	<div style="position: absolute; left: 60px; top: 10px; width: 120px; height: 32px; background-color: black; z-index: 100; opacity: .40; border-radius: 6px; padding-top: 6px;">
+		<img src="../images/icons/left.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '-');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
+		<span id="currentScreenIndicator">1</span> of 4
+		<img src="../images/icons/right.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '+');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
+	</div>
+	<img src="images/1.png" id="sectionStaticScreenID" onclick="sectionNextStaticScreen('sectionStaticScreenID', '+')" 
+		style="position: absolute; left: 0; top: 0;" />
+</body>
+</html>

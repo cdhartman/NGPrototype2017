@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generationTime="2014-11-25T13:57:59-06:00" version="41">
+	<category name="Patient Education" id="3" hasCategories="true" hidden="false" exitAndTune="false">
+		<description/>
+			
+			<category name="Diseases and conditions" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				
+				<category name="Brain and nervous system" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Epilespy" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Understanding and Assisting People with Epilepsy">4903</offeringid>
+					</category>
+					<category name="Strokes" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Recognizing and Preventing Strokes">2298</offeringid>
+					</category>
+					<category name="Traumatic brain injury" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Brain Injury: A Program For Young Kids">2298</offeringid>
+					</category>
+				</category>
+				
+				<category name="Cancer" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Colon Cancer" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Colon Cancer Family Registry">4275</offeringid>
+						<offeringid name="Colon Cancer: A Guide for Patients HD">3756</offeringid>
+					</category>
+				</category>
+				
+				<category name="Genetic disorders" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Congenital heart defects in adults" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Adult Congenital Heart Defects">2357</offeringid>
+					</category>
+				</category>
+				
+				<category name="Glands and endocrine system" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Diabetes mellitus" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Diabetes and Depression">2357</offeringid>
+					</category>
+				</category>
+				
+				<category name="Heart and blood vessels" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Heart disease" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Introduction To Heart Disease Risk Factors">4514</offeringid>
+					</category>
+				</category>
+				
+				<category name="Liver and digestive system" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Inflammatory bowel disease" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Teens - IBD and Surgery">4407</offeringid>
+					</category>
+				</category>
+				
+				<category name="Lungs and respiratory system" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Childhood asthma" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name=">Asthma 11: Kids Tell It Like It Is">3978</offeringid>
+					</category>
+				</category>
+				
+				<category name="Obesity" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Normal Weight Obesity">3271</offeringid>
+				</category>
+				
+				<category name="Pregnancy" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Preterm labor" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name=">Premature Birth Reducing Your Risk Signs of Preterm Labor">3904</offeringid>
+					</category>
+				</category>
+			</category>
+			
+			<category name="Drugs" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				
+				<category name="Heparin" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="How to Inject Heparin Using a Syringe and Vial">4763</offeringid>
+					<offeringid name="How to Inject Heparin Using a Pre-Filled Syringe">4762</offeringid>
+				</category>
+				
+				<category name="Warfarin" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Taking Warfarin: How to Manage Your Blood Thinner">3506</offeringid>
+					<offeringid name="Taking Warfarin: How to Manage Your Blood Thinner (Spanish)">2619</offeringid>
+					<offeringid name="Taking Warfarin: How to Manage Your Blood Thinner (Arabic)">2620</offeringid>
+				</category>
+			</category>
+			
+			<category name="Tests, procedures, and therapies" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				
+				<category name="Examination" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Sexuality and reproductive system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Testicular exam" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Testicular exam">2920</offeringid>
+						</category>
+					</category>
+				</category>
+				
+				<category name="Imaging" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Getting the Best Results: Before Your Surgery">3738</offeringid>
+					<category name="CT scan" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Testicular exam">1775</offeringid>
+					</category>
+					<category name="Liver and digestive system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Colonoscopy" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="How to Prepare for a Colonoscopy with MoviPrep Solution">3781</offeringid>
+						</category>
+					</category>
+				</category>
+				
+				<category name="Surgery" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Getting the Best Results: Before Your Surgery">3738</offeringid>
+					<category name="Heart and blood vessels" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Heart transplant" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Transplant 5 Heart Transplant at MC HD">3173</offeringid>
+						</category>
+					</category>
+				</category>
+				
+				<category name="Therapy" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Brain and nervous system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Ketogenic diet" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Introduction To the Ketogenic Diet">3173</offeringid>
+						</category>
+					</category>
+					<category name="Glands and endocrine system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Insulin therapy" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Insulin Using a Syringe">2671</offeringid>
+						</category>
+					</category>
+					<category name="Liver and digestive system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="Bariatric diet" hasCategories="true" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Nutrition After Bariatric Surgery Transitioning to a General Diet">3804</offeringid>
+						</category>
+						<category name="Ketogenic diet" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Introduction To the Ketogenic Diet">3173</offeringid>
+						</category>
+					</category>
+					<category name="Lungs and respiratory system" hasCategories="true" hidden="false" exitAndTune="false">
+						<description/>
+						<category name="CPAP therapy" hasCategories="false" hidden="false" exitAndTune="false">
+							<description/>
+							<offeringid name="Just Keep Trying Kids and Positive Airway Pressure Therapy (PAP)">3539</offeringid>
+						</category>
+					</category>
+				</category>
+					
+			</category>
+
+			<category name="Medical and assistive devices" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				
+				<category name="Assistive technology" hasCategories="true" hidden="false" exitAndTune="false">
+					<description/>
+					<category name="Cane" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Using a Cane">4130</offeringid>
+					</category>
+					<category name="Knee scooter" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Using a Knee Scooter">4129</offeringid>
+					</category>
+					<category name="Walker" hasCategories="false" hidden="false" exitAndTune="false">
+						<description/>
+						<offeringid name="Using a Walker: Bearing Some Weight">4128</offeringid>
+						<offeringid name="Using a Walker: Bearing No Weight">4127</offeringid>
+					</category>
+				</category>
+				
+			</category>
+			
+			<category name="Wellness" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				
+				<category name="Assertiveness" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="When I Say No, I Feel Guilty">3571</offeringid>
+				</category>
+				
+				<category name="Breastfeeding" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Making Enough Milk 1: Hand Expression of First Milk">4403</offeringid>
+					<offeringid name="Making Enough Milk 2: Hands-On Help">4401</offeringid>
+					<offeringid name="Making Enough Milk 3: Hands-On Pumping">4402</offeringid>	
+				</category>
+				
+				<category name="Fall Prevention" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Preventing Falls-Home">4865</offeringid>
+				</category>
+				
+				<category name="Healthy Diet" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Feeding With Love and Good Sense: The Toddler">3708</offeringid>
+				</category>
+				
+				<category name="Heart Health" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Eating for a Healthy Heart">2882</offeringid>
+				</category>
+				
+				<category name="Labor and Delivery" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Understanding Birth: Labor">3852</offeringid>
+				</category>
+				
+				<category name="Relaxation Techniques" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Progressive Muscle Relaxation">4954</offeringid>
+					<offeringid name="Finger Lakes Waterfalls">3592</offeringid>
+				</category>
+				
+				<category name="School" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Back to School">1729</offeringid>
+				</category>
+				
+				<category name="Travel" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Stay Healthy While Traveling">3755</offeringid>
+				</category>
+				
+			</category>
+			
+	</category>
+</catalog>

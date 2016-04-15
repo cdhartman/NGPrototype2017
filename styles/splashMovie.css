@@ -1,0 +1,25 @@
+span.timeTempSeperator {font-size: 20px; color: #444; font-weight: normal;}
+a.lineItemsLarge:active, a.lineItemsLarge:focus, a.buttons:active, a.buttons:focus {background-color: #ddd; color: #111;}
+div.title, div.plot, div.movieDetailBlock, div.itemCount, div.movieDetailBlockDirector, div.movieDetailBlockCast, #Tomatoes {color: #ccc; font-weight: bold;}
+div.itemCount {color: #999;}
+/*
+a.movieLink:focus, a.movieLink:active, a.movieLink:hover > img.posterArt {padding: 16px 0; opacity: 1.0; filter: alpha(opacity=100);}
+div.movieBox:hover > a.movieLink > img.posterArt:hover, img.posterArt:active, img.posterArt:focus {padding: 16px 0; opacity: 1.0; filter: alpha(opacity=100);}
+img.posterArt:hover, img.posterArt:active, img.posterArt:focus {padding: 16px 0; opacity: 1.0; filter: alpha(opacity=100);}
+
+
+a.movieLink:hover {
+	padding: 16px 0; opacity: 1.0; filter: alpha(opacity=100);
+	visibility:visible
+}
+a.movieLink:hover > img.posterArt, a.movieLink:focus > img.posterArt, a.movieLink:active > img.posterArt  {
+	padding: 16px 0; 
+	opacity: 1.0; filter: alpha(opacity=100);
+}
+.hoverState {
+	padding: 16px 0; opacity: 1.0; filter: alpha(opacity=100);
+   display:block;
+   overflow: hidden;
+   visibility:visible
+}
+*/

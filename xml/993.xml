@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generationTime="2014-11-25T13:57:59-06:00" version="41">
+	<category name="Patient Education" id="3" hasCategories="true" hidden="false" exitAndTune="false">
+		<description/>
+			
+			<category name="Cancer" id="900020" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<category name="Amyloidosis" id="900021" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Amyloidosis Awareness" nameLong="Amyloidosis Awareness" runtime="00:13:00"
+						summary="Describes the effect of amyloidosis on the body, prognosis and outcome. Discusses diagnosis, tests, symptoms and treatment options by type.">2952</offeringid>
+				</category>
+				<category name="Breast Cancer" id="900022" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Breast Health Awareness" nameLong="Breast Health Awareness" runtime="00:12:00" 
+						summary="Emphasizes the benefits of early detection and shows three accepted methods of breast self-examination.">3217</offeringid>
+					<offeringid name="Breast Resonst - Options" nameLong="Breast Reconstruction 1: Reconstruction Options" runtime="00:10:00"
+						summary="Chapter 1 from Breast Reconstruction introduces options for breast reconstruction after a mastectomy, including implants and tissue flaps.">3561</offeringid>
+					<offeringid name="Breast Resonst - Implants" nameLong="Breast Reconstruction 2:Reconstruction With an Implant" runtime="00:10:00"
+						summary="Detailed information on the process of breast reconstructing with an implant.">3562</offeringid>
+					<offeringid name="Breast Resonst - Flap" nameLong="Breast Reconstruction 3: Reconstruction with Flap" runtime="00:10:00" 
+						summary="Detailed information on the process of breast reconstructing with a tissue flap.">3565</offeringid>
+					<offeringid name="Help in Stressful Times" nameLong="Help in Stressful Times: Treatment for Breast Cancer" runtime="00:05:00" 
+						summary="Making lifestyle changes to cope more effectively with stressors.">3654</offeringid>
+					<offeringid name="Mammogram" nameLong="Quality Mammography Can Save Your Life" runtime="00:08:00"
+						summary="Discusses breast screening and the diagnostic mammogram process.">1804</offeringid>
+					<offeringid name="Mary Ellen: Diagnosis" nameLong="Mary Ellen's Journey 1: The Diagnosis" runtime="00:07:00"
+						summary="A cancer survivor describes finding an abnormality on her breast and the diagnosis process, including her emotions and reactions.">3532</offeringid>
+				</category>
+				<category name="Caretaker Stress" id="900023" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Help in Stressful Times" nameLong="Help in Stressful Times: Caretaker Stress" runtime="00:05:00"
+						summary="This individual tells their story of making cognitive and lifestyle changes to cope more effectively with stressors caring for an elderly patient.">3815</offeringid>
+				</category>
+				<category name="General" id="900074" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Blood Transfusions" nameLong="BloodTransfusions: The Gift of Life" runtime="00:12:00"
+						summary="Explains the process involved in blood transfusions.">1517</offeringid>
+					<offeringid name="Colon Cancer" nameLong="Colon Cancer: A Guide for Patients" runtime="00:10:00"
+						summary="This video describes colon cancer, colon function, polyps, how it is diagnosed, cancer staging, laparoscopic surgery, hemicolectomy, sigmoidectomy, stomas and other topics.">3673</offeringid>
+					<offeringid name="Controlling Cancer Pain" nameLong="Controlling Cancer Pain" runtime="00:12:00"
+						summary="Patients talk about their cancer pain control and ways to tell doctors and nurses about their pain.">2837</offeringid>
+					<offeringid name="Chemotherapy Side Effects" nameLong="Managing Side Effects of Chemotherapy" runtime="00:12:00"
+						summary="Describes methods of coping with side effects and minimizing problems including fatigue, bleeding, increased risk of infections, mouth sores, nausea, vomiting and more.">4511</offeringid>
+					<offeringid name="Targeted Therapies" nameLong="Targeted Therapies: A New Way of Treating Cancer" runtime="00:06:00"
+						summary="Explains how cancer forms in the body, how traditional chemotherapy works and why it causes side effects and how new targeted therapies interfere with cancer cells.">4509</offeringid>
+					<offeringid name="Oral Chemotherapy" nameLong="Oral Chemotherapy" runtime="00:08:00"
+						summary="Provides basic information for storing, managing and handling oral chemotherapy. Describes common side effects.">4510</offeringid>
+					<offeringid name="Living with Cancer: Hope" nameLong="Living with Cancer: A Message of Hope" runtime="00:56:00"
+						summary="Stories of courage, humor and hope from people living with cancer. Filmed at the Mayo Clinic Cancer Center.">2774</offeringid>
+					<offeringid name="It's Better to Prevent (Sp)" nameLong="It's Better to Prevent Than Regret (SP)" runtime="00:16:00"
+						summary="Video in Spanish that speaks about cancer prevention. Several topics are covered about enjoying a heathly lifestyle.">1554</offeringid>
+				</category>
+				<category name="Clinical Trials" id="900024" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Let's Talk Clinical Research" nameLong="Let's Talk About Clinical Research" runtime="00:10:00"
+						summary="Introduces the terms, purposes, benefits and risks of clinical research.  Clinical research is a process to find new and better ways to understand, detect, control and treat health conditions.">2423</offeringid>
+				</category>
+				<category name="Gastic" id="900025" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="GERD, Barrett's Esophagus" nameLong="Reflux, GERD, Barrett's Esophagus, Esophageal Cancer" runtime="00:27:00"
+						summary="This program discusses gastroespageal reflux disease (GERD).  It provides tips for controlling reflux and treatment options">2989</offeringid>
+					<offeringid name="High Grade Dysplasia and Cancer" nameLong="Reflux 3: Options for High Grade Dysplasia and Cancer" runtime="00:13:00" 
+						summary="Describes treatment options for high grade dysplasia and cancer including esophagectomy, endoscopic mucosal resection and cryotherapy.">3108</offeringid>
+					<offeringid name="Ways to Reduce Reflux" nameLong="Reflux 2: Ways to Reduce Reflux" runtime="00:06:00"
+						summary="Provides tips for reducing heartburn and reflux.  Describes dietary guidelines, H2 blockers, proton pump inhibitors and how to take anti-reflux medications.">3106</offeringid>
+				</category>
+				<category name="Prostate Cancer" id="900026" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Newly Diagnosed" nameLong="Men Newly Diagnosed with Prostate Cancer" runtime="00:22:00"
+						summary="Provides information to men newly diagnosed with prostate cancer, including infomation about the treatment choices, the treatment decision and dealing with side effects.">3846</offeringid>
+					<offeringid name="Treatment Survivor" nameLong="Be a Survivor: Overview of Prostate Cancer Treatment" runtime="00:29:00"
+						summary="Provides an overview of prostate cancer diagnosis including Gleason score, PSA and INM staging.">3314</offeringid>
+				</category>
+				<category name="Radiation Therapy" id="900027" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Frequently Asked Questions" nameLong="Radiation Therapy Frequently Asked Questions" runtime="00:08:00"
+						summary="Describes radiation therapy using a question and answer format to address common concerns." >2645</offeringid>
+				</category>
+			</category>
+			<category name="Diabetes" id="900030" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Blood Sugar" nameLong="How to Measure Your Blood Sugar" runtime="00:05:00"
+					summary="Shows the equipment and process for checking blood sugar levels for people with diabetes.">4438</offeringid>
+				<offeringid name="Being More Active" nameLong="Exercise For Life 1: Benefits of Being Active" runtime="00:10:00"
+					summary="If you are not exercising, this video will assist you in looking at benefits and barriers and how to overcome them.">3354</offeringid>
+				<offeringid name="Building on Your Success" nameLong="Exercise For Life 4: Staying With It" runtime="00:13:00"
+					summary="If you have been exercising for more than six months, this video will share common reasons people stop and how to stay motivated.">3356</offeringid>
+				<offeringid name="Carbohydrates" nameLong="Carbohydrates" runtime="00:04:00"
+					summary="Provides information about carbohydrates, the myths and facts that surround them and how to include carbohydrates in a healthy eating plan.">3600</offeringid>
+				<offeringid name="Get Started-Small Steps" nameLong="Exercise For Life 2: How Do I Get Started?" runtime="00:12:00"
+					summary="If you are not exercising, however are thinking you might in the future, this video will explain how to get past common challenges and set achievable goals.">3355</offeringid>
+				<offeringid name="How to Read a Food Label" nameLong="How to Read a Food Label" runtime="00:11:00"
+					summary="Provides information and explanations about reading a food/nutrition label in order to understand how to make good food choices to benefit overall health.">3859</offeringid>
+				<offeringid name="Foot Care" nameLong="How To Treat Your Feet" runtime="00:09:00"
+					summary="Provides general guidelines for foot care and prevention of foot problems. It includes inspection, washing and dryinf tips and tips for buying and wering shoes.">2958</offeringid>
+				<offeringid name="Hypoglycemia" nameLong="For Your Health: Preventing and Treating Hypoglycemia" runtime="00:11:00"
+					summary="This two-part program includes information about the causes, symptoms, treatment and prevention of hypoglycemia, as well as a demonstration of preparing and giving glucagon.">3531</offeringid>
+				<offeringid name="Insulin Using a Syringe" nameLong="How to Inject Insulin Using a Syringe" runtime="00:05:00"
+					summary="Shows the proper technique for injecting one type of insulin using a syringe. Topics include gathering supplies, washing hands and discarding syringe.">2671</offeringid>
+				<offeringid name="Personal Fitness Plan" nameLong="Exercise For Life 3: I'm Ready to Exercise" runtime="00:11:00"
+					summary="If you recently started exercising, this video will help you understand exercise guidelines and how to develop your own personal action plan.">3701</offeringid>
+				<offeringid name="Pre-Diabetes" nameLong="Pre-Diabetes" runtime="00:06:00"
+					summary="Defines pre-diabetes and type 2 diabetes. Provides guidelines for prevention and management, testing, exercise and diet.">3861</offeringid>
+			</category>
+			<category name="GI / General Surgery" id="900040" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Tube Feeding: Intro" nameLong="Tube Feeding 1: Introduction" runtime="00:08:00"
+					summary="Depicts the use of a feeing tube, how it is placed and how it is used. Describes possible problems and how tubes are maintained and replaced.">2685</offeringid>
+				<offeringid name="Tube Feeding: Nasal Tube" nameLong="Tube Feeding 2: Placement and Care of Nasal Tube" runtime="00:06:00"
+					summary="Depicts insertion of a nasal feeding tube and how it is secured. Provides instructions for dressing changes and care of the nose and mouth.">2686</offeringid>
+				<offeringid name="Tube Feeding: Abd Tube" nameLong="Tube Feeding 3:Placement and Care of an Abdominal Tube" runtime="00:09:00"
+					summary="Depicts the placement of an abdominal feeding tube, possible risks and care of the site. Describes signs of infection and when to contact a health care provider.">2688</offeringid>
+				<offeringid name="Tube Feeding: By Gravity" nameLong="Tube Feeding 4: By Gravity" runtime="00:13:00"
+					summary="Depicts feeding set and provides instruction for preparation, use and clean up. Includes tips for possible problems, how to use for medications and hints for comfort.">2689</offeringid>
+				<offeringid name="Tube Feeding: Syringe" nameLong="Tube Feeding 5: With a Syringe" runtime="00:11:00"
+					summary="Depicts preparation, supplies needed and use and care of a feeding tube. Provides instructions for use and storage of formula, use for medications and positioning.">2690</offeringid>
+				<offeringid name="Tube Feeding: Pump" nameLong="Tube Feeding 6: With a Pump" runtime="00:12:00"
+					summary="Depicts tube feeding with a pump. Depicts equipment, instructions for preparation, use of formula and clean up.">2691</offeringid>
+				<offeringid name="Care of Pigtail Drains" nameLong="Care of Your Drain: Pigtail Drains" runtime="00:08:00"
+					summary="Information about care for a pigtail drainage tube, including several topics.">4448</offeringid>
+				<offeringid name="Your Surgery" nameLong="Getting the Best Results: Before Your Surgery" runtime="00:06:00"
+					summary="Provides instruction for preparing fo an in-patient or out-patient surgery.">3738</offeringid>
+				<offeringid name="Pain Management: The 3 Rs" nameLong="Pain Management: The 3 Rs" runtime="00:14:00"
+					summary="Encourages individuals to participate in making decisions to manage pain.">2855</offeringid>
+				<offeringid name="Ileostomy" nameLong="Living With An Ileostomy" runtime="00:00:00"
+					summary="Patients who have experienced ileostomy surgery offer encouragement for others as they discuss their feelings, concerns, fears and return to healthy lives.">2552</offeringid>
+				<offeringid name="Colostomy" nameLong="Colostomy Chapter 1: Living With a Colostomy" runtime="00:08:00"
+					summary="Explains different types of colostomies, risks, possible complications and introduces the pouching system. Describes the role of the wound, ostomy and continence (WOC) nurse, includes illustrations, animations and comments from patients.">4651</offeringid>
+				<offeringid name="Endoscopy Consent" nameLong="Informed Consent for Endoscopy Procedures" runtime="00:06:00"
+					summary="Describes endoscopy procedures and why they may be performed.">3779</offeringid>
+				<offeringid name="Ileal Pouch Anastomosis" nameLong="Ileal Pouch - Anal Anastomosis 2012" runtime="00:14:00"
+					summary="Emphasis on the positive results of an ileal pouch-anal anastomosis surgery for people with chronic ulcerative colitis. Describes the surgery with animation and realistic expectations from the surgical process.">3860</offeringid>
+				<offeringid name="Care of Straight Drains" nameLong="Care of Your Drain: Jackson Pratt-Straight Drains" runtime="00:06:00"
+					summary="Information about care for Jackson Pratt or straight drainage tube. Several topics are covered.">4449</offeringid>
+			</category>
+			<category name="Heart / CV Surgery" id="900050" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="HF: Understanding" nameLong="Heart Failure 1: Understanding" runtime="00:06:00"
+					summary="Explains systolic and diastolic heart failure with medical animations.">4512</offeringid>
+				<offeringid name="HF: Managing Symptoms" nameLong="Heart Failure 2: Watching and Reporting Symptoms" runtime="00:03:00"
+					summary="Explains the treatment for heart failure based on symptoms and measurements.">4513</offeringid>
+				<offeringid name="HF: Sodium/Fluid" nameLong="Heart Failure 3: Tips for Limiting Salt and Fluid" runtime="00:07:00"
+					summary="Encourages patients to measure portions of food and fluids, log sodium and fluid intake and stick to daily limits.">4514</offeringid>
+				<offeringid name="HF: Medications" nameLong="Heart Failure 4: Medications" runtime="00:03:00"
+					summary="Encourages patients to take medications exactly as prescribed and store them properly.">4515</offeringid>
+				<offeringid name="HF: Healthy Lifestyle" nameLong="Heart Failure 5: Healthy Lifestyle" runtime="00:04:00"
+					summary="Encourages patients to discontinue the use of tobacco and smokeless cigarettes, follow daily limits of salt and liquids, manage stress and exercise.">4516</offeringid>
+				<offeringid name="HF: Saving Energy" nameLong="Heart Failure 6: Tips for Saving Energy" runtime="00:03:00"
+					summary="Suggests tips for conserving energy.">4517</offeringid>
+				<offeringid name="Living With ICD" nameLong="Living Well With An ICD" runtime="00:17:00"
+					summary="Defines implantable cardioverter defibrillators (ICD) and how to prepare for implantation. Includes stories from people sharing their own experiences.">4158</offeringid>
+				<offeringid name="Your Heart Surgery" nameLong="What You Need to Know About Heart Surgery" runtime="00:10:00"
+					summary="Contains information about heart surgery, what to expect during your hospital stay and after your surgery, and the roles you and your family play in recovery.">3541</offeringid>
+				<offeringid name="Post-Op Heart Surgery" nameLong="Recovering From Heart Surgery" runtime="00:09:00"
+					summary="Learn how to recover from heart surgery. Offers suggestions for medications, pain management, activities and diet.">4145</offeringid>
+				<offeringid name="Heart Infections" nameLong="Protecting Yourself From Heart Infections" runtime="00:06:00"
+					summary="This program discusses Bacterial Endocarditis which can pass infections from the mouth to the heart.">2550</offeringid>
+				<offeringid name="Cardiac Rehab" nameLong="Cardiac Rehabilitation: A Home for Your Heart" runtime="00:00:00"
+					summary="ncourages patients to attend a cardiac rehabilitation program after cardiovascular surgery or procedures.">3344</offeringid>
+				<offeringid name="CV Risk Factors" nameLong="Managing Your Cardiovascular Risk Factors" runtime="00:07:00"
+					summary="Encourages patients to attend a cardiac rehabilitation program after cardiovascular surgery or procedures.">2899</offeringid>
+				<offeringid name="A-Fib" nameLong="Understanding Atrial Fibrillation" runtime="00:16:00"
+					summary="Discusses atrial fibrillation and its treatment. Includes stories from people who share their own experiences.">2299</offeringid>
+				<offeringid name="Heart Cath" nameLong="About Your Heart Catheter Procedure" runtime="00:18:00"
+					summary="This video follows a patient through the typical process of experiencing a heart catheterization an Mayo Clinic.">3334</offeringid>				
+			</category>
+			<category name="Infusion Therapy" id="900060" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="PICC Insertion" nameLong="Peripherally Inserted Central Catheter (PICC)" runtime="00:09:00"
+					summary="Discusses PICC insertion (Peripherally Inserted Central Catheter).">1803</offeringid>
+				<offeringid name="PICC: Site Care" nameLong="Caring For a PICC 1: Site Care and Cap Change" runtime="00:19:00"
+					summary="How to do site care and change the injection cap.">2512</offeringid>
+				<offeringid name="PICC: Flushing" nameLong="Caring For a PICC 2: Flushing the Catheter" runtime="00:05:00"
+					summary="How to flush the catheter.">2509</offeringid>
+				<offeringid name="PICC: Draw From a Vial" nameLong="Caring For a PICC 3: Drawing From a Vial" runtime="00:03:00"
+					summary="How to draw solution from a vial.">2510</offeringid>
+				<offeringid name="PICC: Peds" nameLong="Caring For a PICC 4: Child/Infant Injection Cap Change" runtime="00:03:00"
+					summary="How to change the injection cap for a child or infant.">2511</offeringid>
+				<offeringid name="Long Term CVC" nameLong="Care Of Your Long Term Central Venous Catheter" runtime="00:20:00"
+					summary="This video explains how to care for your long term central venous catheter. Content includes site care, injection cap changes, flushing and assessing for possible complications.">3335</offeringid>
+				<offeringid name="High Flow CVC Adult" nameLong="High Flow CVC Adult Infection Prevention and Care" runtime="00:15:00"
+					summary="Provides information to help adult patients and their caregivers prevent infection in a high flow central venous catheter.">3292</offeringid>
+				<offeringid name="HPN Catheter Care" nameLong="Home Parenteral Nutrition Using Your Hickman Catheter" runtime="00:24:00"
+					summary="Helps patients receiving Home Perenteral Nutrition (HPN) or Total Parenteral Nutrition (TPN) learn how to care for their long-term central venous catheters.">3959</offeringid>
+			</category>
+			<category name="Neph / Urology / OBGyn" id="900070" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Chronic Kidney Disease" nameLong="Chronic Kidney Disease: What You Can Do To Help" runtime="00:07:00"
+					summary="Overview of the function of the kidneys. Topics include common kidney diseases, symptoms, the five stages of kidney disease and GFR.">4009</offeringid>
+				<offeringid name="CKD Tx - Overivew" nameLong="Chronic Kidney Disease Treatment 1: Overview" runtime="00:08:00"
+					summary="Provides a brief introduction to kidney transplant, supportive care, peritoneal dialysis, home hemodialysis and in-center dialysis.">4028</offeringid>
+				<offeringid name="CKD Tx - Transplant" nameLong="Chronic Kidney Disease Treatment 2: Kidney Transplant" runtime="00:08:00"
+					summary="Provides information on kidney transplant options, the donor experience, financial planning and risks and benefits. Includes patient and donor testimonials.">4030</offeringid>
+				<offeringid name="CKD Tx - Supportive Care" nameLong="Chronic Kidney Disease Treatment 3: Supportive Care" runtime="00:03:00"
+					summary="Discusses the goals of supportive care and situations in which it is used.">4032</offeringid>
+				<offeringid name="CKD Tx - Peritoneal Dx" nameLong="Chronic Kidney Disease Treatment 4: Peritoneal Dialysis" runtime="00:04:00"
+					summary="Explains the process of peritoneal dialysis with medical animations. Describes both day and night peritoneal dialysis. Includes risk and benefits.">4029</offeringid>
+				<offeringid name="CKD Tx - Hemodialysis" nameLong="Chronic Kidney Disease Treatment 5: Hemodialysis" runtime="00:05:00"
+					summary="Explains the process of hemodialysis with medical animations. Describes both home and in-center hemodialysis. Includes risks and benefits.">4031</offeringid>
+				<offeringid name="Urostomy" nameLong="Living Well With A Urostomy" runtime="00:17:00"
+					summary="This video in which six people share their experiences with living well with a urostomy.">2815</offeringid>
+				<offeringid name="Female Self-Cath" nameLong="Mayo Video Guide for Female Self-Catheterization" runtime="00:14:00"
+					summary="This video describes adult female self-catheterization on a regular schedule. Preparation of supplies, catheter disinfecting procedure and demonstration of catheterization procedure are explained.">2723</offeringid>
+				<offeringid name="Male Self-Cath" nameLong="Mayo Video Guide for Male Self-Catheterization" runtime="00:12:00"
+					summary="This video describes adult male self-catheterization on a regular schedule. Preparation of supplies, catheter disinfecting procedure and demonstration of catheterization procedure are explained.">2724</offeringid>
+				<offeringid name="Suprapubic Cath" nameLong="Gynecology's Guide to Suprapubic Catheter Care" runtime="00:17:00"
+					summary="This video demonstrates self-care of a suprapubic catheter during hospitalization and at home.">2311</offeringid>
+				<offeringid name="Indwelling Cath Care-Men" nameLong="Indwelling Catheter Care for Men" runtime="00:11:00"
+					summary="An indwelling catheter is placed in your bladder for a time to drain urine.">4441</offeringid>
+				<offeringid name="Indwelling Cath Care-Women" nameLong="Indwelling Catheter Care for Women" runtime="00:00:00"
+					summary="An indwelling catheter is placed in your bladder for a time to drain urine.">4442</offeringid>
+				<offeringid name="Irrigating Cath-Men" nameLong="Irrigating an Indwelling Catheter for Men" runtime="00:05:00"
+					summary="A reminder of the instructions from your healthcare provider on irrigating your catheter to remove a clot.">4443</offeringid>
+				<offeringid name="Irrigating Cath-Women" nameLong="Irrigating an Indwelling Catheter for Women" runtime="00:05:00"
+					summary="A reminder of the instructions from your healthcare provider on irrigating your catheter to remove a clot.">4444</offeringid>
+			</category>
+			<category name="Neurology / Vascular" id="900080" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Foot Care" nameLong="How To Treat Your Feet" runtime="00:09:00"
+					summary="Provides general guidelines for foot care and prevention of foot problems. It includes inspection, washing and drying tips and tips for buying and wearing shoes.">2958</offeringid>
+				<offeringid name="Carotid Artery Disease" nameLong="Managing Carotid Artery Disease" runtime="00:11:00"
+					summary="Describes Carotid Artery Disease (CAD), how it develops, diagnosis and management.">2629</offeringid>
+				<offeringid name="Preventing Strokes" nameLong="Recognizing and Preventing Strokes" runtime="00:17:00"
+					summary="Identify the signs and symptoms of strokes and actions to take if they appear.">2298</offeringid>
+				<offeringid name="Endo Repair of PAD" nameLong="Endovascular Repair of Peripheral Artery Disease" runtime="00:06:00"
+					summary="Describes peripheral artery disease and explains an endovascular procedure to treat it. Describes risks and potential complications.">3967</offeringid>
+				<offeringid name="AAA" nameLong="Treating an Abdominal Aortic Aneurysm" runtime="00:10:00"
+					summary="Ways to treat an Abdominal Aortic Aneurysm are discussed.">2303</offeringid>
+				<offeringid name="Caregiving Dementia" nameLong="Family Caregiving: Dementia" runtime="00:14:00"
+					summary="Caregiving for the loved one with Alheimer\'s or dementia.">2338</offeringid>
+				<offeringid name="High Blood Pressure" nameLong="High Blood Pressure: An Intro to Treatment" runtime="00:16:00"
+					summary="This video explains high blood pressure or hypertension. Sections discuss smoking, diet and exercise, as well as medications an side effects.">2549</offeringid>
+				<offeringid name="HBOT" nameLong="Hyperbaric Oxygen Therapy" runtime="00:07:00"
+					summary="Helps prepare patients for hyperbaric oxygen therapy. Demonstrates how a therapy session is conducted.">3814</offeringid>
+			</category>
+			<category name="OB / ISCN / NICU" id="900090" hasCategories="true" hidden="false" site="AZ, RO" exitAndTune="false">
+				<description/>
+				<category name="OB / ISCN" id="900091" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Breastfeeding" nameLong="Understanding Breastfeeding: Guide to a Healthy Start" runtime="00:34:00"
+						summary="Describes the benefits of breastfeeding, what to expect and tips for making breastfeeding comfortable and enjoyable.">4179</offeringid>
+					<offeringid name="Breastfeeding (SP)" nameLong="Understanding Breastfeeding: Guide to Healthy Start SP" runtime="00:31:00"
+						summary="Describes the benefits of breastfeeding, what to expect and tips for making breastfeeding comfortable and enjoyable.">4202</offeringid>
+					<offeringid name="Child Passenger Safety" nameLong="Steps to Child Passenger Safety" runtime="00:27:00"
+						summary="Demonstrates proper use and installation of car seats.">3716</offeringid>
+					<offeringid name="Child Passenger Safety SP" nameLong="Steps to Child Passenger Safety (SP)" runtime="00:30:00"
+						summary="Demonstrates proper use and installation of car seats.">3717</offeringid>
+					<offeringid name="Healthy Mom,Happy Family" nameLong="Healthy Mom, Happy Family" runtime="00:14:00"
+						summary="Describes prenatal or postpartum mood and anxiety disorders, including depression, anxiety or post-traumatic stress disorder.">3345</offeringid>
+					<offeringid name="Healthy Mom,Happy Family SP" nameLong="Healthy Mom, Happy Family (Spanish)" runtime="00:19:00"
+						summary="Describes prenatal or postpartum mood and anxiety disorders, including depression, anxiety or post-traumatic stress disorder.">4271</offeringid>
+					<offeringid name="Hospital to Home" nameLong="Hospital to Home" runtime="00:33:00"
+						summary="This video contains practical advice and real-life examples to help guide new parents through the steps of post-partum recovery.">2742</offeringid>
+					<offeringid name="Hospital to Home (SP)" nameLong="Hospital to Home (Spanish)" runtime="00:36:00"
+						summary="This video contains practical advice and real-life examples to help guide new parents through the steps of postpartum recovery, emotional and physical wellness and the basics of newborn care.">2850</offeringid>
+					<offeringid name="Period of Purple Crying" nameLong="Period of Purple Crying" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4601</offeringid>
+					<offeringid name="Period of Purple Crying SP" nameLong="Period of Purple Crying (Spanish)" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4024</offeringid>
+					<offeringid name="Period of Purple Crying SO" nameLong="Period of Purple Crying (Somali)" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4108</offeringid>
+					<offeringid name="Shaken Baby Syndrome (HM)" nameLong="Shaken Baby Syndrome (Hmong)" runtime="00:12:00"
+						summary="Designed to educate about Shaken Baby Syndrome, what happens to the brain when shaking occurs, reasons babies cry and suggestions to help you cope with your baby's crying.">3555</offeringid>
+				</category>
+				<category name="ISCN / NICU" id="900092" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Child Passenger Safety" nameLong="Steps to Child Passenger Safety" runtime="00:27:00"
+						summary="Demonstrates proper use and installation of car seats.">3716</offeringid>
+					<offeringid name="Child Passenger Safety SP" nameLong="Steps to Child Passenger Safety (SP)" runtime="00:30:00"
+						summary="Demonstrates proper use and installation of car seats.">3717</offeringid>
+					<offeringid name="Helping Your Baby Grow" nameLong="Helping Your Baby Grow: The NICU" runtime="00:27:00"
+						summary="This video will help parents know what to expect, should their baby need to be delivered prematurely.">2888</offeringid>
+					<offeringid name="Helping Your Baby Grow SO" nameLong="Helping Your Baby Grow: The NICU (Somali)" runtime="00:34:00"
+						summary="Helps parents know what to expect should their baby need to be delivered prematurely.">2103</offeringid>
+					<offeringid name="Helping Your Baby Grow (SP)" nameLong="Helping Your Baby Grow (Spanish)" runtime="00:27:00"
+						summary="This video will help parents (with a baby of 23-26 weeks gestation) know what to expect, should their baby need to be delivered prematurely.">3566</offeringid>
+					<offeringid name="Healthy Mom,Happy Family" nameLong="Healthy Mom, Happy Family" runtime="00:14:00"
+						summary="Describes prenatal or postpartum mood and anxiety disorders, including depression, anxiety or post-traumatic stress disorder.">3345</offeringid>
+					<offeringid name="Healthy Mom,Happy Family SP" nameLong="Healthy Mom, Happy Family (Spanish)" runtime="00:19:00"
+						summary="Describes prenatal or postpartum mood and anxiety disorders, including depression, anxiety or post-traumatic stress disorder.">4271</offeringid>
+					<offeringid name="Hospital Breast Pump" nameLong="Using a Hospital Grade Breast Pump" runtime="00:08:00"
+						summary="Tips on how to use a hospital grade breast pump.">4701</offeringid>
+					<offeringid name="No Matter How Small" nameLong="No Matter How Small" runtime="00:27:00"
+						summary="This video will help parents know what to expect, should their baby need to be delivered prematurely.">2108</offeringid>
+					<offeringid name="No Matter How Small SP" nameLong="No Matter How Small (SP)" runtime="00:42:00"
+						summary="Parents of pre term infants and health care providers describe emotions and impact of a pre term birth, the role of the parents in the NICU and other topics.">3849</offeringid>
+					<offeringid name="Period of Purple Crying" nameLong="Period of Purple Crying" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4601</offeringid>
+					<offeringid name="Period of Purple Crying SO" nameLong="Period of Purple Crying (Somali)" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4108</offeringid>
+					<offeringid name="Period of Purple Crying SP" nameLong="Period of Purple Crying (Spanish)" runtime="00:11:00"
+						summary="Describes normal crying patterns in infants and discusses the impact of baby's long periods of crying on parents.">4024</offeringid>
+				</category>
+				<category name="Relaxation" id="900093" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Finger Lakes Waterfalls" nameLong="Finger Lakes Waterfalls" runtime="00:59:00"
+						summary="Relaxation video that utilizes scenery from New Yorks Finger Lakes and Niagara regions. Nature sounds and a solo piano accompany the views.">3592</offeringid>
+				</category>
+			</category>
+			<category name="Ortho / PM and Rehab" id="900100" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<category name="Hip / Knee" id="900101" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Hip: Recovery" nameLong="Hip Replacement: Recovering from Your Hip Replacement" runtime="00:07:00"
+						summary="Provides information to help patients recover from hip replacement surgery.">3296</offeringid>
+					<offeringid name="Knee: Recovery" nameLong="Knee Replacement Recovering from Knee Replacement" runtime="00:07:00"
+						summary="Provides information to help patients recover from knee replacement surgery.">3656</offeringid>
+					<offeringid name="Knee: Exercises" nameLong="Knee Replacement: Exercising Your Leg" runtime="00:04:00"
+						summary="Demonstration of exercises to help improve strength and range of motion when recovering from knee replacement surgery.">3299</offeringid>
+				</category>
+				<category name="Shoulder / Rotator Cuff" id="900102" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Rotator: Recovery" nameLong="Rotator Cuff 7: Recovering from Surgery" runtime="00:05:00"
+						summary="Provides information to help patients recover from rotator cuff repair surgery. Includes information on wearing a shoulder sling, pain management, follow-up care and other topics.">3911</offeringid>
+					<offeringid name="Rotator: Abd Sling" nameLong="Rotator Cuff 8: Shoulder Abduction Sling" runtime="00:06:00"
+						summary="Demonstration of how to put on, wear and remove a shoulder abduction sling to immobilize the shoulder when recovering from rotator cuff repair surgery.">3912</offeringid>
+					<offeringid name="Rotator: Immobilizer" nameLong="Rotator Cuff 9: Shoulder Immobilizer Sling" runtime="00:06:00"
+						summary="Demonstration of how to put on, wear and remove a shoulder immobilizer sling to immobilize the shoulder when recovering from rotator cuff repair surgery.">3913</offeringid>
+					<offeringid name="Rotator: ER Brace" nameLong="Roator Cuff 10: External Rotation Brace" runtime="00:05:00"
+						summary="Demonstration of how to put on, wear and remove an external rotation brace to immobilize the shoulder when recovering from rotator cuff repair surgery.">3914</offeringid>
+					<offeringid name="Rotator: Passive Exercises" nameLong="Rotator Cuff 11: Passive Motion Exercises" runtime="00:06:00"
+						summary="Demonstration by a physical therapist of how to do passive motion exercises when recovering from rotator cuff repair surgery.">3915</offeringid>
+					<offeringid name="Shoulder: Recovery" nameLong="Shoulder 4 Recovering From Your Shoulder Replacement" runtime="00:06:00"
+						summary="Provides information to help patients prepare for and recover from shoulder replacement surgery.">3252</offeringid>
+					<offeringid name="Shoulder: Sling" nameLong="Shoulder 5 How To Put On a Shoulder Abduction Sling" runtime="00:06:00"
+						summary="Demonstration of how to put on, wear and remove a shoulder abduction sling when recovering from shoulder replacement surgery.">3253</offeringid>
+				</category>
+				<category name="Elbow" id="900103" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Elbow: Recovery" nameLong="Total Elbow Replacement 7: Recovering" runtime="00:07:00"
+						summary="Explains the process for recovering from elbow replacement surgery in the hospital and at home. Demonstrates exercises.">4435</offeringid>
+					<offeringid name="Elbow: Brace" nameLong="Total Elbow Replacement 8: Brace" runtime="00:09:00"
+						summary="Demonstration of how to put on a Mayo Clinic Aircast Elbow Brace and use it gradually to increase strength and range of motion.">4436</offeringid>
+					<offeringid name="CPM Operation" nameLong="CPM Operation" runtime="00:09:00"
+						summary="Demonstrates use of a continuous passive motion device for flexion and extention of the elbow joint.">3294</offeringid>
+					<offeringid name="CPM Principles" nameLong="CPM Applying the Principles" runtime="00:00:00"
+						summary="This video is about continuous passive motion for joints.">3279</offeringid>
+				</category>
+				<category name="Amputation" id="900104" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Lower Limb Amputation" nameLong="Life After Lower Limb Amputation Introduction" runtime="00:12:00"
+						summary="Profiles of people with a variety of lower limb amputations and their experiences adjusting to the use of prosthesis.">3277</offeringid>
+					<offeringid name="Amp Syme" nameLong="Life After Lower Limb Amputation Syme Amputation" runtime="00:03:00"
+						summary="Profiles of people with Syme Amputation and their description of the procedure.">3278</offeringid>
+					<offeringid name="Amp Rotationplasty" nameLong="Life After Lower Limb Amputation Rotationplasty" runtime="00:03:00"
+						summary="Profiles of people with rotationplasty and description of the procedure.">3276</offeringid>
+					<offeringid name="BK: Wrap-Self" nameLong="Below the Knee Residual Limb Self-Wrapping" runtime="00:04:00"
+						summary="Demonstrates the self-wrapping technique and important guidelines for a secure and proper wrap using the recommended materials.">3802</offeringid>
+					<offeringid name="BK: Wrap-Caregiver" nameLong="Below the Knee residual Limb Caregiver Wrapping" runtime="00:04:00"
+						summary="Demonstrates the caregiver wrapping technique and important guidelines for a secure and proper wrap using the recommended materials.">3803</offeringid>
+					<offeringid name="Upper Limb Amputation" nameLong="Life After Upper Limb Amputation" runtime="00:07:00"
+						summary="Positive profiles of people who have had an upper limb amputation. Patients describe and demonstrate their active and satisfying lives.">3952</offeringid>
+				</category>
+				<category name="Mobility / Gait Aids" id="900105" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Crutches: No Weight" nameLong="Using Crutches: Bearing No Weight" runtime="00:06:00"
+						summary="Information on the proper use of crutches for patients at the non-weight-bearing stage of recovery. Including demonstrations.">4125</offeringid>
+					<offeringid name="Crutches: Some Weight" nameLong="Using Crutches: Bearing Some Weight" runtime="00:06:00"
+						summary="Information on the proper use of crutches for patients at the partial weight-bearing stage of recovery. Includes demonstrations.">4126</offeringid>
+					<offeringid name="Cane" nameLong="Using a Cane" runtime="00:05:00"
+						summary="Information on the proper use of a cane. Includes demonstrations of using stairs, sitting and standing and getting in and out of a car.">4130</offeringid>
+					<offeringid name="Walker: No Weight" nameLong="Using a Walker: Bearing No Weight" runtime="00:08:00"
+						summary="Information on the proper use of a walker for patients at the non-weight-bearing stage of recovery. Includes demonstrations.">4127</offeringid>
+					<offeringid name="Walker: Some Weight" nameLong="Using a Walker: Bearing Some Weight" runtime="00:08:00"
+						summary="Information on the proper use of a walker for patients at the partial-weight-bearing stage of recovery. Includes demonstrations.">4128</offeringid>
+					<offeringid name="Knee Scooter" nameLong="Using a Knee Scooter" runtime="00:06:00"
+						summary="Infomation on the proper use of a knee scooter for patients at the non-weight-bearing stage of recovery. Includes demonstrations.">4129</offeringid>
+				</category>
+				<category name="Medication" id="900106" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Heparin Pre-Fill Syringe" nameLong="How to Inject Heparin Using a Pre-Filled Syringe" runtime="00:12:00"
+						summary="This program provides instructions for giving an injection of blood thinning medication to yourself or someone else using a syringe.">4762</offeringid>
+					<offeringid name="Managing Your Warfarin" nameLong="Taking Warfarin: How to Manage Your Blood Thinner" runtime="00:15:00"
+						summary="Contains information about anticoagulants. It describes how anticoagulants work, their purpose and their risks and benefits.">3506</offeringid>
+				</category>
+				<category name="Back/Spine" id="900107" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Caring for Your Back" nameLong="Caring for Your Back" runtime="00:08:00"
+						summary="The health of your back is affected by the way you stand, sit and do the simple things like reaching and turning. Avoid stress on your back and protect you from injury.">4703</offeringid>
+				</category>
+			</category>
+			<category name="Others" id="900110" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Self Injections" nameLong="How to Give Injections to Yourself and Others" runtime="00:25:00"
+					summary="Demonstrates how to give SQ and IM injections, including how to prepare medications and where and how to inject the medication.">4131</offeringid>
+				<offeringid name="Self Injections (SP)" nameLong="How to Give Injections to Yourself and Others (SP)" runtime="00:23:00"
+					summary="Demonstrates how to give SQ and IM injections, including how to prepare medications and where and how to inject the medication.">2400</offeringid>
+				<offeringid name="MRI Experience" nameLong="Your MRI Experience" runtime="00:04:00"
+					summary="Depicts a typical MRI scan experience for a patient. Topics include use of MRI, how the MRI works, metal in the body, possible dye or medications used and comfort measures.">3874</offeringid>
+				<offeringid name="Introduction to the ICU" nameLong="Introduction to the Intensive Care Unit" runtime="00:08:00"
+					summary="Topics about the Intensive Care Unit are covered.">4461</offeringid>
+				<offeringid name="Wet Dressings Instructions" nameLong="Wet Dressings: Home Treatment for Skin Conditions" runtime="00:09:00"
+					summary="Instructions for applying wet dressings for skin conditions such as itching and rash.">3813</offeringid>
+				<offeringid name="Advance Directives" nameLong="Advance Directives" runtime="00:02:00"
+					summary="Encourages patients to fill out advance directives for the benefit of themselves and their families.">4144</offeringid>
+				<offeringid name="Care Transitions Program" nameLong="Employee Community Health Care Transitions Program" runtime="00:04:00"
+					summary="Introduces patients to the Mayo Clinic Employee and Community Health Care Transitions Program.">4151</offeringid>
+			</category>
+			<category name="Pulmonary" id="900120" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Know Your Asthma" nameLong="Asthma 1: Know Your Asthma" runtime="00:06:00"
+					summary="Describes asthma and how to manage it, including medications, environmental controls and adopting a healthy lifestyle.">3969</offeringid>
+				<offeringid name="What Is Asthma" nameLong="Asthma 2: What Is Asthma" runtime="00:04:00"
+					summary="Briefly describes what asthma is and the changes that occur in patient's bodies when they are having an asthma attack.">3968</offeringid>
+				<offeringid name="Asthma Medications" nameLong="Asthma 5: Asthma Medications" runtime="00:04:00"
+					summary="Describes available long-term and quick relief asthma medications.">3972</offeringid>
+				<offeringid name="Taking Asthma Medications" nameLong="Asthma 6: How To Take Medications" runtime="00:06:00"
+					summary="Shows patients a step-by-step process for using a metered dose inhaler.">3973</offeringid>
+				<offeringid name="Asthma Action Plan" nameLong="Asthma 8: Asthma Action Plan" runtime="00:05:00"
+					summary="Describes an asthma action plan and its benefits to patients.">3975</offeringid>
+				<offeringid name="Using A Peak Flow Meter" nameLong="Asthma 7: Using A Peak Flow Meter" runtime="00:05:00"
+					summary="Teaches patients when and how to use a peak flow meter.">3974</offeringid>
+				<offeringid name="Living With Asthma" nameLong="Asthma 9: Tips For Living With Asthma" runtime="00:07:00"
+					summary="Provides basic coping information for asthma patients regarding living with asthma. Topics include exercise, travel, stress reduction and living with pets.">3977</offeringid>
+				<offeringid name="Chest Surgery" nameLong="Recovering From Chest Surgery" runtime="00:11:00"
+					summary="Learn what lung surgery is, what patients can expect in their postoperative period and what patients can do to assist in their recovery.">4124</offeringid>
+				<offeringid name="PleurX Catheter" nameLong="PleurX System Patient Education" runtime="00:14:00"
+					summary="These catheters are used to drain fluid buildup around the lungs. Includes comprehensive care instructions for using the catheter.">5002</offeringid>
+				<offeringid name="COPD" nameLong="Living Better with COPD" runtime="00:09:00"
+					summary="People with COPD share their insights about living with the disease and demonstrate self-care techniques that improve the quality of life.">3801</offeringid>
+			</category>
+			<category name="Transplant" id="900130" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<category name="Allo BMT" id="900131" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="Protecting Your Transplant" nameLong="Protecting Your New Transplant" runtime="00:13:00"
+						summary="Discusses the lifestyle routines, medication management and follow-up appointments required to maintain and protect an individual's new transplanted organ(s).">2716</offeringid>
+					<offeringid name="Immune System" nameLong="Immune System: Our Internal Defender" runtime="00:09:00"
+						summary="Explores the complex immune system and its vital role in the defense of our bodies.">3307</offeringid>
+					<offeringid name="Allo BMT: Introduction" nameLong="Allo BMT 1: Intro to Blood and Marrow Transplant" runtime="00:10:00"
+						summary="Describes allogeneic BMT, why it may be done and the steps involved and the program at Mayo Clinic.">2621</offeringid>
+					<offeringid name="Allo BMT: Screening" nameLong="Allo BMT 2: Screening" runtime="00:06:00"
+						summary="Describes the screening process, the tests and preparation involved and what to expect during this time.">2622</offeringid>
+					<offeringid name="Allo BMT: Collect Stem Cells" nameLong="Allo BMT 3: Collection Stem Cells From a Donor" runtime="00:07:00"
+						summary="Describes crossmatch for blood and marrow donation and how a donor is identified. Describes the collection process, risks and side effects.">2631</offeringid>
+					<offeringid name="Allo BMT: Stem Cell Infusion" nameLong="Allo BMT 4: Conditioning and Stem Cell Infusion" runtime="00:07:00"
+						summary="Describes how a patient is prepared for BMT with conditioning, including possible chemotherapy and radiation.">2624</offeringid>
+					<offeringid name="Allo BMT: Your Daily Routine" nameLong="BMT Daily Routine After Stem Cell Infusion" runtime="00:11:00"
+						summary="You'll stay near your transplant team for continuing care.">1711</offeringid>
+					<offeringid name="Blood Transfusions" nameLong="BloodTransfusions: The Gift of Life" runtime="00:21:00"
+						summary="This program explains food-induced anaphylaxis and how to live with it.">1517</offeringid>
+					<offeringid name="Allogeneic Transplant" nameLong="Allo BMT 6: Allogeneic Transplant" runtime="00:10:00"
+						summary="Describes allogeneic transplant and how it differs from autologous transplant.">2626</offeringid>
+					<offeringid name="Allo BMT: Coping" nameLong="Allo BMT 7: Coping With a Transplant" runtime="00:08:00"
+						summary="Describes the stresses and emotions experienced by those who have had a BMT and provides support and tips for positive coping.">2627</offeringid>
+					<offeringid name="Fertility For Men" nameLong="Fertility Preservation For Men" runtime="00:06:00"
+						summary="Options for men including sperm freezing, testical tissue freezing and surgery. Considerations for timing, use of tissues and other decisions are discussed.">3715</offeringid>
+					<offeringid name="Fertility For Women" nameLong="Fertility Preservation For Women" runtime="00:1:00"
+						summary="Topics for women include controlled ovarian stimulation, embryo freezing, egg freezing, ovarian tissue freezing, surgery and medical therapy.">3714</offeringid>
+				</category>
+				<category name="Auto BMT" id="900132" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid name="BMT: Introduction" nameLong="BMT 1: Introduction to Blood and Marrow Transplant" runtime="00:09:00"
+						summary="The basics of blood and marrow transplant. What it is and why and how it's done.">2137</offeringid>
+					<offeringid name="BMT:Collect Stem Cells" nameLong="BMT Collecting Stem Cells" runtime="00:05:00"
+						summary="Your bone marrow will be primed using a growth factor to increase the production of blood stem cells. Once enough cells have moved into the bloodstream, collection can begin through a process called apheresis.">1709</offeringid>
+					<offeringid name="BMT:Daily Routine" nameLong="BMT Daily Routine After Stem Cell Infusion" runtime="00:11:00"
+						summary="You'll stay near your transplant team for continuing care.">1711</offeringid>
+					<offeringid name="Caretaker Stress" nameLong="Help in Stressful Times: Caretaker Stress" runtime="00:05:00"
+						summary="This individual tells their story of making cognitive and lifestyle changes to cope more effectively with stressors caring for an elderly patient.">3815</offeringid>
+					<offeringid name="Pain Mgmt: The 3 Rs" nameLong="Pain Management: The 3 Rs" runtime="00:14:00"
+						summary="Encourages individuals to participate in making decisions to manage pain.">2855</offeringid>
+					<offeringid name="BMT:Stem Cell Infusion" nameLong="BMT Conditioning and Stem Cell Infusion" runtime="00:07:00"
+						summary="Conditioning uses chemotherapy and/or radiation to destroy diseased cells and prepare your body to receive the transplanted blood stem cells.">1710</offeringid>
+					<offeringid name="BMT:Coping With Transplant" nameLong="BMT Coping With a Transplant" runtime="00:08:00"
+						summary="Members of the BMT health care team and people who have been through the transplant process have volunteered to share their stories with you.">1712</offeringid>
+					<offeringid name="Protecting Your Transplant" nameLong="Protecting Your New Transplant" runtime="00:13:00"
+						summary="Discusses the lifestyle routines, medication management and follow-up appointments required to maintain and protect an individual's new transplanted organ(s).">2716</offeringid>
+				</category>
+			</category>
+			<category name="Safety" id="900140" hasCategories="false" bottomCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Preventing Falls/Blood Clots" nameLong="Preventing Falls and Blood Clots" runtime="00:03:00"
+					summary="This program explains how to prevent falls and blood clots while in the hospital.">5265</offeringid>
+				<offeringid name="Preventing Falls-Hospital" nameLong="Preventing Falls-Hospital" runtime="00:01:00"
+					summary="This program shows you how to prevent falls at Mayo Clinic by calling your healthcare team for help.">4173</offeringid>
+				<offeringid name="Preventing Falls-Clinic" nameLong="Preventing Falls at Mayo Clinic" runtime="00:04:00"
+					summary="Alerts patients and visitors to the risk of falling in the clinical environment. Several desirable behaviors are encouraged.">4203</offeringid>
+				<offeringid name="Preventing Falls-Home" nameLong="Preventing Falls at Home" runtime="00:03:00"
+					summary="Provides steps you can take to reduce your risk of falling at home. Specific areas are identified and tips offered on how to stay safe.">4865</offeringid>
+				<offeringid name="Preventing Hospital Re-Admit" nameLong="Preventing Hospital Readmissions" runtime="00:18:00"
+					summary="Five things to do after going home from the hospital to prevent readmission back into the hospital.">4450</offeringid>
+				<offeringid name="Preventing Blood Clots" nameLong="Preventing Blood Clots While in the Hospital" runtime="00:02:00"
+					summary="Five things to do after going home from the hospital to prevent readmission back into the hospital.">3843</offeringid>
+				<offeringid name="Preventing Pressure Ulcers" nameLong="Preventing Pressure Ulcers" runtime="00:02:00"
+					summary="Explains to hospital patients the importance of changing positions frequently while in bed or in a chair to prevent pressure ulcers.">4050</offeringid>
+			</category>
+			<category name="Anticoagulation" id="900150" hasCategories="false" bottomCategories="true" site="All" hidden="false" exitAndTune="false">
+				<description/>
+				<offeringid name="Using a Syringe and Vial" nameLong="How to Inject Heparin Using a Syringe and Vial" runtime="00:10:00"
+					summary="This program provides instructions for giving an injection of blood thinning medication to yourself or someone else using a syringe and vial.">4763</offeringid>
+				<offeringid name="Using Pre-Filled Syringe" nameLong="How to Inject Heparin Using a Pre-Filled Syringe" runtime="00:12:00"
+					summary="This program provides instructions for giving an injection of blood thinning medication to yourself or someone else using a syringe.">4762</offeringid>
+				<offeringid name="Warfarin" nameLong="Taking Warfarin: How to Manage Your Blood Thinner" runtime="00:14:00"
+					summary="Contains information about anticoagulants. It describes how anticoagulants work, their purpose and their risks and benefits.">3506</offeringid>
+			</category>
+			<category name="Relaxation" id="900160" hasCategories="false" bottomCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Cape Cod Waves" nameLong="Cape Cod Waves" runtime="01:00:00"
+					summary="Includes views of Cape Cod shoreline, coastline and waves. Also has nature sounds of wind and waves. May be used for relaxation.">3591</offeringid>
+				<offeringid name="Earth Prayers: Nature" nameLong="Earth Prayers: The Healing Power of Nature" runtime="00:37:00"
+					summary="This relaxation video focuses on the beauty of our planet and the profound ability to promote a sense of inner peace.">3587</offeringid>
+				<offeringid name="Evening Sky" nameLong="Relaxation: Evening Sky Guided Imagery" runtime="00:09:00"
+					summary="Offers practical techniques to manage stress and promote relaxation.">4757</offeringid>
+				<offeringid name="Even Keel" nameLong="Even Keel" runtime="00:16:00"
+					summary="Provides music and guided imagery, including stretching and breathing techniques. Guides listeners with techniques to reduce stress and find balance.">3509</offeringid>
+				<offeringid name="Finger Lakes Waterfalls" nameLong="Finger Lakes Waterfalls" runtime="00:59:00"
+					summary="Relaxation video that utilizes scenery from New York's Finger Lakes and Niagara regions. Nature sounds and a solo piano accompany the views.">3592</offeringid>
+				<offeringid name="Mind, Body: Stress Mgmt." nameLong="Mind, Body Approach to Stress Management" runtime="00:37:00"
+					summary="Relaxation techniques described while nature scenes are displayed. Introduces what relaxation is, how to approach relaxation, decrease and prevent stress, abdominal breathing, muscle relaxation and imagery exercises.">3564</offeringid>
+				<offeringid name="Relaxation:Abd. Breathing" nameLong="Relaxation: Abdominal Breathing" runtime="00:4:00"
+					summary="Provides information about abdominal breathing using audio prompting. Offers practical techniques to manage stress and promote relaxation.">4753</offeringid>
+				<offeringid name="Relaxation:Evening Sky" nameLong="Relaxation: Evening Sky Guided Imagery" runtime="00:8:00"
+					summary="Offers practical techniques to manage stress and promote relaxation.">4757</offeringid>
+				<offeringid name="Relaxation:Passive Muscle" nameLong="Relaxation: Passive Muscle" runtime="00:30:00"
+					summary="Uses audio program and suggestions to relax the body and mind. Offers practical techniques to manage stress and promote relaxation.">3568</offeringid>
+				<offeringid name="Relaxation:Prog. Muscle" nameLong="Relaxation: Progressive Muscle" runtime="00:12:00"
+					summary="Offers practical techniques to manage stress and promote relaxation.">4754</offeringid>
+				<offeringid name="Relaxation:Seaside Serenity" nameLong="Relaxation: Seaside Serenity Guided Imagery" runtime="00:10:00"
+					summary="Offers practical techniques to manage stress and promote relaxation">4756</offeringid>
+				<offeringid name="Seasons: Music and Pictures" nameLong="Seasons of the Heart: Music and Pictures" runtime="00:34:00"
+					summary="Nature photography and music used for relaxation and meditation.">3568</offeringid>
+				<offeringid name="Seasons: Music, Words" nameLong="Seasons of the Heart: Music, Pictures, Poetry, Words" runtime="00:29:00"
+					summary="Nature photography, music and poetry used for relaxation. Includes words of the poems.">3569</offeringid>
+				<offeringid name="Strength From Stress" nameLong="Strength From Stress" runtime="00:52:00"
+					summary="Includes views of Arizona landscape including deserts and canyons. Nature sounds and light jazz accompany the images.">3594</offeringid>
+				<offeringid name="Vortex Arizona" nameLong="Vortex Arizona" runtime="00:54:00"
+					summary="Displays scenic Arizona views matched with music to assist with relaxation.">3595</offeringid>
+			</category>
+			<category name="Wellness" id="900170" hasCategories="false" bottomCategories="true" hidden="false" site="All" exitAndTune="false">
+				<description/>
+				<offeringid name="Stress Management" nameLong="Mind, Body Approach to Stress Management" runtime="00:38:00"
+					summary="Relaxation techniques described while nature scenes are displayed. Introduces what relaxation is, how to approach relaxation, decrease and prevent stress, abdominal breathing, muscle relaxation and imagery exercises.">3564</offeringid>
+				<offeringid name="Quit Smoking" nameLong="Quit Smoking For Good" runtime="00:13:00"
+					summary="Watch this video for tips to quit smoking for good. Includes personal experiences of peope who have successfully quit smoking.">2985</offeringid>
+				<offeringid name="Chronic Illness" nameLong="Chronic Illness: The Constant Companion" runtime="00:33:00"
+					summary="Informs individuals and families about psycho-social adjustments necessary to deal with chronic illness and helps individuals cope and improve the quality of their lives.">2764</offeringid>
+				<offeringid name="Living in the Moment" nameLong="Living in the Moment" runtime="00:09:00"
+					summary="Introduces the concept of mindfulness and its benefits. Demonstrates simple techniques to practice present moment awareness.">3721</offeringid>
+				<offeringid name="Manage Chronic Conditions" nameLong="Self-Management of Chronic Conditions" runtime="00:09:00"
+					summary="Features patients with asthma, depression and other chronic diseases using healthy self-management habits and positive attitude to increase life satisfaction.">3845</offeringid>
+			</category>
+			
+	</category>
+</catalog>

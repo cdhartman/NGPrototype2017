@@ -1,0 +1,11 @@
+<form name="search_form" id="searchForm" method="GET" action="search_results.html">
+	<input type="text" id="searchBox" name="searchString" popup_osk=”always” onkeydown="" />
+	<!--<button name="searchKeyword" id="searchKeyword">Search</button>-->
+</form>
+<div class="ui-widget ui-widget-content results" id="searchResults"><img src="../images/icons/selectButton.gif" align="left" /></div>
+<script type="text/javascript">
+	$('input#searchBox').autocomplete({autoFocus:true}).mouseenter().click();
+	$( "input#searchBox" ).bind('focus', function() {
+		$("input#searchBox:focus").autocomplete("search");
+	});
+</script>

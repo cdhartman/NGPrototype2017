@@ -1,0 +1,109 @@
+/* white trial */
+
+body {color: #111;}
+a.lineItems, a.lineItemsSmall, a.lineItemsMain, a.lineItemsMainPeds, a.lineItemsLarge  {
+	color: #333;
+}
+a.lineItems:active, a.lineItems:focus, a.lineItemsMain:active, a.lineItemsMain:focus, a.lineItemsMainPeds:active, a.lineItemsMainPeds:focus, a.lineItemsMainWide:active, a.lineItemsMainWide:focus, a.lineItemsLarge:active, a.lineItemsLarge:focus, a.lineColumnMainPreferred :active, a.lineColumnMainPreferred :focus, a.lineItemsNB:active {
+	color: #f2f2f2;
+	/* background-color: #668bc9; */
+}
+div.lineColumnMainWide < a.lineItemsMainWide:active, a.lineItemsMainWide:focus, a.lineItemsLarge:active {}
+a.buttonsPE:active, a.buttonsPE:focus {
+	color: #668bc9;
+	background-color: #f2f2f2;
+}
+a.lineItemsNB:active > span.channelLabel { color: #f2f2f2; }
+div.title {font-weight: 300; color: #eee;}
+span.timeTempSeperator {color: #cad5e9;}
+span.languageIcon, span.languageIconLarge {background-color: #1E4E00;}
+/* div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive {background-color: white;} */
+span.channelLabel { font-weight: normal;}
+div.fvBottom {background-color: #a5c3dd;}
+div.preferredCategoriesLabel {color: #111; background-color: #C8DAEA;}
+div.navbarBlankPE {background-color: #668BC9;}
+.results {border: none; 
+	position: absolute;
+	color: #111; font-weight: normal;
+	overflow: scroll; overflow-x: auto; overflow-y: auto; }
+.results a {display: block; padding: 0.2em 0 0.2em 0.1em; color: #111; font-weight: 600;}
+.results a:active, .results a:focus {color: white;background-color: #668bc9;}
+div.itemCount { color: #444; }
+
+#searchForm {position: absolute; color: #ddd; font-weight: normal; width: 550px;}
+#searchBox {border: 2px solid #668BC9;}
+#searchBox:focus  { 
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+/* end: white trial */
+
+
+/* dark trial */
+/*
+body, a.lineItemsNB {color: #dfdfdf;}
+a.lineItems:active, a.lineItems:focus, a.lineItemsMain:active, a.lineItemsMain:focus, a.lineItemsMainPeds:active, a.lineItemsMainPeds:focus, a.lineItemsMainWide:active, a.lineItemsMainWide:focus, a.lineItemsLarge:active, a.lineItemsLarge:focus {
+	color: #111;
+	background-color: #cfcfcf;
+}
+span.timeTempSeperator {color: #444; font-weight: normal;}
+div.categoriesTop, span.languageIcon, span.languageIconLarge {background-color: #555;}
+div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive {background-color: #111;}
+span.channelLabel { font-size: 11px; vertical-align: super; font-weight: normal; color: #dfdfdf; }
+div.fvBottom {background-color: #444;}
+div.preferredCategoriesLabel {color: #dfdfdf; background-color: #444;}
+div.navbarBlankPE {background-color: #333;}
+
+.results {border: none; 
+	position: absolute;
+	color: #111; font-weight: normal;
+	overflow: scroll; overflow-x: auto; overflow-y: auto; }
+.results a {display: block; padding: 0.2em 0 0.2em 0.1em; color: #dfdfdf; font-weight: 600;}
+.results a:active, .results a:focus {color: #dfdfdf;background-color: #111;}
+
+div.itemCount { color: #dfdfdf; }
+
+#searchForm {position: absolute; color: #ddd; font-weight: normal; width: 550px;}
+#searchBox {border: 2px solid #444;}
+#searchBox:focus  { 
+    box-shadow: 0 0 10px #444;
+}
+*/
+/* end: dark trial */
+
+
+a.buttons {color: white; font-weight: 500;}
+a.buttonsPE {color: #eee; font-weight: bold;}
+
+div.boxbottom1280 {border-right: 4px solid #9bc6f7;}
+div.boxbottom1280-2-5 {background-color: #222;}
+div.information {color: #222;}
+div.lineColumn, div.line {padding: 2px 1px;}
+div.weather { color: #666;}
+
+
+div.lineCategoriesMainHeader {
+	position: absolute;
+	left: 20px;
+	top: 198px;
+	width: 180px;
+	color: #006699;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+div.categoriesBottom {top: 200px;}
+div.lineCategories1 {top: 105px;}
+div.lineCategories2 {top: 154px;}
+div.lineCategories3 {top: 203px;}
+div.lineCategories4 {top: 252px;}
+div.lineCategories5{top: 301px;}
+div.lineCategories6 {top: 350px;}
+div.lineCategories7 {top: 399px;}
+div.lineCategories8 {top: 448px;}
+div.lineCategories9 {top: 497px;}
+div.lineCategories10 {top: 546px;}
+div.lineCategories11 {top: 595px;}
+
+
+img.navBarImage {opacity: 1.0; filter: alpha(opacity=100);}
