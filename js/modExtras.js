@@ -22,27 +22,28 @@ function launcherHandler(param1) {
 	
 	switch(param1) {
 		case '1':
-			$("#activeLauncherSelectionHREF").attr("href",'movies/');
+			$("#activeLauncherSelectionHREF").attr("href",'movies/index.html');
 			launcherState = 1;
 		break;
 		case '2':
-			$("#activeLauncherSelectionHREF").attr("href",'mci/');
+			$("#activeLauncherSelectionHREF").attr("href",'mci/index.html');
 			launcherState = 2;
 		break;
 		case '3':
-			$("#activeLauncherSelectionHREF").attr("href",'patientEducation/');
+			$("#activeLauncherSelectionHREF").attr("href",'patientEducation/index.html');
 			launcherState = 3;
 		break;
 		case '4':
-			$("#activeLauncherSelectionHREF").attr("href",'relaxation/');
+			$("#activeLauncherSelectionHREF").attr("href",'relaxation/index.html');
 			launcherState = 4;
 		break;
 		case '5':
-			$("#activeLauncherSelectionHREF").attr("href",'tv/');
+			$("#activeLauncherSelectionHREF").attr("href",'tv/index.html');
 			launcherState = 5;
 		break;
 		default:
-			$("#activeLauncherSelectionHREF").attr("href",'www.cnn.com');
+			$("#activeLauncherSelectionHREF").attr("href",'patientEducation/index.html');
+			launcherState = 3;
 	}
 	
 	
@@ -159,7 +160,7 @@ function onHoverDiv(selectedDiv, direction, videoFlag, column) {
 	selectedDiv = document.getElementById(selectedDiv);
 	if ( direction === 'left' ) {
 
-		if (column === '1') {
+		if (column === '1') { // alert('here1');
 			$(selectedDiv).css("top", "-=20");
 		} else if (column === '2') {
 			$(selectedDiv).css("left", "-=20");
