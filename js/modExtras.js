@@ -50,7 +50,7 @@ function launcherHandler(param1) {
 	launcherState = param1;
 	//$("#launcherBackground").hide();
 	$("#launcherBackground").attr("src",'images/screens/launcher/' + param1 + '.png').fadeIn(400);
-	// $('#launcherBackground').width(1300);
+	$('#launcherBackground').width(1900);
 	// $('#launcherBackground').height(850);
 	// $("#launcherBackground").html('images/screens/launcher/' + '2' + '.png').fadeIn(400);
 
@@ -71,6 +71,7 @@ function sectionNextStaticScreen(id, param1) {
 	$( "#currentScreenIndicator" ).html(screenNumber);
 	
 	$("#" + id).attr("src",'images/' + screenNumber + '.png').fadeIn(400);
+	$("#" + id).width(1900);
 }
 
 function goFullscreen(id) {
