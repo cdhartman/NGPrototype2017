@@ -70,7 +70,8 @@ function getPatientEdVideoList993(genre, genreID, subGenre, subGenreID, start, q
 function parseAndDisplayPatEd993SubCategory(node, genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
 	var nodeList = '', divContent = '', columnNumber = 0, rowNumber = 1, count = 0, videosPerScreen = 0, numberOfRows = 0, nodeLength = 0, offeringIds = '',
-		index = 0, screenCount = 0, currentScreen = 1, nextStart, nextURL, bulletContent, nextStartTemp, i, title = '', runtime = 0, summary = '', node2 = '', node3 = '', numberOfColumns = 3;
+		index = 0, screenCount = 0, currentScreen = 1, nextStart, nextURL, bulletContent, nextStartTemp, i, title = '', runtime = 0, summary = '', node2 = '',
+		node3 = '', numberOfColumns = 3;
 	nodeLength = $(node).length - 1;
 
 	if (screenFormat === 'HD') {
@@ -181,7 +182,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 
 	var divContent = '', videosPerScreen = 9, offeringIds = '', videoNode = '', videoTitle = '', rating = '', offeringid = '',
 		rowNumber = 1, columnNumber = 1, nodeLength = $(node).length - 1, endCount = 0, navigationLegend = '',
-		nextStart = parseInt(start, 10) + videosPerScreen, currentScreen = 1, nextURL = '', screenCount, nextStartTemp, i, numberOfColumns = 3;
+		nextStart = parseInt(start, 10) + videosPerScreen, currentScreen = 1, nextURL = '', screenCount, nextStartTemp, i, numberOfColumns = 3, count = 0;
 	
 	// var startTime = new Date().getTime();
 	
@@ -204,6 +205,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 	$(node).slice(start).each(function (i,  row) {
 		if ($(this).text() !== 'undefined' && $(this).text() !== '') {
 			// rowNumber++;
+			count++;
 			offeringid = $(this).text();
 			// alert($(this).text());
 			videoNode = $(result).contents().find('offering[offeringId=\"' + offeringid + '\"]');
@@ -211,7 +213,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 			rating = $(videoNode).find('metadata[name="MOD\\:\\:Rating"]').attr('value');
 			// videoTitle = $(node2).find("offerings offering").has('value:contains(\"' + offeringid + '\")').find('label').text();
 			// alert(videoTitle);
-			divContent += getPatEdSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, i, section, screenFormat) + '\n\r';
+			divContent += getPatEdSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, count, section, screenFormat) + '\n\r';
 			if (columnNumber >= numberOfColumns) {
 				// if column is full, move to next column
 				columnNumber = 1;
@@ -270,15 +272,17 @@ function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, sub
 		constructURL = 'patientEdTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
 	}
 	if (screenFormat === 'HD') {
-		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"line' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 		className = 'lineItemsMainWide';
 	} else {
-		divContent = '<div class=\"line lineWide linePE' + rowNumberPE + '\" id=\"line' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		divContent = '<div class=\"line lineWide linePE' + rowNumberPE + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	}
-	divContent += ' onmouseover=\"onHoverDiv(this,\'left\',\'true\',\'' + rowNumber + '\');\"';
-	divContent += ' onmouseout=\"onHoverDiv(this,\'right\',\'true\',\'' + rowNumber + '\');\">';
+	divContent += ' onmouseover=\"onHoverDiv(\'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onmouseout=\"onHoverDiv(\'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\">';
 				
-	divContent += '<a tabIndex=\"' + rowNumber + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+	divContent += ' onfocus=\"onHoverDiv(\'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onblur=\"onHoverDiv(\'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\"';
 	divContent += '>' + languageIcon(title, 'short', screenFormat) + '</a>';
 	// if (screenFormat === 'HD') {
 		// divContent += ' <img src=\"../images/icons/videoIcon' + screenFormat + '.gif\" />';

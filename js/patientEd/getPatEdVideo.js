@@ -40,7 +40,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, subGenre, targetDiv)
 	divContent += '<span class=\"detailVideoTitle\">' + videoTitle + '</span><br />';
 	divContent += '<span class="peDescription">' + videoDescription + '</span><br /><br />';
 	divMetaDataContent = runTime;
-	$('#title').html('Patient Education<br />' + decodeURIComponent(genre) + ' | ' + decodeURIComponent(subGenre));
+	$('#title').html('Patient Education<br />' + decodeURIComponent(genre) + ' &#8226; ' + decodeURIComponent(subGenre));
 	// divContent += '<a href=\"../playTitle.html?offering=' + offeringId + '\" id=\"playBtn\"><img src=\"../images/misc/play.gif\" /></a>';
 	$('#' + targetDiv).html(divContent);
 	$('#videoMetaData').html(divMetaDataContent);
