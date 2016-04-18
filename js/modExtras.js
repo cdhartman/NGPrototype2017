@@ -50,7 +50,7 @@ function launcherHandler(param1) {
 	launcherState = param1;
 	//$("#launcherBackground").hide();
 	$("#launcherBackground").attr("src",'images/screens/launcher/' + param1 + '.png').fadeIn(400);
-	$('#launcherBackground').width(1300);
+	// $('#launcherBackground').width(1300);
 	// $('#launcherBackground').height(850);
 	// $("#launcherBackground").html('images/screens/launcher/' + '2' + '.png').fadeIn(400);
 
