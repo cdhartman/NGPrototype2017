@@ -7,12 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta content='width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0' name='viewport' />
 	
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
-	<script type="text/javascript" src="../js/HEWCommands.js"></script>
-	<script type="text/javascript" src="../js/HEWXMLWrapper.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciCategories.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript" src="../js/stb.js"></script>
@@ -65,7 +63,7 @@
 		classFormat = 'MainWide';
 	}
 
-	getPatientEdCategories('xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
