@@ -37,10 +37,11 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, subGenre, targetDiv)
 			categories += '<li><span>' + $(this).attr('value').replace('MOD/Patient Education/', '').replace('/', ' > ') + '</span></li>';
 		}
 	});
-	divContent += '<span class=\"detailVideoTitle\">' + videoTitle + '</span><br />';
+	divContent += '<span class=\"detailVideoTitle\">' + videoTitle + '</span><br /><br /><br /><br /><br /><br />';
 	divContent += '<span class="peDescription">' + videoDescription + '</span><br /><br />';
 	divMetaDataContent = runTime;
-	$('#title').html('Patient Education<br />' + decodeURIComponent(genre) + ' &#8226; ' + decodeURIComponent(subGenre));
+	if (genre === 'Frequently Viewed') {genre = 'Health Care Provider';}
+	$('#title').html('Patient Education<br /><span style=\"font-size: 44px;\">' + decodeURIComponent(genre) + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ' + decodeURIComponent(subGenre)) + '</span>';
 	// divContent += '<a href=\"../playTitle.html?offering=' + offeringId + '\" id=\"playBtn\"><img src=\"../images/misc/play.gif\" /></a>';
 	$('#' + targetDiv).html(divContent);
 	$('#videoMetaData').html(divMetaDataContent);
