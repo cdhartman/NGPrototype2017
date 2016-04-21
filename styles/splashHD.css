@@ -75,7 +75,7 @@ a.lineItemsMainWide {
 	color: #eee;
 	overflow: hidden;
 }
-div.container {position: absolute; text-align: left; margin: auto; top: 0; left: 0; }
+div.container {position: absolute; text-align: left; margin: auto; top: 0; left: 0; width: 1900px;}
 
 /* Launcher */
 div.box, a.homeBtn, img.transparentBtn {width: 290px; height: 205px;}
