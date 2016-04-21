@@ -107,7 +107,7 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 				divContent += ' onmouseout=\"onHoverDiv(this,\'right\',\'true\');\"';
 			}
 			*/
-			divContent += ' \">';
+			divContent += ' \">\n';
 
 			divContent += '<a tabindex=\"' + count + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
 			if (screenFormat === 'SD') {
