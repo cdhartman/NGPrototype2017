@@ -120,7 +120,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 
 				divContent += ' onmouseover=\"onHoverDiv(\'divLink' + count + '\' ,\'left\',\'\',\'' + columnNumber + '\');\"';
 				divContent += ' onmouseout=\"onHoverDiv(\'divLink' + count + '\' ,\'right\',\'\',\'' + columnNumber + '\');\"';
-				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">';
+				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">\n';
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
 				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
