@@ -64,11 +64,16 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 	}
 
 	if (view === 'Adult' ) {
+		/*
 		if (start === '1' && (pePreferences.length > 0) ) {
 			divContent = getPatientEdFavCategoriesMain(start, pePreferences, 'Main', 'categories', site, screenFormat);
 			count = 3; lineNumber = 3; nextStart = nextStart - 3; nodeLength = nodeLength + 3;
-		}
-		// if (pePreferences.length > 1) {nodeLength = nodeLength + 3;} 
+		} */
+		// if (pePreferences.length > 1) {nodeLength = nodeLength + 3;}
+		$('#favCategoriesSpan').load('../includes/peFavCatorgies.html');
+		
+		count = 3;
+		lineNumber = 2;
 	}
 
 	$(node).each(function (i,  row) {
@@ -212,6 +217,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 	
 	divContent += '<div class=\"lineColumnMainWide lineColumnMainWide5\"  style=\"background-color: #1F1F1F;\"></div> '
 	$('#' + targetDiv).append(divContent);
+	
 	$('#ajaxLoader').html('');
 
 }
