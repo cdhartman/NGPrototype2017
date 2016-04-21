@@ -11,7 +11,7 @@ div.navBarLeftMCI {position: absolute; width: 45px; top: 0px; left: 0; height: 1
 div.navBarLeftMCI:hover {opacity:1.0; filter: alpha(opacity=100);}
 
 #peNavBarHD {display: none;}
-div.title {left: 75px; top: 32px; font-size: 64px; width: 1600px; padding: 4px; text-align: right; font-weight: 300; 
+div.title {left: 75px; top: 20px; font-size: 60px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; 
 	
 }
 /*
@@ -22,7 +22,7 @@ div.title {left: 75px; top: 32px; font-size: 64px; width: 1600px; padding: 4px; 
       1px -1px 0 #ddd,
       -1px 1px 0 #ddd,
        1px 1px 0 #ddd;*/
-div.box1sidePE {position: absolute; left: 1725px; top: 50px;}
+div.box1sidePE {position: absolute; left: 1770px; top: 50px;}
 div.searchPE {position: absolute; left: 30px; top: 50px; display: none;}
 div.lineColumnMainWide {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
 opacity:.70; filter: alpha(opacity=70);
@@ -41,6 +41,8 @@ div.lineColumnMainWideFolder {
 -webkit-box-shadow: 7px -7px 0px 0px rgba(45,112,0,1);
 -moz-box-shadow: 7px -7px 0px 0px rgba(45,112,0,1);
 box-shadow: 7px -7px 0px 0px rgba(45,112,0,1);
+border-top: 4px solid #333;
+border-right: 4px solid #333;
 }
 div.lineColumnMainWideFolderMci {
 -webkit-box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
@@ -100,7 +102,7 @@ div.errorMsg {color: maroon;}
 #genres {position: absolute; top: 0; left: 0;}
 img.patientServicesStaticImage {width: 956px; height: 558px; margin: 49px 0 0 0; }
 #error {position: absolute; top: 100px; left: 20px; width: 900px;}
-div.videoMetaData {position: absolute; top: 690px; left: 842px; width: 900px; font-size: 18px; color: #eee;}
+div.videoMetaData {position: absolute; top: 638px; left: 842px; width: 900px; font-size: 18px; color: #eee;}
 #playBtnDiv {position: absolute; left: 16px; top: 320px;}
 #loaderPosterImage { width: 130px; height: 195px;}
 span.languageIcon {background-color: #668BC9; font-size: 16px; padding: 1px 2px; color: #073f9d;}
@@ -397,6 +399,8 @@ div.lineLarge12 {top: 2390px;}
 div.lineLarge13 {top: 2585px;}
 div.lineLarge14 {top: 2780px;}
 div.lineLarge15 {top: 2975px;}
+div.lineLarge16 {top: 3170px;}
+div.lineLarge17 {top: 3365px;}
 
 div.lineLargePE {position: absolute; left: 15px; width: 900px;}
 div.lineLargePE0 {top: 70px;}
