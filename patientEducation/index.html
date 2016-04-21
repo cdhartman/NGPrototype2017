@@ -48,8 +48,6 @@
 			<span id="favCategoriesSpan"></span>
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
 		</div>
-		<div class="itemCount" id="itemCount"></div>
-		<div class="favLegend" id="favLegend"><img src="../images/icons/star_blue.gif" class="favLegend993" align="top" /> Channel 999 Preferred Category</div>
 		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
 		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" onclick="searchPE();" /></div>
 		<div id="navBar"></div>
@@ -58,7 +56,7 @@
 </html>
 
 <script type="text/javascript">
-	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 2, numOfRows = 9, classFormat = 'Main', tabIndexDefault = 1,
+	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
 		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameterNoDefault('view'), site = getSite(), pePreferences = '',
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = false;
 
@@ -82,63 +80,25 @@
 		}
 	}
 	$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
-	if (screenFormat === 'HD') {
-		// numOfRows = 14; numOfColumns = 3, classFormat = 'Main';
-		numOfRows = 20;
-		numOfColumns = 3;
-		classFormat = 'MainWide';
-		if (view === 'Pediatric') {
-			numOfRows = 20;
-			numOfColumns = 3;
-			classFormat = 'MainWide';
-		}
-	}
+	classFormat = 'MainWide';
 
 	if (view === 'freqViewed') {
-		if (screenFormat === 'SD') {
-			numOfRows = 9; numOfColumns = 2;
-		} else {
-			numOfRows = 10;
-		}
 		getPatientEdCategories('../../modAssets/xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		$('#fvBottom').load('../includes/navBarFVPE.html');
-		// document.getElementById("fvBottom").style.display = "block";
 		tabIndexDefault = 67;
-		// getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
 	} else if (view === 'GBS') {
-		if (screenFormat === 'SD') {
-			numOfRows = 9; numOfColumns = 2;
-		} else {
-			numOfRows = 10;
-		}
 		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		$('#fvBottom').load('../includes/navBarFVPE.html');
-		// document.getElementById("fvBottom").style.display = "block";
 		tabIndexDefault = 67;
-		// getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
 	} else if (view === 'Pediatric') {
 		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Mayo Information') {
 		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-	} else if (view === 'search') {
-		$('#categories').html("Loading Search Form, please wait...").load('../includes/peSearchForm.html');
-		$("head").append('<script type=\"text\/javascript\" src=\"../js/jQuery/jquery-ui.js\"><\/script>');
-		$("head").append('<script type=\"text\/javascript\" src=\"../js/patientEd/psSearch.js\"><\/script>');
-		document.getElementById("splashImageCategory").style.display = "none";
-		document.getElementById("splashImageMayoLogo").style.display = "none";
-		setTimeout(function () { $('#navbarNext').html(''); $('#navbarPrev').html(""); $('input#searchBox').autocomplete({autoFocus: true}).mouseenter().click(); $('#navbarNext').html("");  document.getElementById("navbarPrev").className = "navbar navbarblank";  }, 900);
 	} else {
 		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		// if (getCookie('pePreferences').length > 1) { document.getElementById("descriptionLegend").style.display = "block"; }
 	}
 
-	if (view !== 'search') {
-		$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid); }); });
-	}
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
-		// if (view === 'freqViewed' && $("#preferredCategoriesLabel").html() === '') { getPatientEdFavCategories(start, 'Main', 'categories', site, screenFormat);
 		//}
 		if (triggerLeftNavFlag) { 
 			//navBarLeftFunction(navBarLeftParam);
@@ -149,5 +109,4 @@
 	} else {
 		updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
 	}
-	// document.getElementById("link1").focus();
 </script>
