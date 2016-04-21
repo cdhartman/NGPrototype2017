@@ -71,7 +71,8 @@ function sectionNextStaticScreen(id, param1) {
 	$( "#currentScreenIndicator" ).html(screenNumber);
 	
 	$("#" + id).attr("src",'images/' + screenNumber + '.png').fadeIn(400);
-	$("#" + id).width(1890);
+	$("#" + id).attr('height','1063');
+	$("#" + id).attr('width','1890');
 }
 
 function goFullscreen(id) {
