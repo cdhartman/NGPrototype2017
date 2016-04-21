@@ -7,8 +7,6 @@
 	<link href="../favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
-	<script type="text/javascript" src="../js/HEWXMLWrapper.js"></script>
-	<script type="text/javascript" src="../js/HEWCommands.js"></script>
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciSubCategory.js"></script>
@@ -55,12 +53,8 @@
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar set focus on first link */
 		setTimeout(function(){
-		// navBarLeftFunction('');
-		// $('[tabindex=1]').focus();
-		// addClass('navbar4','navbarActive');
-		// onHoverDiv('#line0','left');
-		// ("#line0").toggleClass("hovered");
 		adjustScreenHeightWidth();
+		$('[tabindex=1]').focus();
 		}, 1900);
 	});
 </script>

@@ -36,9 +36,9 @@
 </html>
 
 <script type="text/javascript">
-	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 2, numOfRows = 9, classFormat = 'Main', tabIndexDefault = 1,
+	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
 		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameterNoDefault('view'), site = getSite(), pePreferences = '',
-		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = false;
+		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = true;
 
 	// if STB is unknown, lookup information, store cookies 
 	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
@@ -48,21 +48,9 @@
 	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
 
 	// alert(view);
-	if (typeof view === 'undefined') {
-		triggerLeftNavFlag = true;
-		var mode = getURLParameterNoDefault('mode');
-		if (typeof mode === 'undefined' || mode === 'default') {
-			view = 'Adult';
-		} else {
-			view = mode;
-		}
-	}
+	view = 'Adult';
 	$('#navBarLeft').load('../includes/mciNavBar' + screenFormat + '.html');
-	if (screenFormat === 'HD') {
-		numOfRows = 20;
-		numOfColumns = 3;
-		classFormat = 'MainWide';
-	}
+	classFormat = 'MainWide';
 
 	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 
@@ -71,7 +59,11 @@
 	setTimeout(function () {
 		// if (view === 'freqViewed' && $("#preferredCategoriesLabel").html() === '') { getPatientEdFavCategories(start, 'Main', 'categories', site, screenFormat);
 		//}
-		if (triggerLeftNavFlag) { navBarLeftFunction(navBarLeftParam); } else { adjustScreenHeightWidth(); }
+		
+		if (triggerLeftNavFlag) { 
+			navBarLeftFunction(navBarLeftParam); 
+			} else { adjustScreenHeightWidth(); } alert('lkj');
+			$('[tabindex=90]').focus();
 	}, 2000);
 	
 	updateVideoDetailTitleBar('Mayo Information', '', 'title', '', screenFormat);
