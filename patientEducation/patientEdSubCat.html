@@ -51,15 +51,12 @@
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar */
 		setTimeout(function(){ 
-			// addClass('navbar4','navbarActive'); 
-			// document.getElementById('link1').focus();
-			// navBarLeftFunction('', 'true');
 			adjustScreenHeightWidth();
+			$('[tabindex=1]').focus();
 		}, 900);
 	});
 
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
-	roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
 	// setChaserStyle ('pe', settopid, screenFormat);
 	
 </script>
