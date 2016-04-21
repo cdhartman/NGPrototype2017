@@ -3,7 +3,7 @@
 
 function getPatientVideo(offeringId, genre, subGenre, targetDiv) {
 	"use strict";
-	var xmlURL = '../../modAssets/xml/Catalog.xml', dataType = 'xml', a, node;
+	var xmlURL = '../xml/Catalog.xml', dataType = 'xml', a, node;
 
 	a = $.ajax({
 		type: "GET",
