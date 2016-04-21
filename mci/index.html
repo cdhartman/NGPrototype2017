@@ -23,7 +23,7 @@
 	</div>
 	
 		<!-- <img src="../images/screens/sectionPE-HD.gif" id="splashScreen" alt="" /> -->
-		<div id="navBarLeft" class="navBarLeftMCI" onclick="navBarLeftFunction('');"></div>
+		<div id="navBarLeft" class="navBarLeftMCI" onmouseover="navBarLeftFunction('expand');" onmouseout="navBarLeftFunction('collapse');"></div>
 		<div class="title" id="title">Mayo Information<br><span id="catalogName">Chaplin Services<span></div>
 		<div id="categories" class="categories">
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
@@ -61,7 +61,7 @@
 		//}
 		
 		if (triggerLeftNavFlag) { 
-			navBarLeftFunction(navBarLeftParam); 
+			// navBarLeftFunction(navBarLeftParam); 
 			} else { 
 			adjustScreenHeightWidth();
 			}
