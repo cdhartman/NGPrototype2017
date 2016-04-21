@@ -83,17 +83,17 @@
 	classFormat = 'MainWide';
 
 	if (view === 'freqViewed') {
-		getPatientEdCategories('../../modAssets/xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		tabIndexDefault = 67;
 	} else if (view === 'GBS') {
 		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		tabIndexDefault = 67;
 	} else if (view === 'Pediatric') {
-		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		getPatientEdCategories('..//xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Mayo Information') {
-		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else {
-		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	}
 
 	$('#ajaxLoader').html("");
