@@ -500,7 +500,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 		if (view === 'freqViewed') {view = 'Health Care Provider';}
 		if (genre === 'Frequently Viewed') {genre = 'Health Care Provider';}
 		if (view !== '' && view !== genre && view !== 'freqViewed' && view !== 'Frequently Viewed' && genre !== 'Frequently Viewed') {
-			titleString += view + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ';
+			titleString += view + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px 0; > ';
 		}
 		titleString += genre.replace(/\%26/g, " & ");
 	}
@@ -512,7 +512,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 	
 	if (subGenre !== '' && genre !== subGenre && genre !== 'Mayo Information') {
 		if (titleString !== '') {
-			titleString += ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ';
+			titleString += ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px 0; > ';
 		}
 		titleString += subGenre;
 	}
