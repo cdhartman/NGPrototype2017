@@ -32,20 +32,21 @@
 </head>
 
 <body leftmargin="0" topmargin="0">
-	<div id="draggable-element">
+	<!-- <div id="draggable-element">
 		<a href="javascript:void(0);" style="z-index: 120;"><img src="../images/remote/remote.gif" id="remoteImage" onclick="alert(document.activeElement)" /></a>
 	
 	</div>
-	<!-- 
+	-->
 	<div style="position: absolute; left: 6px; top: 6px; width: 36px; height: 38px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" width="36" /></a>
 	</div>
-	-->
+	
 	<div class="container">
 		<!-- <img src="../images/screens/sectionPE-HD.gif" id="splashScreen" alt="" /> -->
 		<div id="navBarLeft" class="navBarLeft" onclick="navBarLeftFunction('');"></div>
 		<div class="title" id="title">Patient Education<br><span id="catalogName">Adult Education<span></div>
 		<div id="categories" class="categories">
+			<span id="favCategoriesSpan"></span>
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
 		</div>
 		<div class="itemCount" id="itemCount"></div>
@@ -65,6 +66,8 @@
 	// if STB is unknown, lookup information, store cookies 
 	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
 	pePreferences = getCookie('pePreferences');
+	
+	
 	
 	// load CSS and SplashScreen
 	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
@@ -102,7 +105,7 @@
 		$('#fvBottom').load('../includes/navBarFVPE.html');
 		// document.getElementById("fvBottom").style.display = "block";
 		tabIndexDefault = 67;
-		getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
+		// getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
 	} else if (view === 'GBS') {
 		if (screenFormat === 'SD') {
 			numOfRows = 9; numOfColumns = 2;
@@ -113,7 +116,7 @@
 		$('#fvBottom').load('../includes/navBarFVPE.html');
 		// document.getElementById("fvBottom").style.display = "block";
 		tabIndexDefault = 67;
-		getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
+		// getPatientEdFavCategories(start, pePreferences, 'Main', 'categories', site, screenFormat);
 	} else if (view === 'Pediatric') {
 		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Mayo Information') {
@@ -127,7 +130,7 @@
 		setTimeout(function () { $('#navbarNext').html(''); $('#navbarPrev').html(""); $('input#searchBox').autocomplete({autoFocus: true}).mouseenter().click(); $('#navbarNext').html("");  document.getElementById("navbarPrev").className = "navbar navbarblank";  }, 900);
 	} else {
 		getPatientEdCategories('../../modAssets/xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		if (getCookie('pePreferences').length > 1) { document.getElementById("descriptionLegend").style.display = "block"; }
+		// if (getCookie('pePreferences').length > 1) { document.getElementById("descriptionLegend").style.display = "block"; }
 	}
 
 	if (view !== 'search') {
@@ -138,52 +141,14 @@
 	setTimeout(function () {
 		// if (view === 'freqViewed' && $("#preferredCategoriesLabel").html() === '') { getPatientEdFavCategories(start, 'Main', 'categories', site, screenFormat);
 		//}
-		if (triggerLeftNavFlag) { navBarLeftFunction(navBarLeftParam); } else { adjustScreenHeightWidth(); }
+		if (triggerLeftNavFlag) { 
+			//navBarLeftFunction(navBarLeftParam);
+		} else { adjustScreenHeightWidth(); }
 	}, 2000);
 	if (view === 'freqViewed') {
 		updateVideoDetailTitleBar('Health Care Provider', '', 'title', view, screenFormat);
 	} else {
 		updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
 	}
-	document.getElementById("link1").focus();
+	// document.getElementById("link1").focus();
 </script>
-
-<script>
-
-
-var selected = null, // Object of the element to be moved
-			x_pos = 0, y_pos = 0, // Stores x & y coordinates of the mouse pointer
-			x_elem = 0, y_elem = 0; // Stores top, left values (edge) of the element
-
-		// Will be called when user starts dragging an element
-		function _drag_init(elem) {
-			// Store the object of the element which needs to be moved
-			selected = elem;
-			x_elem = x_pos - selected.offsetLeft;
-			y_elem = y_pos - selected.offsetTop;
-		}
-
-		// Will be called when user dragging an element
-		function _move_elem(e) {
-			x_pos = document.all ? window.event.clientX : e.pageX;
-			y_pos = document.all ? window.event.clientY : e.pageY;
-			if (selected !== null) {
-				selected.style.left = (x_pos - x_elem) + 'px';
-				selected.style.top = (y_pos - y_elem) + 'px';
-			}
-		}
-
-		// Destroy the object when we are done
-		function _destroy() {
-			selected = null;
-		}
-
-		// Bind the functions...
-		document.getElementById('draggable-element').onmousedown = function () {
-			_drag_init(this);
-			return false;
-		};
-
-		document.onmousemove = _move_elem;
-		document.onmouseup = _destroy;
-	</script>
