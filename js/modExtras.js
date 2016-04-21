@@ -71,7 +71,7 @@ function sectionNextStaticScreen(id, param1) {
 	$( "#currentScreenIndicator" ).html(screenNumber);
 	
 	$("#" + id).attr("src",'images/' + screenNumber + '.png').fadeIn(400);
-	$("#" + id).width(1900);
+	$("#" + id).width(1890);
 }
 
 function goFullscreen(id) {
@@ -495,20 +495,23 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 		}
 	} else {
 		titleString = 'Patient Education<br><span style=\"font-size: 48px;\">';
-		if (view !== '' && view !== genre) {
-			titleString += view + ' <span style=\"color: \#333; font-weight: normal;\">&#8226;</span> ';
+		
+		if (view === 'freqViewed') {view = 'Health Care Provider';}
+		if (genre === 'Frequently Viewed') {genre = 'Health Care Provider';}
+		if (view !== '' && view !== genre && view !== 'freqViewed' && view !== 'Frequently Viewed' && genre !== 'Frequently Viewed') {
+			titleString += view + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ';
 		}
 		titleString += genre.replace(/\%26/g, " & ");
 	}
 	// titleString = 'Patient Education<br><span style=\"font-size: 48px;\">';
 	// alert(genre + ' | ' + subGenre + ' | ' + view);
-	
+
 	
 	// }
 	
 	if (subGenre !== '' && genre !== subGenre && genre !== 'Mayo Information') {
 		if (titleString !== '') {
-			titleString += ' <span style=\"color: \#333; font-weight: normal;\">&#8226;</span> ';
+			titleString += ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ';
 		}
 		titleString += subGenre;
 	}
