@@ -21,9 +21,9 @@
 	<div style="position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
-	<div class="container">
+	
 		<!-- <img src="../images/screens/sectionPE-HD.gif" id="splashScreen" alt="" /> -->
-		<div id="navBarLeft" class="navBarLeftMCI"></div>
+		<div id="navBarLeft" class="navBarLeftMCI" onclick="navBarLeftFunction('');"></div>
 		<div class="title" id="title">Mayo Information<br><span id="catalogName">Chaplin Services<span></div>
 		<div id="categories" class="categories">
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
@@ -31,7 +31,7 @@
 
 		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
 		<!-- <div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" onclick="searchPE();" /></div> -->
-	</div>
+	
 </body>
 </html>
 
@@ -62,7 +62,9 @@
 		
 		if (triggerLeftNavFlag) { 
 			navBarLeftFunction(navBarLeftParam); 
-			} else { adjustScreenHeightWidth(); }
+			} else { 
+			adjustScreenHeightWidth();
+			}
 			$('[tabindex=90]').focus();
 	}, 2000);
 	
