@@ -8,6 +8,7 @@ html, body {
 div.navBarLeft {position: absolute; width: 45px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #2e841A; display: block; opacity:.70; filter: alpha(opacity=70);}
 div.navBarLeft:hover {opacity:1.0; filter: alpha(opacity=100);}
 div.navBarLeftMCI {position: absolute; width: 542px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #403EBE; display: block; opacity:.70; filter: alpha(opacity=70);}
+div.navBarLeftMciTrigger {position: absolute; width: 45px; top: 0px; left: 497px; height: 1080px; min-height: 1080px; float: left; cursor: pointer; cursor: hand;  display: block;}
 div.navBarLeftMCI:hover {opacity:1.0; filter: alpha(opacity=100);}
 
 /* #peNavBarHD {display: none;} */
@@ -23,7 +24,7 @@ div.title {left: 572px; top: 20px; font-size: 60px; width: 1670px; padding: 4px;
       -1px 1px 0 #ddd,
        1px 1px 0 #ddd;*/
 div.box1sidePE {position: absolute; left: 1770px; top: 50px;}
-div.box1sideMci {position: absolute; left: 2267; top: 50px;}
+div.box1sideMci {position: absolute; left: 2267px; top: 50px;}
 div.searchPE {position: absolute; left: 30px; top: 50px; display: none;}
 div.lineColumnMainWide {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
 opacity:.70; filter: alpha(opacity=70);
@@ -295,12 +296,12 @@ div.categories {left: 550px; width: 1857px; height: 1080px;}
 div.favoritesTop {position: absolute; width: 956px; top: 92px; left: 0; background-color: #dae7f2; height: 36px;}
 div.fvBottom {width: 956px; top: 564px; left: 0; height: 44px;}
 
-div.navbarTopCategory1 {top: 232px; width: 500px;}
-div.navbarTopCategory2 {top: 332px; width: 500px;}
-div.navbarTopCategory3 {top: 432px; width: 500px;}
-div.navbarTopCategory4 {top: 532px; width: 500px;}
-div.navbarTopCategory5 {top: 632px; width: 500px;}
-div.navbarTopCategory6 {top: 732px; width: 500px;}
+div.navbarTopCategory1 {top: 232px; width: 450px;}
+div.navbarTopCategory2 {top: 332px; width: 450px;}
+div.navbarTopCategory3 {top: 432px; width: 450px;}
+div.navbarTopCategory4 {top: 532px; width: 450px;}
+div.navbarTopCategory5 {top: 632px; width: 450px;}
+div.navbarTopCategory6 {top: 732px; width: 450px;}
 a.white { color: white;}
 div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive
 {
