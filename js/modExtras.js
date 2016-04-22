@@ -3,6 +3,9 @@
 
 var weatherGlobalVariable = '', weatherGlobalVariable = '';
 
+function displayHtmlToolbar(id) {
+	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
+}
 function launcherHandler(param1) {
 	"use strict";
 	var offset = 3 - launcherState;
