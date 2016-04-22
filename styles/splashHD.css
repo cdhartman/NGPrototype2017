@@ -5,7 +5,7 @@ html, body {
 
 
 /* 1E4E00  2e841A 3ea833 */
-div.navBarLeft {position: absolute; width: 45px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #2e841A; display: block; opacity:.70; filter: alpha(opacity=70);}
+div.navBarLeft {position: absolute; width: 542px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #2e841A; display: block; opacity:.70; filter: alpha(opacity=70);}
 div.navBarLeft:hover {opacity:1.0; filter: alpha(opacity=100);}
 div.navBarLeftMCI {position: absolute; width: 542px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #403EBE; display: block; opacity:.70; filter: alpha(opacity=70);}
 div.navBarLeftMciTrigger {position: absolute; width: 45px; top: 0px; left: 497px; height: 1080px; min-height: 1080px; float: left; cursor: pointer; cursor: hand;  display: block;}
@@ -23,7 +23,7 @@ div.title {left: 572px; top: 20px; font-size: 60px; width: 1670px; padding: 4px;
       1px -1px 0 #ddd,
       -1px 1px 0 #ddd,
        1px 1px 0 #ddd;*/
-div.box1sidePE {position: absolute; left: 1770px; top: 50px;}
+div.box1sidePE {position: absolute; left: 2267px; top: 50px;}
 div.box1sideMci {position: absolute; left: 2267px; top: 50px;}
 div.searchPE {position: absolute; left: 30px; top: 50px; display: none;}
 div.lineColumnMainWide {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
@@ -62,7 +62,7 @@ div.lineColumnMainWide1{left: 572px;}
 div.lineColumnMainWide2{left: 1167px;}
 div.lineColumnMainWide3{left: 1762px;}
 div.lineColumnMainWide4{left: 1860px;}
-div.lineColumnMainWide5{left: 1860px; width: 1px;}
+div.lineColumnMainWide5{left: 2357px; width: 1px;}
 div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 50px;}
 a.lineItemsNB {font-size: 42px;}
 a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus {font-size: 52px; font-weight: 500;}
