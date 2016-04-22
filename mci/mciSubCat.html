@@ -14,7 +14,7 @@
 </head>
 
 <body leftmargin="0" topmargin="0">
-	<div style="position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
+	<div class="htmlToolbar" id="htmlToolbar">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
 	<div class="container" id="container">
@@ -53,5 +53,5 @@
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
 	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
 	// setChaserStyle ('pe', settopid, screenFormat);
-	
+	displayHtmlToolbar('htmlToolbar');
 </script>
