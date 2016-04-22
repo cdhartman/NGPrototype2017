@@ -112,6 +112,7 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('#navBarLeft').width("542px");
 		$('#navBarLeft').css('display','block');
 		$('.navbarTopCategory').css('display','block');
+		$('.navBarLeftMciTrigger').css("left", "+=505");
 		$('.lineColumnMainWide1').css("left", "+=505");
 		$('.lineColumnMainWide2').css("left", "+=505");
 		$('.lineColumnMainWide3').css("left", "+=505");
@@ -119,6 +120,7 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('.lineColumnMainWide5').css("left", "+=505");
 		$('#title').css("left", "+=505");
 		$('.box1sidePE').css("left", "+=505");
+		$('.box1sideMci').css("left", "+=505");
 		$('.searchPE').css('display','block');
 		$('.peNavBarHD').css('display','block');
 	}
@@ -128,6 +130,7 @@ function navBarLeftFunction(adjustLeftPane) {
 		
 		$('#peNavBarHD').css('display','none');
 		$('.navbarTopCategory').css('display','none');
+		$('.navBarLeftMciTrigger').css("left", "+=-505");
 		$('.lineColumnMainWide1').css("left", "+=-505");
 		$('.lineColumnMainWide2').css("left", "+=-505");
 		$('.lineColumnMainWide3').css("left", "+=-505");
@@ -135,6 +138,7 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('.lineColumnMainWide5').css("left", "+=-505");
 		$('#title').css("left", "+=-505");
 		$('.box1sidePE').css("left", "+=-505");
+		$('.box1sideMci').css("left", "+=-505");
 		$('.searchPE').css('display','none');
 	}
 	// alert($(document).height());
