@@ -36,7 +36,7 @@ div.navbarTopCategory:hover  > a.lineItemsNB  {padding: 0;}
 div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive {
     color: #eee; text-decoration: none; cursor: pointer; padding: 2px}
 div.roomTimeWeather {position: absolute; color: #eee; text-align: right;}
-div.title {position: absolute;}
+div.title, div.titleMciDetailScreen  {position: absolute;}
 div.titlePE {position: absolute; color: #efefef; font-weight: bold; }
 #homeButtonImage { opacity:.60; filter: alpha(opacity=60);}
 span.detailVideoTitle {display: block; text-align: left;}
