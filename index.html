@@ -1,67 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-
 <head>
-<title>MCTN</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-<link href="favicon.ico" rel="shortcut icon" />
-<style>
-	a, a:visited {color : #336699;} 
-	a:hover, a:active {color : #336699 ;text-decoration : none;}
-	body {margin: 0; padding: 0; background-color: #111;}
-</style>
-<script type="text/javascript">
-	launcherState = 3;
-	
-	document.onkeydown = function(e) {
-    switch (e.keyCode) {
-			case 37:
-				launcherHandler('2');
-				break;
-			case 39:
-				launcherHandler('4');
-				break;
-			case 13:
-				window.location.replace($('#activeLauncherSelectionHREF').attr('href'));
-				break;
-		}
-	};
-</script>
-<script type="text/javascript" src="js/jQuery/jquery-2.min.js"></script>
-<script type="text/javascript" src="js/modExtras.js"></script>
+	<title>MCTN | Patient Education</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link href="favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
+	<script type="text/javascript" src="../js/HEWAlert.js"></script>
+	<script type="text/javascript" src="../js/mci/getMciCategories.js"></script>
+	<script type="text/javascript" src="../js/modExtras.js"></script>
 </head>
 
-<body>
-	<!-- <div style="position: absolute; left: 10px; top: 10px; width: 240px; height: 54px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
-		&nbsp;<a href="index.html"><img src="images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
-		<img src="images/icons/launcher/fullscreen.png" onclick="goFullscreen('launcherBackground');" style="cursor: pointer; cursor: hand;" />
-		<img src="images/icons/launcher/leftArrow.png" onclick="launcherHandler('2');" style="cursor: pointer; cursor: hand;" />
-		<img src="images/icons/launcher/rightArrow.png" onclick="launcherHandler('4');" style="cursor: pointer; cursor: hand;" />
+<body leftmargin="0" topmargin="0">
+	<div class="htmlToolbar" id="htmlToolbar">
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
-	-->
-	<map name="launcherMap">
-		<area href="javascript:void(0);" shape="rect" coords="2,293,138,790" alt="1" title="1" onclick="launcherHandler('1');">
 
-        <area href="javascript:void(0);" shape="rect" coords="242,290,642,790" alt="2" title="2" onclick="launcherHandler('2');">
+	<div id="navBarLeft" class="navBarLeftMCI"></div>
+	<div class="title" id="title">Mayo Information<br><span id="catalogName">Chaplin Services<span></div>
+	<div id="categories" class="categories">
+		<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
+	</div>
 
-        <area href="patientEducation/index.html" shape="rect" coords="690,290,1231,791" alt="3" title="3" id="activeLauncherSelectionHREF">
-
-        <area href="javascript:void(0);" shape="rect" coords="1255,292,1700,790" alt="4" title="4" onclick="launcherHandler('4');">
-
-        <area href="javascript:void(0);" shape="rect" coords="1789,293,1929,791" alt="5" title="5" onclick="launcherHandler('5');">
-
-		<area href="javascript:void(0);" shape="rect" coords="560,880,660,990" alt="8" title="8" id="" onclick="launcherHandler('2');">
-		<area href="javascript:void(0);" shape="rect" coords="1260,880,1360,990" alt="9" title="9" id="" onclick="launcherHandler('4');">
-	</map>
-	<img src="images/screens/launcher/3.png" usemap="#launcherMap" id="launcherBackground" width="1900"
-		style="position: absolute; left: 0; top: 0;"
-		/>
-		<!-- onclick="goFullscreen('launcherBackground');" -->
+	<div class="box1sideMci"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
+	
 </body>
 </html>
 
 <script type="text/javascript">
-	/* setTimeout(function () {
-		goFullscreen('launcherBackground');
-	}, 3000); */
+	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
+		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameterNoDefault('view'), site = getSite(), pePreferences = '',
+		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = true;
+
+	// if STB is unknown, lookup information, store cookies 
+	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
+	pePreferences = getCookie('pePreferences');
+	
+	// load CSS and SplashScreen
+	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
+
+	// alert(view);
+	view = 'Adult';
+	$('#navBarLeft').load('../includes/mciNavBar' + screenFormat + '.html');
+	classFormat = 'MainWide';
+
+	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+
+	$('#navBarLeft').html("");
+	
+	setTimeout(function () {
+		if (triggerLeftNavFlag) { 
+			// navBarLeftFunction(navBarLeftParam); 
+			} else { 
+			// adjustScreenHeightWidth();
+			}
+			// $('[tabindex=1]').focus();
+	}, 2000);
+	
+	updateVideoDetailTitleBar('Mayo Information', '', 'title', '', screenFormat);
+
+	displayHtmlToolbar('htmlToolbar');
 </script>
