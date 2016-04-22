@@ -12,9 +12,8 @@ div.navBarLeftMciTrigger {position: absolute; width: 45px; top: 0px; left: 497px
 div.navBarLeftMCI:hover {opacity:1.0; filter: alpha(opacity=100);}
 
 /* #peNavBarHD {display: none;} */
-div.title {left: 572px; top: 20px; font-size: 60px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; 
-	
-}
+div.title {left: 572px; top: 20px; font-size: 60px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
+div.titleMciDetailScreen {left: 75px; top: 20px; font-size: 60px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
 /*
 -webkit-text-stroke: 1px #ddd;
 	text-shadow:
