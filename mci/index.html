@@ -23,7 +23,7 @@
 		<!-- <img src="../images/screens/sectionPE-HD.gif" id="splashScreen" alt="" /> -->
 		 <!-- onmouseover="navBarLeftFunction('expand');" onmouseout="navBarLeftFunction('collapse');" -->
 		
-		<div id="navBarLeft" class="navBarLeftMCI" onclick="navBarLeftFunction('');"></div>
+		<div id="navBarLeft" class="navBarLeftMCI"></div>
 		<div class="title" id="title">Mayo Information<br><span id="catalogName">Chaplin Services<span></div>
 		<div id="categories" class="categories">
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
@@ -54,7 +54,7 @@
 
 	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 
-	$('#ajaxLoader').html("");
+	$('#navBarLeft').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
 		if (triggerLeftNavFlag) { 
@@ -66,5 +66,5 @@
 	}, 2000);
 	
 	updateVideoDetailTitleBar('Mayo Information', '', 'title', '', screenFormat);
-	
+	alert(navigator.userAgent);
 </script>
