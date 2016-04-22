@@ -65,7 +65,7 @@ div.lineColumnMainWide4{left: 1860px;}
 div.lineColumnMainWide5{left: 1860px; width: 1px;}
 div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 50px;}
 a.lineItemsNB {font-size: 42px;}
-a.lineItemsNB:hover, a.lineItemsNB:active {font-size: 52px; font-weight: 500;}
+a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus {font-size: 52px; font-weight: 500;}
 a.lineItemsMainWide {
 	font-size: 48px;
 	vertical-align: middle;
