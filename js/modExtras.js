@@ -1,11 +1,20 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, document */
 
-var weatherGlobalVariable = '', weatherGlobalVariable = '';
+var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, lastColumnSelected = 1;
 
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
+
+function leftNavBarOnBlurHandler(id) {
+	alert(lastKeyPressed);
+	if (lastKeyPressed === 39) {
+		navBarLeftFunction('collapse');
+		$('[tabindex=1]').focus();
+	}
+}
+
 function launcherHandler(param1) {
 	"use strict";
 	var offset = 3 - launcherState;
@@ -164,10 +173,11 @@ function adjustScreenHeightWidth() {
 }
 
 function onHoverDiv(selectedDiv, direction, videoFlag, column) {
-	"use strict";
+	// "use strict";
 	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
 	// column = '4';
 	// alert(selectedDiv);
+	lastColumnSelected = column;
 	selectedDiv = document.getElementById(selectedDiv);
 	if ( direction === 'left' ) {
 
@@ -219,6 +229,11 @@ function onHoverDiv(selectedDiv, direction, videoFlag, column) {
 	if ( $('#navBarLeft').width() !== 45 ) {
 		navBarLeftFunction();
 	}
+	// alert('lastKeyPressed='+lastKeyPressed +', ' + 'column=' + column);
+	if (column === '1' && lastKeyPressed === 37) {
+		navBarLeftFunction('expand');
+	}
+	
 }
 
 function searchPE(sParam) {
