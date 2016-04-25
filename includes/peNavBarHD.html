@@ -1,13 +1,16 @@
 <div id="navBarLeftMciTrigger" class="navBarLeftMciTrigger" onclick="navBarLeftFunction('');"></div>
 <span id="peNavBarHD" class="peNavBarHD">
 	<div class="navbarTopCategory navbarTopCategory1" id="divNavBarAdult">
-		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Adult&navBarLeft=collapse')" chaser_up="previousButtonHref" chaser_left="aNavBarSearch" class="lineItemsNB" id="aNavBarAll" tabIndex="90">Adult Education</a>
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Adult&navBarLeft=collapse')" chaser_up="previousButtonHref" chaser_left="aNavBarSearch" class="lineItemsNB" id="aNavBarAdult" tabIndex="90"
+			 onblur="leftNavBarOnBlurHandler('aNavBarAdult')">Adult Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory2" id="divNavBarPediatric">
-		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Pediatric&navBarLeft=collapse')" chaser_up="previousButtonHref" class="lineItemsNB" id="aNavBarPediatric" tabIndex="91">Pediatric Education</a>
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Pediatric&navBarLeft=collapse')" chaser_up="previousButtonHref" class="lineItemsNB" id="aNavBarPediatric" tabIndex="91"
+			onblur="leftNavBarOnBlurHandler('aNavBarPediatric')">Pediatric Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory3" id="divNavBarFV">
-		<a href="javascript:ForwardWithIDAndQuery('index.html?view=freqViewed&navBarLeft=collapse')" chaser_up="previousButtonHref" class="lineItemsNB" id="aNavBarFV tabIndex="92">Healthcare Provider</a>
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=freqViewed&navBarLeft=collapse')" chaser_up="previousButtonHref" class="lineItemsNB" id="aNavBarFV tabIndex="92"
+			onblur="leftNavBarOnBlurHandler('aNavBarFV')">Healthcare Provider</a>
 		<br /><span class="">Frequently Viewed (Ch. 993)</span>
 	</div>
 	
