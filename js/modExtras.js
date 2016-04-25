@@ -8,9 +8,9 @@ function displayHtmlToolbar(id) {
 }
 
 function leftNavBarOnBlurHandler(id) {
-	alert(lastKeyPressed);
+	// alert(lastKeyPressed);
 	if (lastKeyPressed === 39) {
-		navBarLeftFunction('collapse');
+		// navBarLeftFunction('collapse');
 		$('[tabindex=1]').focus();
 	}
 }
@@ -172,7 +172,7 @@ function adjustScreenHeightWidth() {
 	}
 }
 
-function onHoverDiv(javascriptAction, selectedDiv, direction, videoFlag, column) {
+function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column, row) {
 	// "use strict";
 	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
 	// column = '4';
@@ -229,7 +229,7 @@ function onHoverDiv(javascriptAction, selectedDiv, direction, videoFlag, column)
 	if ( $('#navBarLeft').width() !== 45 ) {
 		navBarLeftFunction();
 	}
-	// alert('lastKeyPressed='+lastKeyPressed +', ' + 'column=' + column);
+	// alert('lastKeyPressed='+lastKeyPressed +', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction);
 	if (column === '1' && lastKeyPressed === 37) {
 		navBarLeftFunction('expand');
 	}
