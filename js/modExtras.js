@@ -11,7 +11,7 @@ function leftNavBarOnBlurHandler(id) {
 	// alert(lastKeyPressed);
 	if (lastKeyPressed === 39) {
 		// navBarLeftFunction('collapse');
-		$('[tabindex=1]').focus();
+		// $('[tabindex=1]').focus();
 	}
 }
 
@@ -230,8 +230,9 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 		navBarLeftFunction();
 	}
 	// alert('lastKeyPressed='+lastKeyPressed +', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction);
-	if (column === '1' && lastKeyPressed === 37) {
+	if (column === '1' && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		navBarLeftFunction('expand');
+		$('[tabindex=90]').focus();
 	}
 	
 }
