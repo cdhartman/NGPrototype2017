@@ -11,7 +11,7 @@ function leftNavBarOnBlurHandler(id) {
 	// alert(lastKeyPressed);
 	if (lastKeyPressed === 39) {
 		// navBarLeftFunction('collapse');
-		// $('[tabindex=1]').focus();
+		$('[tabindex=1]').focus();
 	}
 }
 
