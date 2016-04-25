@@ -172,7 +172,7 @@ function adjustScreenHeightWidth() {
 	}
 }
 
-function onHoverDiv(selectedDiv, direction, videoFlag, column) {
+function onHoverDiv(javascriptAction, selectedDiv, direction, videoFlag, column) {
 	// "use strict";
 	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
 	// column = '4';
