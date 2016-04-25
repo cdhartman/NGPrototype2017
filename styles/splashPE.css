@@ -8,6 +8,10 @@ a.lineItems:active, a.lineItems:focus, a.lineItemsMain:active, a.lineItemsMain:f
 	color: #f2f2f2;
 	/* background-color: #668bc9; */
 }
+a.lineItemsMainWide{
+	display: block;
+	height: 120px;
+}
 div.lineColumnMainWide < a.lineItemsMainWide:active, a.lineItemsMainWide:focus, a.lineItemsLarge:active {}
 a.buttonsPE:active, a.buttonsPE:focus {
 	color: #668bc9;
