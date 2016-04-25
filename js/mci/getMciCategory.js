@@ -97,8 +97,8 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			}
 			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\javascript:' + constructURL + ' \"';
 			// alert($(this).attr('exitAndTune'));
-			divContent += ' onmouseover=\"onHoverDiv(\'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
-			divContent += ' onmouseout=\"onHoverDiv(\'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
 			/*
 			if (view === 'Adult' || view === 'freqViewed') {
 				divContent += ' onmouseover=\"onHoverDiv(this,\'left\',\'false\');\"';
@@ -116,8 +116,8 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			} else {
 				divContent += '  class=\"lineItemsMainWide\"';
 			}
-			divContent += ' onfocus=\"onHoverDiv(\'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
-			divContent += ' onblur=\"onHoverDiv(\'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
 			divContent += '>';
 			divContent += categoryName;
 			divContent += '</a>';
