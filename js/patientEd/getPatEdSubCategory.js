@@ -43,10 +43,10 @@ function getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, qu
 
 function getPatientEdVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
-	var xmlURL = '../../modAssets/xml/993.xml', dataType = 'xml', node;
+	var xmlURL = '../xml/993.xml', dataType = 'xml', node;
 
 	if (view === 'GBS') {
-		xmlURL = '../../modAssets/xml/GBS.xml'
+		xmlURL = '../xml/GBS.xml'
 	}
 	$.ajax({
 		type: "GET",
