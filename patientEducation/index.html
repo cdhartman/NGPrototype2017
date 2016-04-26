@@ -130,7 +130,15 @@
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
-		$('[tabindex=97]').focus();
+		if (view = 'Adult') {
+			$('[tabindex=97]').focus();
+		} else if (view = 'Pediatric'){
+			$('[tabindex=98]').focus();
+		} else if (view = 'freqViewed') {
+			$('[tabindex=99]').focus();
+		} else {
+			$('[tabindex=97]').focus();
+		}
 		if (triggerLeftNavFlag) { 
 			//navBarLeftFunction(navBarLeftParam);
 		} else { 
