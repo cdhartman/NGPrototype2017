@@ -534,8 +534,8 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 	} else {
 		titleString = 'Patient Education<br><span style=\"font-size: 48px;\">';
 		
-		if (view === 'freqViewed') {view = 'Health Care Provider';}
-		if (genre === 'Frequently Viewed') {genre = 'Health Care Provider';}
+		if (view === 'freqViewed') {view = 'Healthcare Provider';}
+		if (genre === 'Frequently Viewed') {genre = 'Healthcare Provider';}
 		if (view !== '' && view !== genre && view !== 'freqViewed' && view !== 'Frequently Viewed' && genre !== 'Frequently Viewed') {
 			titleString += view + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px 0; > ';
 		}
