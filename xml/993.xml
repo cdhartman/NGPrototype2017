@@ -103,7 +103,7 @@
 				<offeringid name="Pre-Diabetes" nameLong="Pre-Diabetes" runtime="00:06:00"
 					summary="Defines pre-diabetes and type 2 diabetes. Provides guidelines for prevention and management, testing, exercise and diet.">3861</offeringid>
 			</category>
-			<category name="GI / General Surgery" id="900040" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+			<category name="Gastroenterology / General Surgery" id="900040" hasCategories="false" hidden="false" site="All" exitAndTune="false">
 				<description/>
 				<offeringid name="Tube Feeding: Intro" nameLong="Tube Feeding 1: Introduction" runtime="00:08:00"
 					summary="Depicts the use of a feeing tube, how it is placed and how it is used. Describes possible problems and how tubes are maintained and replaced.">2685</offeringid>
@@ -134,7 +134,7 @@
 				<offeringid name="Care of Straight Drains" nameLong="Care of Your Drain: Jackson Pratt-Straight Drains" runtime="00:06:00"
 					summary="Information about care for Jackson Pratt or straight drainage tube. Several topics are covered.">4449</offeringid>
 			</category>
-			<category name="Heart / CV Surgery" id="900050" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+			<category name="Heart / Cardiovasular Surgery" id="900050" hasCategories="false" hidden="false" site="All" exitAndTune="false">
 				<description/>
 				<offeringid name="HF: Understanding" nameLong="Heart Failure 1: Understanding" runtime="00:06:00"
 					summary="Explains systolic and diastolic heart failure with medical animations.">4512</offeringid>
@@ -184,7 +184,7 @@
 				<offeringid name="HPN Catheter Care" nameLong="Home Parenteral Nutrition Using Your Hickman Catheter" runtime="00:24:00"
 					summary="Helps patients receiving Home Perenteral Nutrition (HPN) or Total Parenteral Nutrition (TPN) learn how to care for their long-term central venous catheters.">3959</offeringid>
 			</category>
-			<category name="Neph / Urology / OBGyn" id="900070" hasCategories="false" hidden="false" site="All" exitAndTune="false">
+			<category name="Nephrology / Urology / OB Gyn" id="900070" hasCategories="false" hidden="false" site="All" exitAndTune="false">
 				<description/>
 				<offeringid name="Chronic Kidney Disease" nameLong="Chronic Kidney Disease: What You Can Do To Help" runtime="00:07:00"
 					summary="Overview of the function of the kidneys. Topics include common kidney diseases, symptoms, the five stages of kidney disease and GFR.">4009</offeringid>
@@ -298,7 +298,7 @@
 						summary="Relaxation video that utilizes scenery from New Yorks Finger Lakes and Niagara regions. Nature sounds and a solo piano accompany the views.">3592</offeringid>
 				</category>
 			</category>
-			<category name="Ortho / PM and Rehab" id="900100" hasCategories="true" hidden="false" site="All" exitAndTune="false">
+			<category name="Orthopedics / Physical Med and Rehabilation" id="900100" hasCategories="true" hidden="false" site="All" exitAndTune="false">
 				<description/>
 				<category name="Hip / Knee" id="900101" hasCategories="false" hidden="false" exitAndTune="false">
 					<description/>
