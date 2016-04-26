@@ -238,11 +238,11 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 	
 	if (column === '1' && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		navBarLeftFunction('expand');
-		if (view = 'Adult') {
+		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
-		} else if (view = 'Pediatric'){
+		} else if (view === 'Pediatric'){
 			$('[tabindex=98]').focus();
-		} else if (view = 'freqViewed') {
+		} else if (view === 'freqViewed') {
 			$('[tabindex=99]').focus();
 		} else {
 			$('[tabindex=97]').focus();
