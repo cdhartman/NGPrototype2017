@@ -12,6 +12,35 @@
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript" src="../js/patientEd/getPatEdSubCategory.js"></script>
+		<script type="text/javascript">
+		// var ;
+		document.onkeydown = function(e) { // alert(e.keyCode);
+		previousKeyPressed = lastKeyPressed;
+		switch (e.keyCode) {
+				case 37:
+					// left
+					lastKeyPressed = 37;
+					if (lastColumnSelected === '1') { navBarLeftFunction('expand'); $('[tabindex=97]').focus();}
+					break;
+				case 38:
+					// up
+					lastKeyPressed = 38;
+					break;
+				case 39:
+					// right
+					lastKeyPressed = 39;
+					break;
+				case 40:
+					// down
+					lastKeyPressed = 40;
+					break;
+				case 13:
+					// OK
+					lastKeyPressed = 13;
+					break;
+			}
+		};
+	</script>
 </head>
 
 <body leftmargin="0" topmargin="0">
@@ -54,13 +83,15 @@
 	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
 	// setChaserStyle ('pe', settopid, screenFormat);
 	
+	displayHtmlToolbar('htmlToolbar');
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar set focus on first link */
 		setTimeout(function(){
-		$('[tabindex=1]').focus();
+		
 		adjustScreenHeightWidth();
+		$('[tabindex=1]').focus();
 		}, 1000);
 	});
-	displayHtmlToolbar('htmlToolbar');
+	
 </script>
