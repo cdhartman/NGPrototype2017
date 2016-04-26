@@ -14,7 +14,7 @@ function offSetFunction(id) {
 	if( posY > 700) { // alert('lkj');
 		// $.scrollTo('+=100px', 800, { axis:'y' });
 		// $(id).scrollTop(300);
-		// $(window).scrollTop(posY-200);
+		$(window).scrollTop(posY-200);
 	}
 	// alert(posX + ', y: ' + posY);
 }
