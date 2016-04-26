@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, document */
 
-var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, lastColumnSelected = 1;
+var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 0, previousColumnSelected = 0;
 
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
@@ -177,7 +177,8 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
 	// column = '4';
 	// alert(selectedDiv);
-	lastColumnSelected = column;
+	
+	
 	selectedDiv = document.getElementById(selectedDiv);
 	if ( direction === 'left' ) {
 
@@ -203,7 +204,10 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 		}
 		$(selectedDiv).css('opacity', '1.0');
 	} else {
-
+		if (previousColumnSelected === lastColumnSelected || previousColumnSelected === 0) {
+			previousColumnSelected = lastColumnSelected;
+			lastColumnSelected = column;
+		}
 		if (column === '1') {
 			$(selectedDiv).css("top", "+=20");
 		} else if (column === '2') {
@@ -229,12 +233,14 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 	if ( $('#navBarLeft').width() !== 45 ) {
 		navBarLeftFunction();
 	}
-	// alert('lastKeyPressed='+lastKeyPressed +', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction);
+	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
+	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
+	
 	if (column === '1' && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		navBarLeftFunction('expand');
 		$('[tabindex=90]').focus();
 	}
-	
+	// lastColumnSelected = column;
 }
 
 function searchPE(sParam) {
