@@ -277,11 +277,11 @@ function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, sub
 	} else {
 		divContent = '<div class=\"line lineWide linePE' + rowNumberPE + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	}
-	divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\')\"';
 	divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\">';
 				
 	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
-	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\'); offSetFunction(this) \"';
 	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\"';
 	divContent += '>' + languageIcon(title, 'short', screenFormat) + '</a>';
 	// if (screenFormat === 'HD') {
