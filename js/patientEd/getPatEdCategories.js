@@ -89,7 +89,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 				}
 				count++;
 				columnNumber++;
-				categoryName = formatCategoryName(categoryName, 32);
+				categoryName = formatCategoryName(categoryName, 41);
 				urlCategoryName = categoryName.replace(' & ', ' %26 ');
 
 				composeURL = 'javascript:ForwardWithIDAndQuery(';

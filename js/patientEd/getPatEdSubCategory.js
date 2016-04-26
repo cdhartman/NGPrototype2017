@@ -107,7 +107,7 @@ function parseAndDisplayPatEd993SubCategory(node, genre, genreID, subGenre, subG
 					count++;
 					// rowNumber++;
 					if (titleFormat === 'short') {
-						title = $(this).attr('name');
+						title = $(this).attr('nameLong');
 						summary = $(this).attr('summary');
 					} else {
 						// title = $(this).attr('nameLong');
