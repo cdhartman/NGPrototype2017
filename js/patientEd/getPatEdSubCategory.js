@@ -299,7 +299,9 @@ function getPatEdSubCategory993Video(offeringid, title, rating, runtime, summary
 		divContent = '<div class=\"lineColumnMain lineColumnMain' + columnNumber + ' linePE' + rowNumber + '\" id=\"line' + rowNumber + '\">';
 		if (summary.length > 60) {summary = summary.substr(0, 60) + '...'; }
 	} else {
-		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"line' + rowNumber + '\">';
+		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\"';
+		divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\')\"';
+		divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\">';
 		className = 'lineItemsMainWide';
 		if (summary.length > 90) {summary = summary.substr(0, 90) + '...'; }
 	}
@@ -308,9 +310,11 @@ function getPatEdSubCategory993Video(offeringid, title, rating, runtime, summary
 	if (runtime) { onFocusContent = ' onfocus=\"(displayDescriptionLegend(\'' + summary + ' (' + runtime + ')\'))\"'; }
 	divContent += '<a tabIndex=\"' + count + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')' + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\"';
 	divContent += 'class=\"' + className + '\"';
-	if (onFocusContent !== '') { divContent += onFocusContent + ' onblur=\"displayDescriptionLegend(\'\');\"'; }
+	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\'); offSetFunction(this) \"';
+	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\"';
 
 	divContent += '>' + languageIcon(title, 'short', screenFormat);
+	
 	divContent += '</a>';
 
 	if (screenFormat === 'HD') {
