@@ -6,7 +6,18 @@ var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, 
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
-
+function offSetFunction(id) {
+	var offset = $(id).offset();
+	var posY = offset.top - $(window).scrollTop();
+	var posX = offset.left - $(window).scrollLeft();
+	//alert('posX: ' + posX)
+	if( posY > 700) { // alert('lkj');
+		// $.scrollTo('+=100px', 800, { axis:'y' });
+		// $(id).scrollTop(300);
+		// $(window).scrollTop(posY-200);
+	}
+	// alert(posX + ', y: ' + posY);
+}
 function leftNavBarOnBlurHandler(id) {
 	// alert(lastKeyPressed);
 	if (lastKeyPressed === 39) {
