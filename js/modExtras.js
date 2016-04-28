@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, document */
 
-var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 0, previousColumnSelected = 0;
+var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 0, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 0;
 
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
@@ -10,10 +10,11 @@ function offSetFunction(id) {
 	var offset = $(id).offset();
 	var posY = offset.top - $(window).scrollTop();
 	var posX = offset.left - $(window).scrollLeft();
-	//alert('posX: ' + posX)
+	// alert('posX: ' + posX + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 	if( posY > 700) { // alert('lkj');
 		// $.scrollTo('+=100px', 800, { axis:'y' });
 		// $(id).scrollTop(300);
+		// alert('posX: ' + posX + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		$(window).scrollTop(posY-200);
 	}
 	// alert(posX + ', y: ' + posY);
@@ -132,6 +133,7 @@ function navBarLeftFunction(adjustLeftPane) {
 	//}
 	
 	if (adjustLeftPane === 'expand') {
+		// alert('expand branch');
 		$('#navBarLeft').width("542px");
 		$('#navBarLeft').css('display','block');
 		$('.navbarTopCategory').css('display','block');
@@ -149,8 +151,8 @@ function navBarLeftFunction(adjustLeftPane) {
 	}
 	
 	if (adjustLeftPane === 'collapse') {
+		// alert('collapse branch');
 		$('#navBarLeft').width("45px");
-		
 		$('#peNavBarHD').css('display','none');
 		$('.navbarTopCategory').css('display','none');
 		$('.navBarLeftMciTrigger').css("left", "+=-505");
@@ -183,7 +185,7 @@ function adjustScreenHeightWidth() {
 	}
 }
 
-function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column, row) {
+function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, column) {
 	// "use strict";
 	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
 	// column = '4';
@@ -193,12 +195,12 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 	selectedDiv = document.getElementById(selectedDiv);
 	if ( direction === 'left' ) {
 
-		if (column === '1') { // alert('here1');
+		if (column === 1) { // alert('here1');
 			$(selectedDiv).css("top", "-=20");
-		} else if (column === '2') {
+		} else if (column === 2) {
 			$(selectedDiv).css("left", "-=20");
 			$(selectedDiv).css("top", "-=20");
-		} else if (column === '3') {
+		} else if (column === 3) {
 			$(selectedDiv).css("top", "-=20");
 			$(selectedDiv).css("left", "-=40");
 		} else {
@@ -219,12 +221,16 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 			previousColumnSelected = lastColumnSelected;
 			lastColumnSelected = column;
 		}
-		if (column === '1') {
+		if (previousRowSelected === lastRowSelected || previousRowSelected === 0) {
+			previousRowSelected = lastRowSelected;
+			lastRowSelected = column;
+		}
+		if (column === 1) {
 			$(selectedDiv).css("top", "+=20");
-		} else if (column === '2') {
+		} else if (column === 2) {
 			$(selectedDiv).css("left", "+=20");
 			$(selectedDiv).css("top", "+=20");
-		} else if (column === '3') {
+		} else if (column === 3) {
 			$(selectedDiv).css("top", "+=20");
 			$(selectedDiv).css("left", "+=40");
 		} else {
@@ -247,7 +253,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, column,
 	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
 	
-	if (column === '1' && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
+	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		navBarLeftFunction('expand');
 		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
@@ -565,7 +571,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 		titleString += subGenre;
 	}
 	if (screenFormat === 'HD') {
-		if (titleString.length > 254) {titleString = titleString.substr(0, 254) + '...'; }
+		if (titleString.length > 280) {titleString = titleString.substr(0, 280) + '...'; }
 	} else {
 		if (titleString.length > 35) {titleString = titleString.substr(0, 35) + '...'; }
 	}
@@ -588,7 +594,7 @@ function convertRuntimePE(time, showSeconds) {
 
 		if (hours !== '') { returnString = hours + ' hour '; }
 		if (mins !== '') { returnString += mins + ' mins'; }
-		if (secs !== '' && showSeconds) { returnString += ' ' + secs + ' secs'; }
+		if (secs !== '' && showSeconds) { returnString += ' &nbsp;' + secs + ' secs'; }
 		return returnString;
 	} else {
 		return null;
