@@ -44,7 +44,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, subGenre, view, targ
 		titlePath2 += decodeURIComponent(view);
 	}
 	if (view !== genre) {
-		if (titlePath2 !== '') {titlePath2 += ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; >' }
+		if (titlePath2 !== '') {titlePath2 += ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px; > ' }
 		titlePath2 += decodeURIComponent(genre);
 	}
 	if (subGenre !== genre) {
