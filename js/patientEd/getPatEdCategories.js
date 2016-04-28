@@ -123,14 +123,14 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 				divContent += '<div class=\"lineColumn' + targetRegion + ' lineColumn' + targetRegion + columnNumber;
 				divContent += ' ' + divClassPostFix + lineNumber + ' lineColumnMainWideFolder' + '\"';
 
-				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'\',\'' + columnNumber + '\');\"';
-				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'\',\'' + columnNumber + '\');\"';
+				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">';
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
 				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
-				divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',\'' + columnNumber + '\');\"';
-				divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'\',\'' + columnNumber + '\');\"';
+				divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += '>';
 				
 				divContent += categoryName;

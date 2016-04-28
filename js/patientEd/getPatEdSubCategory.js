@@ -213,7 +213,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 			rating = $(videoNode).find('metadata[name="MOD\\:\\:Rating"]').attr('value');
 			// videoTitle = $(node2).find("offerings offering").has('value:contains(\"' + offeringid + '\")').find('label').text();
 			// alert(videoTitle);
-			divContent += getPatEdSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, count, section, screenFormat) + '\n\r';
+			divContent += getPatEdSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, count, section, view, screenFormat) + '\n\r';
 			if (columnNumber >= numberOfColumns) {
 				// if column is full, move to next column
 				columnNumber = 1;
@@ -261,15 +261,17 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 	// alert('Execution time: ' + time);
 }
 
-function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, screenFormat) {
+function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, view, screenFormat) {
 	"use strict";
 	var divContent = '', constructURL = '', className = 'lineItems', rowNumberPE = rowNumber;
 	
 	if (section === 'mci') { rowNumberPE = rowNumber - 1; }
 	if (rating === 'TV-MA') {
-		constructURL = 'patientEdPassword.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		constructURL = 'patientEdPassword.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + 
+		'&subGenreID=' + subGenreID + '&offeringId=' + offeringid + '&view=' + view;
 	} else {
-		constructURL = 'patientEdTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		constructURL = 'patientEdTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + 
+		'&subGenreID=' + subGenreID + '&offeringId=' + offeringid + '&view=' + view;
 	}
 	if (screenFormat === 'HD') {
 		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
@@ -277,12 +279,12 @@ function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, sub
 	} else {
 		divContent = '<div class=\"line lineWide linePE' + rowNumberPE + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	}
-	divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\')\"';
-	divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\">';
+	divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumber + ')\"';
+	divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumber + ');\">';
 				
 	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
-	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\'); offSetFunction(this) \"';
-	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumber + '); offSetFunction(this) \"';
+	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumber + ');\"';
 	divContent += '>' + languageIcon(title, 'short', screenFormat) + '</a>';
 	// if (screenFormat === 'HD') {
 		// divContent += ' <img src=\"../images/icons/videoIcon' + screenFormat + '.gif\" />';
@@ -300,18 +302,18 @@ function getPatEdSubCategory993Video(offeringid, title, rating, runtime, summary
 		if (summary.length > 60) {summary = summary.substr(0, 60) + '...'; }
 	} else {
 		divContent = '<div class=\"lineColumnMainWidePE lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\"';
-		divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\')\"';
-		divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\">';
+		divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumber + ')\"';
+		divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumber + ');\">';
 		className = 'lineItemsMainWide';
 		if (summary.length > 90) {summary = summary.substr(0, 90) + '...'; }
 	}
 
-	constructURL = 'patientEdTitle.html?offeringId=' + offeringid + '&genre=' + genre + '&subGenre=' + subGenre;
+	constructURL = 'patientEdTitle.html?offeringId=' + offeringid + '&genre=' + genre + '&subGenre=' + subGenre + '&view=' + view;
 	if (runtime) { onFocusContent = ' onfocus=\"(displayDescriptionLegend(\'' + summary + ' (' + runtime + ')\'))\"'; }
 	divContent += '<a tabIndex=\"' + count + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')' + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\"';
 	divContent += 'class=\"' + className + '\"';
-	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',\'' + rowNumber + '\'); offSetFunction(this) \"';
-	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',\'' + rowNumber + '\');\"';
+	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumber + '); offSetFunction(this) \"';
+	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumber + ');\"';
 
 	divContent += '>' + languageIcon(title, 'short', screenFormat);
 	
