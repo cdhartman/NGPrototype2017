@@ -43,34 +43,14 @@
 			}
 		};
 	</script>
-	<style>
-		#draggable-element {
-			width:111px;
-			height:188px;
-			color:white;
-			cursor:move;
-			z-index: 200;
-			left: 1790px;
-			/* background-image: url(../images/remote/remote.gif);
-			background-repeat: no-repeat */
-			position:relative; /* important (all position that's not `static`) */
-		}
-	</style>
-	
 </head>
 
 <body leftmargin="0" topmargin="0">
-	<!-- <div id="draggable-element">
-		<a href="javascript:void(0);" style="z-index: 120;"><img src="../images/remote/remote.gif" id="remoteImage" onclick="alert(document.activeElement)" /></a>
-	
-	</div>
-	-->
 	<div class="htmlToolbar" id="htmlToolbar">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
 	
 	<div class="container">
-		<!-- <img src="../images/screens/sectionPE-HD.gif" id="splashScreen" alt="" /> -->
 		<div id="navBarLeft" class="navBarLeft"></div>
 		<div class="title" id="title">Patient Education<br><span id="catalogName">Adult Education<span></div>
 		<div id="categories" class="categories">
@@ -79,7 +59,6 @@
 		</div>
 		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" 
 			onclick="alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', lastColumnSelected=' + lastColumnSelected + ', previousColumnSelected=' + previousColumnSelected  );" /></div>
-		<!--  onclick="searchPE();" -->
 		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" /></div>
 		<div id="navBar"></div>
 	</div>
@@ -87,68 +66,36 @@
 </html>
 
 <script type="text/javascript">
-	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
-		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameterNoDefault('view'), site = getSite(), pePreferences = '',
+	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'MainWide', tabIndexDefault = 1,
+		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameter('view','Adult'), site = 'RO', pePreferences = '',
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = false;
 
-	// if STB is unknown, lookup information, store cookies 
-	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
-	pePreferences = getCookie('pePreferences');
-	
-	
-	
 	// load CSS and SplashScreen
+	$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
 	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
 
-	// alert(view);
-	if (typeof view === 'undefined') {
-		triggerLeftNavFlag = true;
-		var mode = getURLParameterNoDefault('mode');
-		if (typeof mode === 'undefined' || mode === 'default') {
-			view = 'Adult';
-		} else {
-			view = mode;
-		}
-	}
-	$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
-	classFormat = 'MainWide';
-
 	if (view === 'freqViewed') {
+		tabIndexDefault = 99;
 		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		tabIndexDefault = 67;
 	} else if (view === 'GBS') {
+		tabIndexDefault = 100;
 		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		tabIndexDefault = 67;
 	} else if (view === 'Pediatric') {
+		tabIndexDefault = 98;
 		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Mayo Information') {
 		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else {
+		tabIndexDefault = 97;
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	}
 
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
-		if (view === 'Adult') {
-			$('[tabindex=97]').focus();
-		} else if (view === 'Pediatric') {
-			$('[tabindex=98]').focus();
-		} else if (view === 'freqViewed') {
-			$('[tabindex=99]').focus();
-		} else {
-			$('[tabindex=97]').focus();
-		}
-		if (triggerLeftNavFlag) { 
-			//navBarLeftFunction(navBarLeftParam);
-		} else { 
-		// adjustScreenHeightWidth();
-		}
+		$('[tabindex=' + tabIndexDefault + ']').focus();
 	}, 2000);
-	if (view === 'freqViewed') {
-		updateVideoDetailTitleBar('Health Care Provider', '', 'title', view, screenFormat);
-	} else {
-		updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
-	}
+	if (view === 'freqViewed') { view = 'Healthcare Provider'}
+	updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
 	displayHtmlToolbar('htmlToolbar');
 </script>
