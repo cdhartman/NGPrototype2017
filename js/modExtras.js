@@ -27,12 +27,12 @@ function leftNavBarOnBlurHandler(id) {
 	}
 }
 
-function leftNavBarCatSubCatHandler(tabIndexPosition) {
+function leftNavBarCatSubCatHandler(id, tabIndexPosition) {
 	if (navigator.userAgent.indexOf('Android') > 0) {
 		$('[tabindex=' + tabIndexPosition + ']').focus();
 		adjustLeftNavBarOpacity('navBarLeft');
 	} else {
-		if ( $('#navBarLeft').width() !== 45 ) {
+		if ( $('#'+ id).width() !== 45 ) {
 			navBarLeftFunction();
 			adjustLeftNavBarOpacity('navBarLeft');
 		}
