@@ -6,6 +6,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href="../favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarCollapse.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css" />
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	<script type="text/javascript" src="../js/HEWXMLWrapper.js"></script>
 	<script type="text/javascript" src="../js/HEWCommands.js"></script>
@@ -55,7 +58,7 @@
 		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Titles, please wait...</div></div>
 		
 		<div id="navBar"></div>
-		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" onclick="searchPE();" /></div>
+		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" /></div>
 		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="100" /></div>
 	</div>
 </body>
@@ -69,9 +72,6 @@
 	genre = genre.replace(' and ',' & ');
 
 	getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
-
-	// load CSS and SplashScreen
-	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
 	
 	/* load primary content */
 	if (section !== 'mci') { 
@@ -87,11 +87,10 @@
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar set focus on first link */
-		setTimeout(function(){
-		
+		setTimeout(function(){		
 		adjustScreenHeightWidth();
-		$('[tabindex=1]').focus();
-		}, 1900);
+		leftNavBarCatSubCatHandler('navBarLeft');
+		}, 900);
 	});
 	
 </script>

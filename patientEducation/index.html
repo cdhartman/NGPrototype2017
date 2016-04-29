@@ -8,7 +8,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarExpand.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css" />
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
@@ -71,8 +73,7 @@
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = false;
 
 	// load CSS and SplashScreen
-	$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
-	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
+	$('#navBarLeft').load('../includes/peNavBarHD.html');
 
 	if (view === 'freqViewed') {
 		tabIndexDefault = 99;
