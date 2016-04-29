@@ -27,6 +27,27 @@ function leftNavBarOnBlurHandler(id) {
 	}
 }
 
+function leftNavBarCatSubCatHandler(tabIndexPosition) {
+	if (navigator.userAgent.indexOf('Android') > 0) {
+		$('[tabindex=' + tabIndexPosition + ']').focus();
+		adjustLeftNavBarOpacity('navBarLeft');
+	} else {
+		if ( $('#navBarLeft').width() !== 45 ) {
+			navBarLeftFunction();
+			adjustLeftNavBarOpacity('navBarLeft');
+		}
+	}
+}
+
+function adjustLeftNavBarOpacity(id) {
+	if ( $('#'+ id).width() !== 45 ) {
+		if ($('#'+ id).css("opacity") !== '1') {
+			$('#'+ id).fadeTo( "fast" , 1.0);
+		}
+	} else {
+		$('#'+ id).fadeTo( "fast" , 0.7);
+	}
+}
 function launcherHandler(param1) {
 	"use strict";
 	var offset = 3 - launcherState;
@@ -249,6 +270,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	}
 	if ( $('#navBarLeft').width() !== 45 ) {
 		navBarLeftFunction();
+		$('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
 	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
@@ -537,19 +559,19 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 	// if (genre !== 'Frequently Viewed') {
 	// alert(genre + ' | ' + subGenre);
 	if (view === 'mci') {
-		titleString = 'Mayo Information<br><span style=\"font-size: 48px;\">';
+		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
 		titleString += genre;
 	} else if (genre === 'Mayo Information') {
-		titleString = 'Mayo Information<br><span style=\"font-size: 48px;\">';
+		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
 		titleString += view;
 	} else if (genre !== '' && genre === 'Mayo Information') {
-		titleString = 'Mayo Information<br><span style=\"font-size: 48px;\">';
+		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
 		if (view !== '' && view !== genre && genre !== 'Mayo Information') {
 			titleString += view + ' <span style=\"color: \#333; font-weight: normal;\">&#8226;</span> ';
 			titleString += genre.replace(/\%26/g, " & ");
 		}
 	} else {
-		titleString = 'Patient Education<br><span style=\"font-size: 48px;\">';
+		titleString = 'Patient Education<br><span style=\"font-size: 38px;\">';
 		
 		if (view === 'freqViewed') {view = 'Healthcare Provider';}
 		if (genre === 'Frequently Viewed') {genre = 'Healthcare Provider';}
