@@ -106,7 +106,7 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			} else {
 				divContent += '  class=\"lineItemsMainWide\"';
 			}
-			divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + actualcolumnNumber + ');\"';
+			divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + actualcolumnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
 			divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + actualcolumnNumber + ');\"';
 			divContent += '>';
 			divContent += categoryName;

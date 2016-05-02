@@ -129,7 +129,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
 				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
-				divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + ');offSetFunction(\'divLink' + count + '\')\"';
+				divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
 				divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += '>';
 				
