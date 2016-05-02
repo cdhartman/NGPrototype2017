@@ -97,8 +97,8 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			}
 			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\javascript:' + constructURL + ' \"';
 			// alert($(this).attr('exitAndTune'));
-			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
-			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
+			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
 			divContent += ' \">';
 
 			divContent += '<a tabindex=\"' + columnNumber + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
@@ -107,13 +107,13 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			} else {
 				divContent += '  class=\"lineItemsMainWide\"';
 			}
-			divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
-			divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
+			divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
+			divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
 			divContent += '>';
 			divContent += categoryName;
 			divContent += '</a>';
 			//divContent += '<span class=videoCount>(' + videosInCategory + ')</span>';
-			divContent += '</div>';
+			divContent += '</div>\n';
 
 			if (columnNumber === categoriesPerScreen) {
 				return false;

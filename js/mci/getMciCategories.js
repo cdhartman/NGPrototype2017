@@ -118,17 +118,17 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 				divContent += '<div class=\"lineColumn' + targetRegion + 'MciFolder' + ' lineColumn' + targetRegion + columnNumber;
 				divContent += ' ' + divClassPostFix + lineNumber + ' lineColumnMainWideFolderMci' + '\"';
 
-				divContent += ' onmousemver=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'\',\'' + columnNumber + '\');\"';
-				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'onFocus\', \'divLink' + count + '\' ,\'right\',\'\',\'' + columnNumber + '\');\"';
+				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">\n';
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
 				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
-				divContent += ' onfocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',\'' + columnNumber + '\');\"';
-				divContent += ' onblur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',\'' + columnNumber + '\');\"';
+				divContent += ' onfocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
+				divContent += ' onblur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += '>';
 				divContent += categoryName;
-				divContent += '</a>';
+				divContent += '</a>\n';
 				// if (prefenenceFlag) { divContent += '<img src=\"../images/icons/star_blue.gif\" />'; }
 				// if (fileURL.indexOf("993") === -1) {divContent += '<span class=videoCount>(' + videosInCategory + ')</span>'; }
 				// divContent += '<img src=../images/icons/folder.png style=\"position:absolute;bottom:12px;right:12px;\">';
