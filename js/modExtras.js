@@ -9,12 +9,7 @@ function displayHtmlToolbar(id) {
 function offSetFunction(id) {
 	var offset = $('#'+ id).offset();
 	var posY = offset.top - $(window).scrollTop();
-	
-
 	var y = $(window).scrollTop();  //your current y position on the page
-	
-	
-	
 	var posX = offset.left - $(window).scrollLeft();
 	// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 	if( posY > 800) { // alert('lkj');
@@ -22,7 +17,7 @@ function offSetFunction(id) {
 		// $(id).scrollTop(300);
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
-		$(window).scrollTop(y+250);
+		$(window).scrollTop(y + 270);
 		// $(window).scrollTop(posY-200);
 	}
 	// alert(posX + ', y: ' + posY);
