@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css"/ >
 	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarExpand.css" />
 
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
@@ -40,13 +44,10 @@
 	// if STB is unknown, lookup information, store cookies 
 	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
 	pePreferences = getCookie('pePreferences');
-	
-	// load CSS and SplashScreen
-	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
 
 	// alert(view);
 	view = 'Adult';
-	$('#navBarLeft').load('../includes/mciNavBar' + screenFormat + '.html');
+	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	classFormat = 'MainWide';
 
 	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
