@@ -6,6 +6,9 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarCollapse.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css" />
 
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
@@ -18,7 +21,7 @@
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
 	<div class="container" id="container">
-		<div id="navBarLeft" class="navBarLeftMCI"></div>
+		<div id="navBarLeft" class="navBarLeftMci"></div>
 		<div class="title" id="title">Patient Education</div>
 		<div id="categoriesTop" class="categoriesTop"></div>
 		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div></div>
@@ -33,25 +36,21 @@
 		start = getURLParameter('start','1'), quickPlay = getURLParameter('quickPlay','0'), view = getURLParameter('view','All'),
 		screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), site = getSite();
 
-	// load CSS and SplashScreen
-	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
-
 	/* load primary content */
 	getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
-	$('#navBarLeft').load('../includes/mciNavBar' + screenFormat + '.html');
+	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
 
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar */
 		setTimeout(function(){ 
-			$('[tabindex=1]').focus();
-			adjustScreenHeightWidth();
+			leftNavBarCatSubCatHandler('navBarLeft', 1);
+			// adjustScreenHeightWidth();
 		}, 900);
 	});
 
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
-	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
-	// setChaserStyle ('pe', settopid, screenFormat);
+
 	displayHtmlToolbar('htmlToolbar');
 </script>

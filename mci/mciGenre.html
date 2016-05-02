@@ -6,6 +6,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href="../favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarCollapse.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css" />
+
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
@@ -19,7 +23,7 @@
 	<div class="container" id="container">
 		<!-- <img src="../images/screens/sectionPE-SD.gif" id="splashScreen" alt="" /> -->
 		<div class="title" id="title">Patient Education</div>
-		<div id="navBarLeft" class="navBarLeftMCI"></div>
+		<div id="navBarLeft" class="navBarLeftMci"></div>
 		<div id="categoriesTop" class="categoriesTop"></div>
 		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Titles, please wait...</div></div>
 		<div class="box1sideMci"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
@@ -36,22 +40,16 @@
 
 	getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
 
-	// load CSS and SplashScreen
-	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
-	
 	/* load primary content */
-	$('#categoriesTop').load('../includes/mciNavBar' + screenFormat + '.html');
-
+	$('#categoriesTop').load('../includes/mciNavBarHD.html');
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
-	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
-	// setChaserStyle ('pe', settopid, screenFormat);
-	
+
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
 	$( document ).ready(function() {
 		/* highlight Patient Education nav bar set focus on first link */
 		setTimeout(function(){
-		adjustScreenHeightWidth();
-		$('[tabindex=1]').focus();
+			adjustScreenHeightWidth();
+			leftNavBarCatSubCatHandler('navBarLeft', 1);
 		}, 1900);
 	});
 	displayHtmlToolbar('htmlToolbar');
