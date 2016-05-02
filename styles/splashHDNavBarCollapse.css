@@ -1,4 +1,5 @@
 div.navBarLeft {width: 45px;}
+div.navBarLeftMci {width: 45px; left: 0;}
 div.navbarTopCategory {display: none;}
 
 div.navBarLeftMciTrigger {width: 45px;}
