@@ -17,7 +17,7 @@ function offSetFunction(id) {
 	
 	var posX = offset.left - $(window).scrollLeft();
 	// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
-	if( posY > 900) { // alert('lkj');
+	if( posY > 800) { // alert('lkj');
 		// $.scrollTo('+=100px', 800, { axis:'y' });
 		// $(id).scrollTop(300);
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
