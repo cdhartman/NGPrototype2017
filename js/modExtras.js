@@ -76,7 +76,7 @@ function launcherHandler(param1) {
 			launcherState = 1;
 		break;
 		case '2':
-			$("#activeLauncherSelectionHREF").attr("href",'mci/index.html');
+			$("#activeLauncherSelectionHREF").attr("href",'relaxation/index.html');
 			launcherState = 2;
 		break;
 		case '3':
@@ -84,7 +84,7 @@ function launcherHandler(param1) {
 			launcherState = 3;
 		break;
 		case '4':
-			$("#activeLauncherSelectionHREF").attr("href",'relaxation/index.html');
+			$("#activeLauncherSelectionHREF").attr("href",'mci/index.html');
 			launcherState = 4;
 		break;
 		case '5':
