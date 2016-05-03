@@ -1,7 +1,4 @@
-html, body {
-	margin: 0; padding: 0;
-	
-}
+html, body { margin: 0; padding: 0; }
 
 
 /* 1E4E00  2e841A 3ea833 */
@@ -12,9 +9,10 @@ div.navBarLeftMCI {position: absolute; top: 0px; left: 0; height: 1200px; min-he
 div.navBarLeftMciTrigger {position: absolute; top: 0px; height: 1080px; min-height: 1080px; float: left; cursor: pointer; cursor: hand;  display: block;}
 div.navBarLeftMCI:hover {opacity:1.0; filter: alpha(opacity=100);}
 
+
 div.title {top: 32px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
 div.htmlToolbar{position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; }
-div.titleMciDetailScreen, div.titlePEDetailScreen {left: 75px; top: 36px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
+div.titleMciDetailScreen, div.titlePEDetailScreen {left: 83px; top: 36px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
 /*
 -webkit-text-stroke: 1px #ddd;
 	text-shadow:
@@ -32,7 +30,7 @@ opacity:.70; filter: alpha(opacity=70);
 div.lineColumnMainWideMciFolder {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
 opacity:.70; filter: alpha(opacity=70);
 }
-div.lineColumnMainWideMci {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 196px;
+div.lineColumnMainWideMci {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 197px;
 opacity:.70; filter: alpha(opacity=70);
 }
 div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 190px;
