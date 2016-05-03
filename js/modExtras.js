@@ -277,10 +277,11 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		navBarLeftFunction();
 		$('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
-	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
-	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
+	
 	
 	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
+		alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
+			', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
 		navBarLeftFunction('expand');
 		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
