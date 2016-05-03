@@ -172,12 +172,12 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('.box1sidePE').css("left", "+=505");
 		$('.box1sideMci').css("left", "+=505");
 		$('.searchPE').css('display','block');
-		$('.peNavBarHD').css('display','block');
-		$('.mciNavBarHD').css('display','block');
+		$('#peNavBarHD').css('display','block');
+		$('#mciNavBarHD').css('display','block');
 	}
 	
 	if (adjustLeftPane === 'collapse') {
-		// alert('collapse branch');
+		alert('collapse branch');
 		$('#navBarLeft').width("45px");
 		$('#peNavBarHD').css('display','none');
 		$('#mciNavBarHD').css('display','none');
