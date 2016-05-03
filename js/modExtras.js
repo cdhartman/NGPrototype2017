@@ -34,10 +34,12 @@ function leftNavBarCatSubCatHandler(id, tabIndexPosition) {
 	if (navigator.userAgent.indexOf('Android') > 0) {
 		$('[tabindex=' + tabIndexPosition + ']').focus();
 		adjustLeftNavBarOpacity('navBarLeft');
+		adjustLeftNavBarOpacity('navBarLeftMci');
 	} else {
 		if ( $('#'+ id).width() !== 45 ) {
 			navBarLeftFunction();
 			adjustLeftNavBarOpacity('navBarLeft');
+			adjustLeftNavBarOpacity('navBarLeftMci');
 		}
 	}
 }
@@ -145,7 +147,7 @@ function goFullscreen(id) {
 function navBarLeftFunction(adjustLeftPane) {
 	"use strict";
 
-	// alert('navBarLeft');
+	alert('navBarLeft');
 	// if (adjustLeftPane !== 'expand') {
 		if ( $('#navBarLeft').width() === 45 ) {
 			adjustLeftPane = 'expand';
@@ -156,7 +158,7 @@ function navBarLeftFunction(adjustLeftPane) {
 	//}
 	
 	if (adjustLeftPane === 'expand') {
-		// alert('expand branch');
+		alert('expand branch');
 		$('#navBarLeft').width("542px");
 		$('#navBarLeft').css('display','block');
 		$('.navbarTopCategory').css('display','block');
