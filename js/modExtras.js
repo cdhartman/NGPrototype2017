@@ -250,7 +250,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		}
 		if (previousRowSelected === lastRowSelected || previousRowSelected === 0) {
 			previousRowSelected = lastRowSelected;
-			lastRowSelected = column;
+			lastRowSelected = row;
 		}
 		if (column === 1) {
 			$(selectedDiv).css("top", "+=20");
