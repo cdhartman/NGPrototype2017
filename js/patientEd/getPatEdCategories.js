@@ -128,7 +128,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">';
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
-				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
+				divContent += '\" tabIndex=\"' + count + '\"';
 				divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',' + lineNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
 				divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += '>';
