@@ -280,7 +280,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
 	
-	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
+	if (column === 1 && lastKeyPressed === 37) {
 		navBarLeftFunction('expand');
 		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
@@ -294,7 +294,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			$('[tabindex=97]').focus();
 		}
 	}
-	// lastColumnSelected = column;
+
 }
 
 function searchPE(sParam) {
