@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, document */
 
-var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 0, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 0;
+var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1;
 
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
@@ -234,8 +234,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			$(selectedDiv).css("left", "-=20");
 			$(selectedDiv).css("top", "-=20");
 		}
-		
-			
+
 		$(selectedDiv).css("width", "+=40"); // alert($(selectedDiv).css("height"))
 		if (videoFlag === 'true') {
 			$(selectedDiv).css("height", "230px");
@@ -244,11 +243,11 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		}
 		$(selectedDiv).css('opacity', '1.0');
 	} else {
-		if (previousColumnSelected !== lastColumnSelected || previousColumnSelected === 0) {
+		if (column !== lastColumnSelected || previousColumnSelected === 0) {
 			previousColumnSelected = lastColumnSelected;
 			lastColumnSelected = column;
 		}
-		if (previousRowSelected !== lastRowSelected || previousRowSelected === 0) {
+		if (row !== lastRowSelected || previousRowSelected === 0) {
 			previousRowSelected = lastRowSelected;
 			lastRowSelected = row;
 		}
