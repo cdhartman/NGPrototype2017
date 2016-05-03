@@ -22,7 +22,7 @@
 				case 37:
 					// left
 					lastKeyPressed = 37;
-					if (lastColumnSelected === '1') { navBarLeftFunction('expand'); $('[tabindex=97]').focus();}
+					if (lastColumnSelected === 1) { navBarLeftFunction('expand'); $('[tabindex=97]').focus();}
 					break;
 				case 38:
 					// up
@@ -70,7 +70,7 @@
 	/* load primary content */
 	getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
 	if (section !== 'mci') { 
-		$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html', function() {
+		$('#navBarLeft').load('../includes/peNavBarHD.html', function() {
 		// navBarLeftFunction('collapse');
 	});
 	} else {
