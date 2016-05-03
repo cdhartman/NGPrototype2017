@@ -278,7 +278,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		$('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
 	
-	
+	// if (column === 1) {alert('column=1')}
 	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 		// 	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
