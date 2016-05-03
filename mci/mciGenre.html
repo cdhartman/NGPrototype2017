@@ -67,7 +67,8 @@
 		view = getURLParameter('view','mci'), titleFormat = getURLParameter('titleFormat','short'), site = getSite(), node2;
 	genre = genre.replace(' and ',' & ');
 
-	getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
+	alert(genre + ',' + genreID + ',' + subGenre + ',' + subGenreID + ',' + start + ',' + quickPlay + ',' + screenFormat + ',' + view + ',' + titleFormat + ',' + section + ',' + 'genres');
+	getMciSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
 
 	/* load primary content */
 	$('#categoriesTop').load('../includes/mciNavBarHD.html');

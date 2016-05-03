@@ -66,7 +66,7 @@
 		screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), site = getSite();
 
 	/* load primary content */
-	getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
+	getMciCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
 	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);

@@ -15,8 +15,10 @@
 	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarExpand.css" />
 
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
+	
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciCategories.js"></script>
+	<script type="text/javascript" src="../js/mci/getMciSubCategory.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript">
 		// var ;
@@ -71,7 +73,8 @@
 <script type="text/javascript">
 	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
 		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'), view = getURLParameter('view','mci'), site = getSite(), pePreferences = '',
-		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = true;
+		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), titleFormat = getURLParameter('titleFormat','short'),
+		section = getURLParameter('section',''), triggerLeftNavFlag = true;
 
 	// if STB is unknown, lookup information, store cookies 
 	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
@@ -82,7 +85,8 @@
 	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	classFormat = 'MainWide';
 
-	getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	// getMciCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	getMciSubCategory('Chaplain Services', '24', 'Chaplain Services', '435', start, 0, screenFormat, view, titleFormat, section, 'categories')
 
 	$('#navBarLeft').html("");
 	
