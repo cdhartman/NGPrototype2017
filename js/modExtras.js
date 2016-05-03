@@ -147,7 +147,7 @@ function goFullscreen(id) {
 function navBarLeftFunction(adjustLeftPane) {
 	"use strict";
 
-	alert('navBarLeft');
+	// alert('navBarLeft');
 	// if (adjustLeftPane !== 'expand') {
 		if ( $('#navBarLeft').width() === 45 ) {
 			adjustLeftPane = 'expand';
@@ -158,7 +158,7 @@ function navBarLeftFunction(adjustLeftPane) {
 	//}
 	
 	if (adjustLeftPane === 'expand') {
-		alert('expand branch');
+		// alert('expand branch');
 		$('#navBarLeft').width("542px");
 		$('#navBarLeft').css('display','block');
 		$('.navbarTopCategory').css('display','block');
@@ -177,7 +177,7 @@ function navBarLeftFunction(adjustLeftPane) {
 	}
 	
 	if (adjustLeftPane === 'collapse') {
-		alert('collapse branch');
+		// alert('collapse branch');
 		$('#navBarLeft').width("45px");
 		$('#peNavBarHD').css('display','none');
 		$('#mciNavBarHD').css('display','none');
