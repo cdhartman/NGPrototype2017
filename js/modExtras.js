@@ -289,6 +289,8 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			$('[tabindex=98]').focus();
 		} else if (view === 'freqViewed') {
 			$('[tabindex=99]').focus();
+		} else if (view === 'mci') {
+			$('[tabindex=94]').focus();
 		} else {
 			$('[tabindex=97]').focus();
 		}
