@@ -280,7 +280,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 	//	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
 	
-	if (column === 1 && lastKeyPressed === 37) {
+	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		navBarLeftFunction('expand');
 		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
