@@ -1,15 +1,15 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert, console, parseAndDisplayPatEdSubCategory, parseAndDisplayPatEd993SubCategory, getPatEdSubCategoryVideo, convertRuntime, languageIcon, handleAjaxError, document */
+/*global $, jQuery, alert, console, parseAndDisplayMciSubCategory, parseAndDisplayPatEd993SubCategory, getMciSubCategoryVideo, convertRuntime, languageIcon, handleAjaxError, document */
 
-function getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
+function getMciSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
 	var xmlURL = '../xml/Catalog.xml', dataType = 'xml', node;
 
 	// alert(view + '|' + quickPlayFlag);
 	if (view === 'GBS') {
-		getPatientEdVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
+		getMciVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
 	} else if (quickPlayFlag === '1') {
-		getPatientEdVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
+		getMciVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
 	} else {
 		/* 
 		$.ajax({
@@ -32,7 +32,7 @@ function getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, qu
 			success: function (xml) {
 				// get the requested catalogue node and call function for processing
 				node = $(xml).contents().find('category[id=\"' + subGenreID + '\"]').children();
-				parseAndDisplayPatEdSubCategory(xml, node, genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
+				parseAndDisplayMciSubCategory(xml, node, genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv);
 			},
 			error: function (jqXHR, statusText, errorThrown) {
 				handleAjaxError(jqXHR, statusText, errorThrown, 'getPatientEdSubCategory');
@@ -41,7 +41,7 @@ function getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, qu
 	}
 }
 
-function getPatientEdVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
+function getMciVideoList993(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
 	var xmlURL = '../../modAssets/xml/993.xml', dataType = 'xml', node;
 
@@ -126,7 +126,7 @@ function parseAndDisplayPatEd993SubCategory(node, genre, genreID, subGenre, subG
 						columnNumber++;
 					}
 					
-					divContent += getPatEdSubCategory993Video($(this).text(), title, $(this).attr('rating'), runtime, summary, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, count, quickPlayFlag, view, titleFormat, screenFormat) + '\r';
+					divContent += getMciSubCategory993Video($(this).text(), title, $(this).attr('rating'), runtime, summary, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, count, quickPlayFlag, view, titleFormat, screenFormat) + '\r';
 				}
 				if (count >= videosPerScreen) {
 					return false;
@@ -176,7 +176,7 @@ function parseAndDisplayPatEd993SubCategory(node, genre, genreID, subGenre, subG
 }
 
 
-function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
+function parseAndDisplayMciSubCategory(result, node, genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
 
 	var divContent = '', videosPerScreen = 9, offeringIds = '', videoNode = '', videoTitle = '', rating = '', offeringid = '',
@@ -211,7 +211,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 			rating = $(videoNode).find('metadata[name="MOD\\:\\:Rating"]').attr('value');
 			// videoTitle = $(node2).find("offerings offering").has('value:contains(\"' + offeringid + '\")').find('label').text();
 			// alert(videoTitle);
-			divContent += getPatEdSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, i, section, screenFormat) + '\n\r';
+			divContent += getMciSubCategoryVideo(offeringid, videoTitle, rating, genre, genreID, subGenre, subGenreID, rowNumber, columnNumber, i, section, screenFormat) + '\n\r';
 			if (columnNumber >= numberOfColumns) {
 				// if column is full, move to next column
 				columnNumber = 1;
@@ -259,7 +259,7 @@ function parseAndDisplayPatEdSubCategory(result, node, genre, genreID, subGenre,
 	// alert('Execution time: ' + time);
 }
 
-function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, screenFormat) {
+function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, screenFormat) {
 	"use strict";
 	var divContent = '', constructURL = '', className = 'lineItems', rowNumberPE = rowNumber;
 	// alert(screenFormat);
@@ -290,7 +290,7 @@ function getPatEdSubCategoryVideo(offeringid, title, rating, genre, genreID, sub
 	return divContent;
 }
 
-function getPatEdSubCategory993Video(offeringid, title, rating, runtime, summary, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, quickPlayFlag, view, titleFormat, screenFormat) {
+function getMciSubCategory993Video(offeringid, title, rating, runtime, summary, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, quickPlayFlag, view, titleFormat, screenFormat) {
 	"use strict";
 	var divContent = '', constructURL = '', className = 'lineItems', onFocusContent = '';
 

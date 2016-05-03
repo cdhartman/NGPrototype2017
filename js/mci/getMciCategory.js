@@ -1,7 +1,7 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert, console, document, handleAjaxError, parseAndDisplayPatEdCategory, formatCategoryName, getURLParameter */
+/*global $, jQuery, alert, console, document, handleAjaxError, parseAndDisplayMciCategory, formatCategoryName, getURLParameter */
 
-function getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat) {
+function getMciCategory(genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat) {
 	"use strict";
 	var xmlURL = '../xml/Catalog.xml', dataType = 'xml', node;
 	if (quickPlayFlag === '1') { xmlURL = '../xml/993.xml'; }
@@ -18,15 +18,15 @@ function getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quick
 			} else {
 				node = $(xml).contents().find('category[name=\"' + genre + '\"]').children();
 			}
-			parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat);
+			parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat);
 		},
 		error: function (jqXHR, statusText, errorThrown) {
-			handleAjaxError(jqXHR, statusText, errorThrown, 'getPatientEdCategory');
+			handleAjaxError(jqXHR, statusText, errorThrown, 'getMciCategory');
 		}
 	});
 }
 
-function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat) {
+function parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, start, quickPlayFlag, view, targetDiv, screenFormat) {
 	"use strict";
 	var divContent = '', columnNumber = 0, rowNumber = 1, screenCount = 1, categoriesPerScreen = 11, categoryName = '', constructURL = '', nextURL,
 		nodeLength = $(node).length - 1, i = 0, nextStartTemp = 0, currentScreen = 0, title = '', endCount = 0, navigationLegend = '', videosInCategory = 0, classFormat = '', actualcolumnNumber = 0,

@@ -1,7 +1,7 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert, console, document, parseAndDisplaypatEdCategories, getCookie, createNextScreenButton, formatCategoryName, handleAjaxError */
+/*global $, jQuery, alert, console, document, parseAndDisplayMciCategories, getCookie, createNextScreenButton, formatCategoryName, handleAjaxError */
 
-function getPatientEdCategories(fileURL, nodeId, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat) {
+function getMciCategories(fileURL, nodeId, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat) {
 	"use strict";
 	var dataType = 'xml', node;
 
@@ -13,16 +13,16 @@ function getPatientEdCategories(fileURL, nodeId, start, numberOfColumns, numberO
 		success: function (xml) {
 			// get the requested catalogue node and call function for processing
 			node = $(xml).contents().find('category[id=\"' + nodeId + '\"]').children();
-			parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat);
+			parseAndDisplayMciCategories(node, fileURL, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat);
 		},
 		error: function (jqXHR, statusText, errorThrown) {
-			handleAjaxError(jqXHR, statusText, errorThrown, 'getPatientEdCategories');
+			handleAjaxError(jqXHR, statusText, errorThrown, 'getMciCategories');
 		}
 	});
 
 }
 
-function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat) {
+function parseAndDisplayMciCategories(node, fileURL, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat) {
 	"use strict";
 	var divContent = '', screenCount = 0, categoriesPerScreen = numberOfColumns * numberOfRows, count = 0, lineNumber = 1, columnNumber = 0, divClassPostFix = '',
 		skippedCount = 0, composeURL = '', categoryName = '', urlCategoryName = '', nextStart = parseInt(start, 10) + categoriesPerScreen, nextURL = '', currentScreen,
