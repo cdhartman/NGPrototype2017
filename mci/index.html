@@ -18,6 +18,38 @@
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciCategories.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
+	<script type="text/javascript">
+		// var ;
+		document.onkeydown = function(e) { 
+		// alert(e.keyCode);
+		previousKeyPressed = lastKeyPressed;
+		// alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);
+		switch (e.keyCode) {
+				case 37:
+					// left
+					// alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);
+					lastKeyPressed = 37;
+					if (lastColumnSelected === '1') { navBarLeftFunction('expand'); $('[tabindex=94]').focus();}
+					break;
+				case 38:
+					// up
+					lastKeyPressed = 38;
+					break;
+				case 39:
+					// right
+					lastKeyPressed = 39;
+					break;
+				case 40:
+					// down
+					lastKeyPressed = 40;
+					break;
+				case 13:
+					// OK
+					lastKeyPressed = 13;
+					break;
+			}
+		};
+	</script>
 </head>
 
 <body leftmargin="0" topmargin="0">
