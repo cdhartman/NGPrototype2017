@@ -244,11 +244,11 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		}
 		$(selectedDiv).css('opacity', '1.0');
 	} else {
-		if (previousColumnSelected === lastColumnSelected || previousColumnSelected === 0) {
+		if (previousColumnSelected !== lastColumnSelected || previousColumnSelected === 0) {
 			previousColumnSelected = lastColumnSelected;
 			lastColumnSelected = column;
 		}
-		if (previousRowSelected === lastRowSelected || previousRowSelected === 0) {
+		if (previousRowSelected !== lastRowSelected || previousRowSelected === 0) {
 			previousRowSelected = lastRowSelected;
 			lastRowSelected = row;
 		}
