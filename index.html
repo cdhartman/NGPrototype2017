@@ -4,15 +4,17 @@
 <title>MCTN</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+
 <link href="favicon.ico" rel="shortcut icon" />
 <style>
-	a, a:visited {color : #336699;} 
-	a:hover, a:active {color : #336699 ;text-decoration : none;}
-	body {margin: 0; padding: 0; background-color: #111;}
+	body {margin: 0; padding: 0; font-family: 'Roboto';}
+	div.timeMain {position: absolute; top: 110px; left: 1400px; color: #eee; z-Index: 140; font-weight: bold; font-size: 40px; width: 400px; text-align: right;}
+	div.dateMain {position: absolute; top: 162px; left: 1400px; color: #eee; z-Index: 140; font-weight: 300; font-size: 22px; width: 400px; text-align: right;}
+	.amPM {font-size: 26px; font-weight: 400;}
 </style>
 <script type="text/javascript">
 	launcherState = 3;
-	
 	document.onkeydown = function(e) {
     switch (e.keyCode) {
 			case 37:
@@ -28,40 +30,33 @@
 	};
 </script>
 <script type="text/javascript" src="js/jQuery/jquery-2.min.js"></script>
+<script type="text/javascript" src="js/jQuery/dateFormat.min.js"></script>
 <script type="text/javascript" src="js/modExtras.js"></script>
 </head>
 
 <body>
-	<!-- <div style="position: absolute; left: 10px; top: 10px; width: 240px; height: 54px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; ">
-		&nbsp;<a href="index.html"><img src="images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
-		<img src="images/icons/launcher/fullscreen.png" onclick="goFullscreen('launcherBackground');" style="cursor: pointer; cursor: hand;" />
-		<img src="images/icons/launcher/leftArrow.png" onclick="launcherHandler('2');" style="cursor: pointer; cursor: hand;" />
-		<img src="images/icons/launcher/rightArrow.png" onclick="launcherHandler('4');" style="cursor: pointer; cursor: hand;" />
-	</div>
-	-->
 	<map name="launcherMap">
 		<area href="javascript:void(0);" shape="rect" coords="2,293,138,790" alt="1" title="1" onclick="launcherHandler('1');">
 
-        <area href="javascript:void(0);" shape="rect" coords="242,290,642,790" alt="2" title="2" onclick="launcherHandler('2');">
+        <area href="javascript:void(0);" shape="rect" coords="242,290,642,790" alt="2" title="2" onclick="launcherHandler('4');">
 
         <area href="patientEducation/index.html" shape="rect" coords="690,290,1231,791" alt="3" title="3" id="activeLauncherSelectionHREF">
 
-        <area href="javascript:void(0);" shape="rect" coords="1255,292,1700,790" alt="4" title="4" onclick="launcherHandler('4');">
+        <area href="javascript:void(0);" shape="rect" coords="1255,292,1700,790" alt="4" title="4" onclick="launcherHandler('2');">
 
         <area href="javascript:void(0);" shape="rect" coords="1789,293,1929,791" alt="5" title="5" onclick="launcherHandler('5');">
 
 		<area href="javascript:void(0);" shape="rect" coords="560,880,660,990" alt="8" title="8" id="" onclick="launcherHandler('2');">
 		<area href="javascript:void(0);" shape="rect" coords="1260,880,1360,990" alt="9" title="9" id="" onclick="launcherHandler('4');">
 	</map>
-	<img src="images/screens/launcher/3.png" usemap="#launcherMap" id="launcherBackground" width="1900"
-		style="position: absolute; left: 0; top: 0;"
-		/>
-		<!-- onclick="goFullscreen('launcherBackground');" -->
+	<img src="images/screens/launcher/3.png" usemap="#launcherMap" id="launcherBackground" width="1900" style="position: absolute; left: 0; top: 0;" />
+	<div class="timeMain" id="timeMain"></div><div class="dateMain" id="dateMain"></div>
 </body>
 </html>
 
 <script type="text/javascript">
-	/* setTimeout(function () {
-		goFullscreen('launcherBackground');
-	}, 3000); */
+	var date = new Date(), time = $.format.date(date, 'H:mm'), amPM = $.format.date(date, 'a');
+	date = $.format.date(date, 'ddd, MMMM d, yyyy');
+	$('#dateMain').html(date);
+	$('#timeMain').html(time + ' <span class=\"amPM\">' + amPM + '</span>');
 </script>
