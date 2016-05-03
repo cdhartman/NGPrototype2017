@@ -118,14 +118,14 @@ function parseAndDisplayMciCategories(node, fileURL, start, numberOfColumns, num
 				divContent += '<div class=\"lineColumn' + targetRegion + 'MciFolder' + ' lineColumn' + targetRegion + columnNumber;
 				divContent += ' ' + divClassPostFix + lineNumber + ' lineColumnMainWideFolderMci' + '\"';
 
-				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
-				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += ' onclick=\"' + composeURL + '\"' + 'id=\"divLink' + count + '\">\n';
 				divContent += '<a id=\"link' + count + '\" href=\"' + composeURL + '\" class=\"lineItems' + targetRegion;
 				// if (prefenenceFlag) { divContent += ' preferredCategory'; }
 				divContent += '\" tabIndex=\"' + count + '\"' + chaserContent;
-				divContent += ' onfocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'\',' + lineNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
-				divContent += ' onblur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'\',' + lineNumber + ',' + columnNumber + ');\"';
+				divContent += ' onfocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'false\',' + lineNumber + ',' + columnNumber + '); offSetFunction(\'divLink' + count + '\');\"';
+				divContent += ' onblur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += '>';
 				divContent += categoryName;
 				divContent += '</a>\n';
