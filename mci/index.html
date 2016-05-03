@@ -17,7 +17,6 @@
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
-	<script type="text/javascript" src="../js/mci/getMciCategories.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciSubCategory.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript">
@@ -29,7 +28,7 @@
 		switch (e.keyCode) {
 				case 37:
 					// left
-					// alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);
+					alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);
 					lastKeyPressed = 37;
 					if (lastColumnSelected === '1') { navBarLeftFunction('expand'); $('[tabindex=94]').focus();}
 					break;
@@ -85,7 +84,6 @@
 	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	classFormat = 'MainWide';
 
-	// getMciCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	getMciSubCategory('Chaplain Services', '24', 'Chaplain Services', '435', start, 0, screenFormat, view, titleFormat, section, 'categories')
 
 	$('#navBarLeft').html("");
