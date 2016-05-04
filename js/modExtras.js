@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, document */
 
-var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1;
+var weatherGlobalVariable = '', weatherGlobalVariable = '';
 
 
 function debugNavBar(id) {
@@ -152,16 +152,16 @@ function goFullscreen(id) {
 function navBarLeftFunction(adjustLeftPane) {
 	"use strict";
 
-	// alert('navBarLeft');
+	// 
 	// if (adjustLeftPane !== 'expand') {
-		if ( $('#navBarLeft').width() === 45 ) {
+		/*if ( $('#navBarLeft').width() === 45 ) {
 			adjustLeftPane = 'expand';
 		} else {
 			adjustLeftPane = 'collapse';
-		}
+		} */
 	// }
 	//}
-	
+	// alert('navBarLeft: ' + adjustLeftPane);
 	if (adjustLeftPane === 'expand') {
 		// alert('expand branch');
 		$('#navBarLeft').width("542px");
@@ -278,8 +278,8 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		}
 		$(selectedDiv).css('opacity', '0.7');
 	}
-	if ( $('#navBarLeft').width() !== 45 ) {
-		// navBarLeftFunction();
+	if ( $('#navBarLeft').width() !== 45) { // alert($('#navBarLeft').width());
+		navBarLeftFunction('collapse');
 		// $('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
 	
@@ -287,17 +287,19 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 		// 	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
-		// navBarLeftFunction('expand');
-		if (view === 'Adult') {
-			$('[tabindex=97]').focus();
-		} else if (view === 'Pediatric'){
-			$('[tabindex=98]').focus();
-		} else if (view === 'freqViewed') {
-			$('[tabindex=99]').focus();
-		} else if (view === 'mci') {
-			$('[tabindex=94]').focus();
-		} else {
-			$('[tabindex=97]').focus();
+		if ( $('#navBarLeft').width() !== 45) {
+			navBarLeftFunction('expand');
+			if (view === 'Adult') {
+				$('[tabindex=97]').focus();
+			} else if (view === 'Pediatric'){
+				$('[tabindex=98]').focus();
+			} else if (view === 'freqViewed') {
+				$('[tabindex=99]').focus();
+			} else if (view === 'mci') {
+				$('[tabindex=94]').focus();
+			} else {
+				$('[tabindex=97]').focus();
+			}
 		}
 	}
 
