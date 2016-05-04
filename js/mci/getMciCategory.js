@@ -95,11 +95,11 @@ function parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, 
 			} else {
 				divContent += ' lineLarge';
 			}
-			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\javascript:' + constructURL + ' \"';
+			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:' + constructURL + ';\"';
 			// alert($(this).attr('exitAndTune'));
 			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
 			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
-			divContent += ' \">';
+			divContent += '>';
 
 			divContent += '<a tabindex=\"' + columnNumber + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
 			if (screenFormat === 'SD') {
