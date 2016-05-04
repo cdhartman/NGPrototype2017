@@ -94,11 +94,11 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 			} else {
 				divContent += ' lineLarge';
 			}
-			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\javascript:' + constructURL + ' \"';
+			divContent += rowNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:' + constructURL + '\;\"';
 			// alert($(this).attr('exitAndTune'));
 			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + actualcolumnNumber + ');\"';
 			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + actualcolumnNumber + ');\"';
-			divContent += ' \">\n';
+			divContent += ' >\n';
 
 			divContent += '<a tabindex=\"' + count + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
 			if (screenFormat === 'SD') {
