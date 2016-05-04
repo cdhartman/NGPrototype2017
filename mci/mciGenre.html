@@ -72,7 +72,7 @@
 	getMciSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
 
 	/* load primary content */
-	$('#categoriesTop').load('../includes/mciNavBarHD.html');
+	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
 
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
