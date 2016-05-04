@@ -288,7 +288,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		// ', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
 		if ( $('#navBarLeft').width() === 45) {
 			navBarLeftFunction('expand');
-			$("#navBarLeft").trigger("click");
+			// $("#navBarLeft").trigger("click");
 			setTimeout(function () {
 				if (view === 'Adult') {
 					$('[tabindex=97]').focus();
