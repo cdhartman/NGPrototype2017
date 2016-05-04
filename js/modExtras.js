@@ -3,6 +3,11 @@
 
 var weatherGlobalVariable = '', weatherGlobalVariable = '', lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1;
 
+
+function debugNavBar(id) {
+	alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', lastColumnSelected=' + lastColumnSelected + ', previousColumnSelected=' + previousColumnSelected + ', lastRowSelected=' +lastRowSelected + ', previousRowSelected=' + previousRowSelected  );
+}
+
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
@@ -282,7 +287,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
 		// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
 		// 	', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected);
-		navBarLeftFunction('expand');
+		// navBarLeftFunction('expand');
 		if (view === 'Adult') {
 			$('[tabindex=97]').focus();
 		} else if (view === 'Pediatric'){
