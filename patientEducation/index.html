@@ -17,14 +17,15 @@
 	<script type="text/javascript" src="../js/patientEd/getPatEdCategories.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript">
-		// var ;
+		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1;
 		document.onkeydown = function(e) { // alert(e.keyCode);
 		previousKeyPressed = lastKeyPressed;
 		switch (e.keyCode) {
 				case 37:
 					// left
-					// alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);lastKeyPressed = 37;
-					if (lastColumnSelected === 1) { navBarLeftFunction('expand'); $('[tabindex=97]').focus();}
+					// alert('lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected);
+					lastKeyPressed = 37;
+					// if (lastColumnSelected === 1) { navBarLeftFunction('expand'); $('[tabindex=97]').focus();}
 					break;
 				case 38:
 					// up
