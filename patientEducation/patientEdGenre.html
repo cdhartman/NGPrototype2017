@@ -71,12 +71,9 @@
 
 	getPatientEdSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlay, screenFormat, view, titleFormat, section, 'genres');
 	
-	/* load primary content */
-	if (section !== 'mci') { 
-		$('#categoriesTop').load('../includes/peNavBar' + screenFormat + '.html');
-	} else {
-		$( "#categoriesTop" ).removeClass( 'categoriesTop' );
-	}
+	/* load primary content */ 
+	$('#navBarLeft').load('../includes/peNavBar' + screenFormat + '.html');
+
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
 	// roomTimeWeather('roomTimeWeather', 'pe', screenFormat);
 	// setChaserStyle ('pe', settopid, screenFormat);

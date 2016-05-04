@@ -69,13 +69,7 @@
 
 	/* load primary content */
 	getPatientEdCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
-	if (section !== 'mci') { 
-		$('#navBarLeft').load('../includes/peNavBarHD.html', function() {
-		// navBarLeftFunction('collapse');
-	});
-	} else {
-		$( "#navBarLeft" ).removeClass( 'categoriesTop' );
-	}
+	$('#navBarLeft').load('../includes/peNavBarHD.html');
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
 
 	$( document ).ready(function() {
