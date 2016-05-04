@@ -274,8 +274,8 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		$(selectedDiv).css('opacity', '0.7');
 	}
 	if ( $('#navBarLeft').width() !== 45 ) {
-		navBarLeftFunction();
-		$('#navBarLeft').fadeTo( "fast" , 0.7)
+		// navBarLeftFunction();
+		// $('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
 	
 	// if (column === 1) {alert('column=1')}
