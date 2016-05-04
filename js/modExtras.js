@@ -152,15 +152,14 @@ function goFullscreen(id) {
 function navBarLeftFunction(adjustLeftPane) {
 	"use strict";
 
-	// 
-	// if (adjustLeftPane !== 'expand') {
-		/*if ( $('#navBarLeft').width() === 45 ) {
+	if (adjustLeftPane == '') {
+		if ( $('#navBarLeft').width() === 45 ) {
 			adjustLeftPane = 'expand';
 		} else {
 			adjustLeftPane = 'collapse';
-		} */
-	// }
-	//}
+		}
+	 }
+	
 	// alert('navBarLeft: ' + adjustLeftPane);
 	if (adjustLeftPane === 'expand') {
 		// alert('expand branch');
@@ -289,17 +288,20 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		// ', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
 		if ( $('#navBarLeft').width() === 45) {
 			navBarLeftFunction('expand');
-			if (view === 'Adult') {
-				$('[tabindex=97]').focus();
-			} else if (view === 'Pediatric'){
-				$('[tabindex=98]').focus();
-			} else if (view === 'freqViewed') {
-				$('[tabindex=99]').focus();
-			} else if (view === 'mci') {
-				$('[tabindex=94]').focus();
-			} else {
-				$('[tabindex=97]').focus();
-			}
+			$("#navBarLeft").trigger("click");
+			setTimeout(function () {
+				if (view === 'Adult') {
+					$('[tabindex=97]').focus();
+				} else if (view === 'Pediatric'){
+					$('[tabindex=98]').focus();
+				} else if (view === 'freqViewed') {
+					$('[tabindex=99]').focus();
+				} else if (view === 'mci') {
+					$('[tabindex=94]').focus();
+				} else {
+					$('[tabindex=97]').focus();
+				}
+			}, 2000);
 		}
 	}
 
