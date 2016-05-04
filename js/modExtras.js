@@ -288,20 +288,17 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		// ', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
 		if ( $('#navBarLeft').width() === 45) {
 			navBarLeftFunction('expand');
-			// $("#navBarLeft").trigger("click");
-			setTimeout(function () {
-				if (view === 'Adult') {
-					$('[tabindex=97]').focus();
-				} else if (view === 'Pediatric'){
-					$('[tabindex=98]').focus();
-				} else if (view === 'freqViewed') {
-					$('[tabindex=99]').focus();
-				} else if (view === 'mci') {
-					$('[tabindex=94]').focus();
-				} else {
-					$('[tabindex=97]').focus();
-				}
-			}, 2000);
+			if (view === 'Adult') {
+				$('[tabindex=97]').focus();
+			} else if (view === 'Pediatric'){
+				$('[tabindex=98]').focus();
+			} else if (view === 'freqViewed') {
+				$('[tabindex=99]').focus();
+			} else if (view === 'mci') {
+				$('[tabindex=94]').focus();
+			} else {
+				$('[tabindex=97]').focus();
+			}
 		}
 	}
 
