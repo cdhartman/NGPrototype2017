@@ -99,7 +99,7 @@ function parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, 
 			// alert($(this).attr('exitAndTune'));
 			divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
 			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
-			divContent += '>';
+			divContent += '>\n';
 
 			divContent += '<a tabindex=\"' + columnNumber + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
 			if (screenFormat === 'SD') {
@@ -113,7 +113,7 @@ function parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, 
 			divContent += categoryName;
 			divContent += '</a>';
 			//divContent += '<span class=videoCount>(' + videosInCategory + ')</span>';
-			divContent += '</div>\n';
+			divContent += '\n</div>\n';
 
 			if (columnNumber === categoriesPerScreen) {
 				return false;
