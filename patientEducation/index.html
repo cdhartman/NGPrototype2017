@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="../js/patientEd/getPatEdCategories.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript">
-		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1;
+		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1, view = '';
 		document.onkeydown = function(e) {
 			previousKeyPressed = lastKeyPressed;
 			switch (e.keyCode) {
@@ -72,8 +72,10 @@
 
 <script type="text/javascript">
 	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'MainWide', tabIndexDefault = 1,
-		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'),  view = getURLParameter('view','Adult'), site = 'RO', pePreferences = '',
+		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'), site = 'RO', pePreferences = '',
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), triggerLeftNavFlag = false;
+
+	view = getURLParameter('view','Adult');
 
 	// load CSS and SplashScreen
 	$('#navBarLeft').load('../includes/peNavBarHD.html');
