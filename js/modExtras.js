@@ -17,7 +17,7 @@ function offSetFunction(id) {
 	var y = $(window).scrollTop();  //your current y position on the page
 	var posX = offset.left - $(window).scrollLeft();
 	// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
-	if( posY > 800) { // alert('lkj');
+	if( posY > 700) { // alert('lkj');
 		// $.scrollTo('+=100px', 800, { axis:'y' });
 		// $(id).scrollTop(300);
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
@@ -27,6 +27,20 @@ function offSetFunction(id) {
 	}
 	// alert(posX + ', y: ' + posY);
 }
+
+function centerItFixedWidth(target, outer){
+  var out = $('html, body');
+  var tar = $('#' + target);
+  var x = window.innerHeight
+  var y = tar.outerHeight(true);
+  var z = tar.index();
+  out.scroll(Math.max(0, (y * z) - (x - y)/2));
+  var temp = (x - y)/2; 
+  // alert(temp + ' | x=' + x + ' | y=' + y + ' | z=' + z );
+  $('html, body').animate({scrollTop: temp}, 800);
+}
+
+
 function leftNavBarOnBlurHandler(id) {
 	// alert(lastKeyPressed);
 	if (lastKeyPressed === 39) {
