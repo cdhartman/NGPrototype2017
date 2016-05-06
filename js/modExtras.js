@@ -31,7 +31,7 @@ function getMovieDBVideoInfoDataSuccess (id) {
 	} else {
 		trailerKey = '<img src=\"../images/button_transparency.gif\" style=\"position: absolute; left: 822px; top:410px; cursor: pointer; cursor: hand;\" width=\"230\" height=\"62\" tabindex=\"1\" id=\"playButton\" onclick=\"window.location.assign(\'http://rofiwa001a.mayo.edu/library/clips/' + id + '.mp4\')\"; />';
 	}
-	// alert(trailerKey);
+	alert(trailerKey);
 	$("#playButton").html(trailerKey);
 	document.getElementById('playButton').focus();
 }
