@@ -61,6 +61,7 @@
 	<gap:plugin name="org.apache.cordova.network-information"  />
 	<gap:plugin name="org.apache.cordova.splashscreen"  />
 	<gap:plugin name="org.apache.cordova.vibration"  />
+	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
 	
     <icon src="res/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
 	<icon src="res/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
