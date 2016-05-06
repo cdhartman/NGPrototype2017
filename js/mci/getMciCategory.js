@@ -101,7 +101,7 @@ function parseAndDisplayMciCategory(node, genreId, genre, subGenreId, subGenre, 
 			divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + rowNumber + ',' + columnNumber + ');\"';
 			divContent += '>\n';
 
-			divContent += '<a tabindex=\"' + columnNumber + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
+			divContent += '<a tabindex=\"' + count + '\" id=\"link' + columnNumber + '\" href=\"javascript:' + constructURL  + ';\"';
 			if (screenFormat === 'SD') {
 				divContent += '  class=\"lineItems\"';
 			} else {
