@@ -72,7 +72,7 @@
 		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'), view = getURLParameter('view','mci'), site = getSite(), pePreferences = '',
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), titleFormat = getURLParameter('titleFormat','short'),
 		section = getURLParameter('section',''), triggerLeftNavFlag = true;
-	genre = decodeURI(getURLParameter('genre','Chaplain Services')),
+	genre = decodeURI(getURLParameter('genre','Chaplain Services'));
 
 	// if STB is unknown, lookup information, store cookies 
 	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }

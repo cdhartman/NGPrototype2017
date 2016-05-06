@@ -65,7 +65,7 @@
 		start = getURLParameter('start','1'), quickPlay = getURLParameter('quickPlay','0'),
 		screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), site = getSite();
 
-	genre = decodeURI(getURLParameter('genre','')),
+	genre = decodeURI(getURLParameter('genre',''));
 
 	/* load primary content */
 	getMciCategory(genreId, genre, subGenreId, subGenre, start, quickPlay, view, 'genres', screenFormat);
