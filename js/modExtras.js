@@ -284,11 +284,11 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	
 	// if (column === 1) {alert('column=1')}
 	if (column === 1 && lastKeyPressed === 37 && javaScriptAction === 'onBlur') {
-		alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
-		', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
+		// alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', ' + 'column=' + column + ', javaScriptAction=' + javaScriptAction +
+		// ', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
 		if ( $('#navBarLeft').width() === 45) {
 			navBarLeftFunction('expand');
-			$('#title').trigger('click');
+			// $('#title').trigger('click');
 			if (view === 'Adult') {
 				$('[tabindex=97]').focus();
 			} else if (view === 'Pediatric'){
