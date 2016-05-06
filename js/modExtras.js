@@ -330,7 +330,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		// ', previousColumnSelected=' + previousColumnSelected + ', lastColumnSelected=' + lastColumnSelected + ', leftNavBarWidth=' + $('#navBarLeft').width());
 		if ( $('#navBarLeft').width() === 45) {
 			navBarLeftFunction('expand');
-			$("html, body").animate({ scrollTop: 0 }, "slow");
+			$("html, body").animate({ scrollTop: 0 }, "fast");
 			// $('#title').trigger('click');
 			if (view === 'Adult') {
 				$('[tabindex=97]').focus();
