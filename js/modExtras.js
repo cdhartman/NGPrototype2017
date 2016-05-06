@@ -293,10 +293,22 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 				$('[tabindex=97]').focus();
 			} else if (view === 'Pediatric'){
 				$('[tabindex=98]').focus();
-			} else if (view === 'freqViewed') {
+			} else if (view === 'freqViewed' || view === 'Healthcare Provider') {
 				$('[tabindex=99]').focus();
 			} else if (view === 'mci') {
-				$('[tabindex=94]').focus();
+				if (genre === 'Chaplain Services') {
+					$('[tabindex=94]').focus();
+				} else if (genre === 'Entertainment') {
+					$('[tabindex=95]').focus();
+				} else if (genre === 'History') {
+					$('[tabindex=96]').focus();
+				} else if (genre === 'Humanities in Medicine') {
+					$('[tabindex=97]').focus();
+				} else if (genre === 'Information') {
+					$('[tabindex=98]').focus();
+				} else if (genre === 'Patient Stories') {
+					$('[tabindex=99]').focus();
+				}
 			} else {
 				$('[tabindex=97]').focus();
 			}
