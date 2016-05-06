@@ -8,6 +8,34 @@ function debugNavBar(id) {
 	alert('previousKeyPressed=' + previousKeyPressed + ', lastKeyPressed=' + lastKeyPressed + ', lastColumnSelected=' + lastColumnSelected + ', previousColumnSelected=' + previousColumnSelected + ', lastRowSelected=' +lastRowSelected + ', previousRowSelected=' + previousRowSelected  );
 }
 
+function isPhoneGap() {
+    if (document.location.protocol == 'file:') { return true } else { return false };
+}
+
+function isMobileDevice() {
+    if ((navigator.userAgent.search("Windows") > -1 || navigator.userAgent.search("Macintosh") > -1)) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+function getMovieDBVideoInfoDataSuccess (id) {
+
+	var trailerKey = '';
+
+	if (isPhoneGap()) {
+		trailerKey = '<img src=\"../images/button_transparency.gif\" style=\"position: absolute; left: 822px; top:410px; cursor: pointer; cursor: hand;\" width=\"230\" height=\"62\" 		onclick=\"playVideo(\'http://distribution.videos.mayo.edu:1935/vod/_definst_/library/clips/' + id + '.mp4/playlist.m3u8\')\" />';
+	} else if (navigator.userAgent.search("iPad") > -1 || isMobileDevice()) {
+		trailerKey = '<img src=\"../images/button_transparency.gif\" style=\"position: absolute; left: 822px; top:410px; cursor: pointer; cursor: hand;\" width=\"230\" height=\"62\" tabindex=\"1\" id=\"playButton\" 	onclick=\"window.location.assign(\'http://distribution.videos.mayo.edu:1935/vod/_definst_/library/clips/' + id + '.mp4/playlist.m3u8\')\" />';
+	} else {
+		trailerKey = '<img src=\"../images/button_transparency.gif\" style=\"position: absolute; left: 822px; top:410px; cursor: pointer; cursor: hand;\" width=\"230\" height=\"62\" tabindex=\"1\" id=\"playButton\" onclick=\"window.location.assign(\'http://rofiwa001a.mayo.edu/library/clips/' + id + '.mp4\')\"; />';
+	}
+	$("#playButton").html(trailerKey);
+	document.getElementById('playButton').focus();
+}
+
+
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
