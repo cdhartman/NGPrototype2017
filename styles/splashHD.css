@@ -294,9 +294,9 @@ div.fvBottom {width: 956px; top: 564px; left: 0; height: 44px;}
 div.navbarTopCategory1 {top: 232px; width: 450px;}
 div.navbarTopCategory2 {top: 332px; width: 490px;}
 div.navbarTopCategory3 {top: 432px; width: 490px;}
-div.navbarTopCategory4 {top: 532px; width: 450px;}
-div.navbarTopCategory5 {top: 632px; width: 450px;}
-div.navbarTopCategory6 {top: 732px; width: 450px;}
+div.navbarTopCategory4 {top: 532px; width: 490px;}
+div.navbarTopCategory5 {top: 682px; width: 450px;}
+div.navbarTopCategory6 {top: 782px; width: 450px;}
 a.white { color: white;}
 div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive
 {
