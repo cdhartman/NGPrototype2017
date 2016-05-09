@@ -121,7 +121,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 
 				// build category URL
 				divContent += '<div class=\"lineColumn' + targetRegion + ' lineColumn' + targetRegion + columnNumber;
-				divContent += ' ' + divClassPostFix + lineNumber + ' lineColumnMainWideFolder' + '\"';
+				divContent += ' ' + divClassPostFix + lineNumber + ' lineColumnMainWide' + '\"';
 
 				divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\' ,\'left\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';
 				divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\' ,\'right\',\'false\',' + lineNumber + ',' + columnNumber + ');\"';

@@ -68,11 +68,11 @@ function parseAndDisplayPatEdCategory(node, genreId, genre, subGenreId, subGenre
 
 			if (view === 'Adult' || view === 'Pediatric') {
 				constructURL = 'patientEdGenre.html?genre=' + encodeURI(genre) + '&subGenre=' + encodeURI(subGenre) + '&genreID=' + genreId + '&subGenreID=' + $(this).attr('id') + '&view=' + view;
-				lineColumnMainWideFolderClass = 'lineColumnMainWideFolder';
+				lineColumnMainWideFolderClass = 'lineColumnMainWide';
 			} else if ($(this).attr('exitAndTune') === 'false') {
 				// constructURL = 'patientEdSubCat.html?genre=' + encodeURI(subGenre) + '&genreID=' + $(this).attr('id') + '&view=' + view;
 				constructURL = 'patientEdSubCat.html?genre=' + encodeURI(genre) + '&subGenre=' + encodeURI(subGenre) + '&genreID=' + $(this).attr('id') + '&view=' + view;
-				lineColumnMainWideFolderClass = 'lineColumnMainWideFolder';
+				lineColumnMainWideFolderClass = 'lineColumnMainWide';
 			} else if ($(this).attr('hasCategories') === 'false') {
 				constructURL = 'patientEdGenre.html?genre=' + encodeURI(genre) + '&subGenre=' + encodeURI(subGenre) + '&genreID=' + genreId + '&subGenreID=' + $(this).attr('id') + '&view=' + view;
 				lineColumnMainWideFolderClass = 'lineColumnMainWide';
