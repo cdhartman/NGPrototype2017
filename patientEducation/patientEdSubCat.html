@@ -18,7 +18,7 @@
 		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1, view = '';
 		document.onkeydown = function(e) {
 			previousKeyPressed = lastKeyPressed;
-			alert(e.keyCode);
+			
 			switch (e.keyCode) {
 					case 37:
 						// left
@@ -44,11 +44,19 @@
 				}
 		};
 		
-		
+		function init() {
+			document.addEventListener("deviceready", onDR, false);
+		}
+		function onDR(){
+			document.addEventListener("backbutton", backKeyDown, true);     
+		}
+		function backKeyDown() {
+			alert('go back!');
+		}
 	</script>
 </head>
 
-<body leftmargin="0" topmargin="0">
+<body leftmargin="0" topmargin="0" onload="init();">
 	<div class="htmlToolbar" id="htmlToolbar">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
