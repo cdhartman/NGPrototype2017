@@ -16,6 +16,7 @@
 <script type="text/javascript">
 	var stateObj = { foo: "bar" };
 	history.pushState(stateObj, "home", "index.html");
+	
 	launcherState = 3;
 	document.onkeydown = function(e) {
     switch (e.keyCode) {
@@ -58,8 +59,9 @@
 </html>
 
 <script type="text/javascript">
-	var date = new Date(), time = $.format.date(date, 'H:mm'), amPM = $.format.date(date, 'a');
+	var date = new Date(), time = $.format.date(date, 'h:mm'), amPM = $.format.date(date, 'a');
 	date = $.format.date(date, 'ddd, MMMM d, yyyy');
 	$('#dateMain').html(date);
 	$('#timeMain').html(time + ' <span class=\"amPM\">' + amPM + '</span>');
+	// setCookie('launcherState','3','360')
 </script>
