@@ -13,12 +13,28 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 <script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 <script type="text/javascript" src="../js/modExtras.js"></script>
-
+<script>
+	screenNumber = 1;
+	numberOfScreens = 4;
+	document.onkeydown = function(e) { // alert(e.keyCode);
+    switch (e.keyCode) {
+			case 37:
+				sectionNextStaticScreen('sectionStaticScreenID', '-')
+				break;
+			case 39:
+				sectionNextStaticScreen('sectionStaticScreenID', '+')
+				break;
+			case 13:
+				sectionNextStaticScreen('sectionStaticScreenID', '+')
+				break;
+		}
+	};
+</script>
 </head>
 
 <body>
 	<div style="position: absolute; left: 10px; top: 10px; width: 34px; height: 30px; background-color: black; z-index: 100; opacity: .30; border-radius: 6px; padding: 4px;">
-		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" onclick="alert(window.location.origin);" /></a>
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" /></a>
 	</div>
 	<div style="position: absolute; left: 60px; top: 10px; width: 120px; height: 32px; background-color: black; z-index: 100; opacity: .40; border-radius: 6px; padding-top: 6px;">
 		<img src="../images/icons/left.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '-');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
