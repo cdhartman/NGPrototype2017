@@ -14,23 +14,11 @@
 <script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 <script type="text/javascript" src="../js/modExtras.js"></script>
 
-
-<script type="text/javascript">
-function init() {
-		document.addEventListener("deviceready", onDR, false);
-		}
-		function onDR(){
-			document.addEventListener("backbutton", backKeyDown, true);     
-		}
-		function backKeyDown() {
-			alert('go back!');
-		}
-</script>
 </head>
 
-<body onload="init();">
+<body>
 	<div style="position: absolute; left: 10px; top: 10px; width: 34px; height: 30px; background-color: black; z-index: 100; opacity: .30; border-radius: 6px; padding: 4px;">
-		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" /></a>
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" onclick="alert(window.location.origin);" /></a>
 	</div>
 	<div style="position: absolute; left: 60px; top: 10px; width: 120px; height: 32px; background-color: black; z-index: 100; opacity: .40; border-radius: 6px; padding-top: 6px;">
 		<img src="../images/icons/left.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '-');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
@@ -41,7 +29,3 @@ function init() {
 		style="position: absolute; left: 0; top: 0;" />
 </body>
 </html>
-
-<script type="text/javascript">
-	alert(document.referrer);
-</script>
