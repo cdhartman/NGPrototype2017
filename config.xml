@@ -62,14 +62,10 @@
 	<gap:plugin name="org.apache.cordova.splashscreen"  />
 	<gap:plugin name="org.apache.cordova.vibration"  />
 	<plugin name="com.dawsonloudon.videoplayer" spec="1.0.0" source="pgb" />
-	
+
 	<icon src="icon.png" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="ldpi" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="mdpi" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="hdpi" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="xxhdpi" />
-	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="fr-xxhdpi" />
+	<icon src="res/icon.png" platform="android" qualifier="xhdpi" />
+	<icon src="res/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
 	<allow-navigation href="http://*/*" />
 	<allow-navigation href="https://*/*" />
