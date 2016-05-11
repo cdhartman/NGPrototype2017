@@ -20,6 +20,13 @@ function isMobileDevice() {
 	}
 }
 
+function processLeftNavBarFocus(url, section) {
+    if ( view !== section) {
+		// alert('view: ' + view + ' | ' + 'section: ' + section);
+		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
+	}
+}
+
 function getMovieDBVideoInfoDataSuccess (id) {
 
 	var trailerKey = '';
@@ -146,12 +153,13 @@ function launcherHandler(param1) {
 	
 	
 	launcherState = param1;
+	
 	//$("#launcherBackground").hide();
 	$("#launcherBackground").attr("src",'images/screens/launcher/' + param1 + '.png').fadeIn(400);
 	$('#launcherBackground').width(1900);
 	// $('#launcherBackground').height(850);
 	// $("#launcherBackground").html('images/screens/launcher/' + '2' + '.png').fadeIn(400);
-
+	setCookie('launcherState',launcherState,'360')
 }
 
 function sectionNextStaticScreen(id, param1) {
@@ -627,7 +635,7 @@ function createNextScreenButton(nextURL, screenFormat) {
 function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenFormat) {
     "use strict";
 	var titleString = '';
-	// if (genre !== 'Frequently Viewed') {
+	if (view === 'freqViewed') { view = 'Healthcare Provider'}
 	// alert(genre + ' | ' + subGenre);
 	if (view === 'mci') {
 		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
@@ -643,9 +651,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 		}
 	} else {
 		titleString = 'Patient Education<br><span style=\"font-size: 38px;\">';
-		
-		if (view === 'freqViewed') {view = 'Healthcare Provider';}
-		if (genre === 'Frequently Viewed') {genre = 'Healthcare Provider';}
+		if (genre === 'Frequently Viewed' || genre === 'freqViewed') {genre = 'Healthcare Provider';}
 		if (view !== '' && view !== genre && view !== 'freqViewed' && view !== 'Frequently Viewed' && genre !== 'Frequently Viewed') {
 			titleString += view + ' <img src=\"../images/icons/breadcrumb-triangle.png\" style=padding:6px 0; > ';
 		}
