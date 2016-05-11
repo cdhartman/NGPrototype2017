@@ -21,10 +21,12 @@ function isMobileDevice() {
 }
 
 function processLeftNavBarFocus(url, section) {
-    if ( view !== section) {
+    /*
+	if ( view !== section) {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
+	*/
 }
 
 function getMovieDBVideoInfoDataSuccess (id) {
