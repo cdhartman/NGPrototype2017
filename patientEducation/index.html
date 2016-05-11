@@ -99,9 +99,9 @@
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
-		$('[tabindex=' + tabIndexDefault + ']').focus();
+		// $('[tabindex=' + tabIndexDefault + ']').focus();
 	}, 2000);
-	if (view === 'freqViewed') { view = 'Healthcare Provider'}
+
 	updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
 	displayHtmlToolbar('htmlToolbar');
 </script>
