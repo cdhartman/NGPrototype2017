@@ -9,19 +9,9 @@
 	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript" src="../js/patientEd/getPatEdVideo.js"></script>
-	<script type="text/javascript" charset="utf-8" src="../js/cordova.js"></script>
-	<script type="text/javascript" charset="utf-8" src="../js/android/video.js"></script>
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<link rel="stylesheet" href="../styles/splashHD.css">
 	<link rel="stylesheet" href="../styles/splashPE.css">
-	<script type="text/javascript">
-		function init(){  
-			document.addEventListener("deviceready", console.log('ready'), true);
-		}
-		function playVideo(vidUrl) {
-            window.plugins.videoPlayer.play(vidUrl);
-        }
-	</script>
 </head>
 <!-- history.go(-1); ../images/screens/pe-movie player.png-->
 <body leftmargin="0" topmargin="0" onload="init();">
@@ -30,7 +20,7 @@
 		<a href="javascript:void(0);"><img src="../images/icons/launcher/leftArrow.png" style="cursor: pointer; cursor: hand;" width="36" onclick="history.go(-1);" /></a>
 		<span id="playButton">
 			<img src="../images/button_transparency.gif" style="position: absolute; left: 822px; top:410px; cursor: pointer; cursor: hand;" width="230" height="62" 
-			onclick="playVideo('http://distribution.videos.mayo.edu:1935/vod/_definst_/library/clips/49040.mp4/playlist.m3u8')" />
+			onclick="VideoPlayer.play('http://distribution.videos.mayo.edu:1935/vod/_definst_/library/clips/49040.mp4/playlist.m3u8')" />
 		</span>
 	</div>
 	<div class="titlePEDetailScreen" id="title">Patient Education</div>
