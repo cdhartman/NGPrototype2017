@@ -15,14 +15,17 @@
 	<link rel="stylesheet" href="../styles/splashHD.css">
 	<link rel="stylesheet" href="../styles/splashPE.css">
 	<script type="text/javascript">
-			function playVideo(vidUrl)
-			{
-				window.plugins.videoPlayer.play(vidUrl);
-			}
+		function init(){  
+			document.addEventListener("deviceready", console.log('ready'), true);
+		}
+		function playVideo(vidUrl)
+		{
+			window.plugins.videoPlayer.play(vidUrl);
+		}
 	</script>
 </head>
 <!-- history.go(-1); ../images/screens/pe-movie player.png-->
-<body leftmargin="0" topmargin="0">
+<body leftmargin="0" topmargin="0" onload="init();">
 	<div class="htmlToolbar" id="htmlToolbar" style="width: 120px;">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 		<a href="javascript:void(0);"><img src="../images/icons/launcher/leftArrow.png" style="cursor: pointer; cursor: hand;" width="36" onclick="history.go(-1);" /></a>
