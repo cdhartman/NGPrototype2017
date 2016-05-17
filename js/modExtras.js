@@ -26,7 +26,7 @@ function processLeftNavBarFocus(url, section) {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
-	alert(section);
+	// alert(section);
 	if (section === 'Adult') {
 		$("#aNavBarAdult").addClass("lineItemsNBhover");
 		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
