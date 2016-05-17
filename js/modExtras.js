@@ -73,8 +73,8 @@ function processPatEdView(view) {
 
 function processLeftNavBarOnMouseOver(viewVariable, functionType) {
 	"use strict";
-	var okToProceed = true;
-	if (isPhoneGap() && functionType === 'onmouseover') {
+	var okToProceed = false;
+	if (isPhoneGap() && functionType === 'onfocus') {
 		okToProceed = true
 	}
 	if (!isPhoneGap() && functionType === 'onclick') {
