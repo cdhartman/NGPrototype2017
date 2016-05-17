@@ -22,6 +22,23 @@ function getPatientEdCategories(fileURL, nodeId, start, numberOfColumns, numberO
 
 }
 
+function processPatEdView(view) {
+	"use strict";
+
+	if (view === 'freqViewed') {
+		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	} else if (view === 'GBS') {
+		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	} else if (view === 'Pediatric') {
+		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	} else if (view === 'Mayo Information') {
+		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	} else {
+		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+	}
+
+}
+
 function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, numberOfRows, targetRegion, targetDiv, view, titleLength, site, screenFormat) {
 	"use strict";
 	var divContent = '', screenCount = 0, categoriesPerScreen = numberOfColumns * numberOfRows, count = 0, lineNumber = 1, columnNumber = 0, divClassPostFix = '',
@@ -62,7 +79,7 @@ function parseAndDisplaypatEdCategories(node, fileURL, start, numberOfColumns, n
 	} else {
 		divClassPostFix += ' lineLarge';
 	}
-
+// alert(view);
 	if (view === 'Adult' ) {
 		/*
 		if (start === '1' && (pePreferences.length > 0) ) {
