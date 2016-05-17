@@ -21,12 +21,12 @@ function isMobileDevice() {
 }
 
 function processLeftNavBarFocus(url, section) {
-	/*
-	if (url !== '') {
+	
+	if (url !== '' && isPhoneGap()) {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
-	*/
+	
 	if (section === 'Adult') {
 		$("#aNavBarAdult").addClass("lineItemsNBhover");
 		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
