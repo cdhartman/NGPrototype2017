@@ -21,14 +21,42 @@ function isMobileDevice() {
 }
 
 function processLeftNavBarFocus(url, section) {
-    /*
-	if ( view !== section) {
+	/*
+	if (url !== '') {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
 	*/
+	if (section === 'Adult') {
+		$("#aNavBarAdult").addClass("lineItemsNBhover");
+		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
+		$("#aNavBarFV").removeClass("lineItemsNBhover");
+		// $("#aNavBarAdult").trigger("mouseover");
+	} else if (section === 'Pediatric') {
+		$("#aNavBarAdult").removeClass("lineItemsNBhover");
+		$("#aNavBarPediatric").toggleClass("lineItemsNBhover");
+		$("#aNavBarFV").removeClass("lineItemsNBhover");
+		// $("#aNavBarPediatric").trigger("mouseover");
+	} else if (section === 'freqViewed') {
+		$("#aNavBarAdult").removeClass("lineItemsNBhover");
+		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
+		$("#aNavBarFV").toggleClass("lineItemsNBhover");
+		// $("#aNavBarFV").trigger("mouseover");
+	}
 }
 
+function leftNavBarOnBlurHandler(id) {
+	// alert(lastKeyPressed);
+	$('#' + id).removeClass("lineItemsNBhover");
+	if (lastKeyPressed === 39) {
+		navBarLeftFunction('collapse');
+		$('[tabindex=1]').focus();
+	}
+}
+
+function processLeftNavBarOnMouseOver(id) {
+	alert('processLeftNavBarOnMouseOver: ' + id);
+}
 function getMovieDBVideoInfoDataSuccess (id) {
 
 	var trailerKey = '';
@@ -79,13 +107,7 @@ function centerItFixedWidth(target, outer){
 }
 
 
-function leftNavBarOnBlurHandler(id) {
-	// alert(lastKeyPressed);
-	if (lastKeyPressed === 39) {
-		navBarLeftFunction('collapse');
-		$('[tabindex=1]').focus();
-	}
-}
+
 
 function leftNavBarCatSubCatHandler(id, tabIndexPosition) {
 	if (navigator.userAgent.indexOf('Android') > 0) {
