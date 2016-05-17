@@ -9,7 +9,8 @@ function debugNavBar(id) {
 }
 
 function isPhoneGap() {
-    if (document.location.protocol == 'file:') { return true } else { return false };
+	if (document.location.protocol == 'file:') { alert('PhoneGap'); } else { alert('not PhoneGap'); };
+    // if (document.location.protocol == 'file:') { return true } else { return false };
 }
 
 function isMobileDevice() {
@@ -22,7 +23,7 @@ function isMobileDevice() {
 
 function processLeftNavBarFocus(url, section) {
 	
-	if (url !== '' && isPhoneGap()) {
+	if (url !== '' && isPhoneGap() && false) {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
