@@ -9,8 +9,7 @@ function debugNavBar(id) {
 }
 
 function isPhoneGap() {
-	if (document.location.protocol == 'file:') { alert('PhoneGap'); } else { alert('not PhoneGap'); };
-    // if (document.location.protocol == 'file:') { return true } else { return false };
+    if (document.location.protocol == 'file:') { return true } else { return false };
 }
 
 function isMobileDevice() {
