@@ -1,7 +1,7 @@
 <div id="navBarLeftMciTrigger" class="navBarLeftMciTrigger" onclick="navBarLeftFunction('');"></div>
 <span id="peNavBarHD" class="peNavBarHD">
 	<div class="navbarTopCategory navbarTopCategory1" id="divNavBarAdult">
-		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Adult')" chaser_up="previousButtonHref" class="lineItemsNB" id="aNavBarAdult" tabIndex="97"
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Adult')" class="lineItemsNB lineItemsNBhover" id="aNavBarAdult" tabIndex="97"
 			 onblur="leftNavBarOnBlurHandler('aNavBarAdult')" onfocus="processLeftNavBarFocus('index.html?view=Adult', 'Adult'); adjustLeftNavBarOpacity('aNavBarAdult')">Adult Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory2" id="divNavBarPediatric">
@@ -16,22 +16,5 @@
 </span>
 <script type="text/javascript">
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById('navBarLeftMciTrigger').style.display = "none";}
-	/*
-	if (view === 'Adult') {
-		$("#aNavBarAdult").toggleClass("lineItemsNBhover");
-		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
-		$("#aNavBarFV").removeClass("lineItemsNBhover");
-		// $("#aNavBarAdult").trigger("mouseover");
-	} else if (view === 'Pediatric') {
-		$("#aNavBarAdult").removeClass("lineItemsNBhover");
-		$("#aNavBarPediatric").toggleClass("lineItemsNBhover");
-		$("#aNavBarFV").removeClass("lineItemsNBhover");
-		// $("#aNavBarPediatric").trigger("mouseover");
-	} else if (view === 'freqViewed') {
-		$("#aNavBarAdult").removeClass("lineItemsNBhover");
-		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
-		$("#aNavBarFV").toggleClass("lineItemsNBhover");
-		// $("#aNavBarFV").trigger("mouseover");
-	}
-	*/
+	processLeftNavBarFocus('', view);
 </script>
