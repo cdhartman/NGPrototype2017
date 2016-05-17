@@ -58,7 +58,6 @@
 		<div id="oneRowContentHandler" class="oneRowContentHandler" onclick="javascript:void(0);"></div>
 		<div class="title" id="title">Patient Education<br><span id="catalogName">Adult Education<span></div>
 		<div id="categories" class="categories">
-			<span id="favCategoriesSpan"></span>
 			<div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div>
 		</div>
 		<div class="box1sidePE"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" 
@@ -66,6 +65,7 @@
 		</div>
 		<div class="searchPE"><img src="../images/icons/search.png" id="mayoSplashImage" /></div>
 		<div id="navBar"></div>
+		<span id="favCategoriesSpan"></span>
 	</div>
 </body>
 </html>
@@ -80,26 +80,27 @@
 	// load CSS and SplashScreen
 	$('#navBarLeft').load('../includes/peNavBarHD.html');
 
+	processPatEdView(view);
 	if (view === 'freqViewed') {
 		tabIndexDefault = 99;
-		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		// getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'GBS') {
 		tabIndexDefault = 100;
-		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		// getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Pediatric') {
 		tabIndexDefault = 98;
-		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		// getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'Mayo Information') {
-		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		// getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else {
 		tabIndexDefault = 97;
-		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		// getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	}
 
 	$('#ajaxLoader').html("");
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
-		// $('[tabindex=' + tabIndexDefault + ']').focus();
+		$('[tabindex=' + tabIndexDefault + ']').focus();
 	}, 2000);
 
 	updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
