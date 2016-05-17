@@ -1,18 +1,15 @@
 <div id="navBarLeftMciTrigger" class="navBarLeftMciTrigger" onclick="navBarLeftFunction('');"></div>
 <span id="peNavBarHD" class="peNavBarHD">
 	<div class="navbarTopCategory navbarTopCategory1" id="divNavBarAdult">
-		<a href="javascript:void(0);" class="lineItemsNB lineItemsNBhover" id="aNavBarAdult" tabIndex="97"
-			onclick="$('#categories').html(''); $('#favCategoriesSpan').html(''); view = 'Adult';  getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);"
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Adult')" class="lineItemsNB lineItemsNBhover" id="aNavBarAdult" tabIndex="97"
 			 onblur="leftNavBarOnBlurHandler('aNavBarAdult')" onfocus="processLeftNavBarFocus('index.html?view=Adult', 'Adult'); adjustLeftNavBarOpacity('aNavBarAdult')">Adult Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory2" id="divNavBarPediatric">
-		<a href="javascript:void(0);" class="lineItemsNB" id="aNavBarPediatric" tabIndex="98"
-			onclick="view = 'Pediatric'; $('#categories').html(''); $('#favCategoriesSpan').html(''); getPatientEdCategories('../xml/Catalog.xml', '4711', '1', numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);"
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=Pediatric')" class="lineItemsNB" id="aNavBarPediatric" tabIndex="98"
 			onblur="leftNavBarOnBlurHandler('aNavBarPediatric')" onfocus="processLeftNavBarFocus('index.html?view=Pediatric', 'Pediatric'); adjustLeftNavBarOpacity('aNavBarPediatric')">Pediatric Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory3" id="divNavBarFV">
-		<a href="javascript:void(0);" class="lineItemsNB" id="aNavBarFV" tabIndex="99"
-			onclick="view = 'freqViewed'; $('#categories').html(''); $('#favCategoriesSpan').html(''); getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);"
+		<a href="javascript:ForwardWithIDAndQuery('index.html?view=freqViewed')" class="lineItemsNB" id="aNavBarFV" tabIndex="99"
 			onblur="leftNavBarOnBlurHandler('aNavBarFV')" onfocus="processLeftNavBarFocus('index.html?view=freqViewed', 'freqViewed'); adjustLeftNavBarOpacity('aNavBarFV')">Healthcare Provider</a>
 		<!-- <br /><span class="">Frequently Viewed (Ch. 993)</span> -->
 	</div>
