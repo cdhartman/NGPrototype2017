@@ -26,7 +26,7 @@ function processLeftNavBarFocus(url, section) {
 		// alert('view: ' + view + ' | ' + 'section: ' + section);
 		window.location = 'javascript:ForwardWithIDAndQuery(\'' + url + '\')';
 	}
-	
+	alert(section);
 	if (section === 'Adult') {
 		$("#aNavBarAdult").addClass("lineItemsNBhover");
 		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
@@ -34,13 +34,13 @@ function processLeftNavBarFocus(url, section) {
 		// $("#aNavBarAdult").trigger("mouseover");
 	} else if (section === 'Pediatric') {
 		$("#aNavBarAdult").removeClass("lineItemsNBhover");
-		$("#aNavBarPediatric").toggleClass("lineItemsNBhover");
+		$("#aNavBarPediatric").addClass("lineItemsNBhover");
 		$("#aNavBarFV").removeClass("lineItemsNBhover");
 		// $("#aNavBarPediatric").trigger("mouseover");
 	} else if (section === 'freqViewed') {
 		$("#aNavBarAdult").removeClass("lineItemsNBhover");
 		$("#aNavBarPediatric").removeClass("lineItemsNBhover");
-		$("#aNavBarFV").toggleClass("lineItemsNBhover");
+		$("#aNavBarFV").addClass("lineItemsNBhover");
 		// $("#aNavBarFV").trigger("mouseover");
 	}
 }
@@ -56,7 +56,7 @@ function leftNavBarOnBlurHandler(id) {
 
 function processPatEdView(view) {
 	"use strict";
-
+// alert(view);
 	if (view === 'freqViewed') {
 		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	} else if (view === 'GBS') {
@@ -68,11 +68,25 @@ function processPatEdView(view) {
 	} else {
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 	}
-
+	processLeftNavBarFocus('', view);
 }
 
-function processLeftNavBarOnMouseOver(id) {
-	alert('processLeftNavBarOnMouseOver: ' + id);
+function processLeftNavBarOnMouseOver(viewVariable, functionType) {
+	"use strict";
+	var okToProceed = true;
+	if (isPhoneGap() && functionType === 'onmouseover') {
+		okToProceed = true
+	}
+	if (!isPhoneGap() && functionType === 'onclick') {
+		okToProceed = true
+	}
+	// alert('processLeftNavBarOnMouseOver: ' + id);
+	if (okToProceed) {
+		$('#categories').html('');
+		$('#favCategoriesSpan').html('');
+		view = viewVariable;
+		processPatEdView(viewVariable);
+	}
 }
 function getMovieDBVideoInfoDataSuccess (id) {
 
