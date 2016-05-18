@@ -13,7 +13,7 @@
 
 	</author>
 
-	<preference name="phonegap-version" value="3.5.0" />          <!-- all: current version of PhoneGap -->
+	<preference name="phonegap-version" value="3.7.0" />          <!-- all: current version of PhoneGap -->
 	<preference name="orientation" value="default" />
 	<preference name="fullscreen" value="false" />
 	<preference name="target-device" value="universal" />
@@ -61,7 +61,7 @@
 	<gap:plugin name="org.apache.cordova.network-information"  />
 	<gap:plugin name="org.apache.cordova.splashscreen"  />
 	<gap:plugin name="org.apache.cordova.vibration"  />
-	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
+	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" source="pgb" />
 
 	<icon src="icon.png" />
 	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
