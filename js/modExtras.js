@@ -71,7 +71,7 @@ function processPatEdView(view) {
 	processLeftNavBarFocus('', view);
 }
 
-function processLeftNavBarOnMouseOver(viewVariable, functionType) {
+function processLeftNavBarOnEvent(viewVariable, functionType) {
 	"use strict";
 	var okToProceed = false;
 	if (isPhoneGap() && functionType === 'onfocus') {
@@ -80,7 +80,7 @@ function processLeftNavBarOnMouseOver(viewVariable, functionType) {
 	if (!isPhoneGap() && functionType === 'onclick') {
 		okToProceed = true
 	}
-	// alert('processLeftNavBarOnMouseOver: ' + id);
+	// alert('processLeftNavBarOnEvent: ' + id);
 	if (okToProceed) {
 		$('#categories').html('');
 		$('#favCategoriesSpan').html('');
@@ -333,25 +333,27 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	if ( direction === 'left' ) {
 
 		if (column === 1) { // alert('here1');
-			$(selectedDiv).css("top", "-=20");
+			$(selectedDiv).css("top", "-=30");
 		} else if (column === 2) {
-			$(selectedDiv).css("left", "-=20");
-			$(selectedDiv).css("top", "-=20");
+			$(selectedDiv).css("left", "-=30");
+			$(selectedDiv).css("top", "-=30");
 		} else if (column === 3) {
-			$(selectedDiv).css("top", "-=20");
-			$(selectedDiv).css("left", "-=40");
+			$(selectedDiv).css("top", "-=30");
+			$(selectedDiv).css("left", "-=60");
 		} else {
-			$(selectedDiv).css("left", "-=20");
-			$(selectedDiv).css("top", "-=20");
+			$(selectedDiv).css("left", "-=30");
+			$(selectedDiv).css("top", "-=30");
 		}
 
-		$(selectedDiv).css("width", "+=40"); // alert($(selectedDiv).css("height"))
+		$(selectedDiv).css("width", "+=60"); // alert($(selectedDiv).css("height"))
 		if (videoFlag === 'true') {
-			$(selectedDiv).css("height", "230px");
+			$(selectedDiv).css("height", "260px");
 		} else {
-			$(selectedDiv).css("height", "166px");
+			$(selectedDiv).css("height", "176px");
 		}
 		$(selectedDiv).css('opacity', '1.0');
+		$(selectedDiv).css( "zIndex", 100 );
+		
 	} else {
 		if (column !== lastColumnSelected || previousColumnSelected === 0) {
 			previousColumnSelected = lastColumnSelected;
@@ -362,22 +364,22 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			lastRowSelected = row;
 		}
 		if (column === 1) {
-			$(selectedDiv).css("top", "+=20");
+			$(selectedDiv).css("top", "+=30");
 		} else if (column === 2) {
-			$(selectedDiv).css("left", "+=20");
-			$(selectedDiv).css("top", "+=20");
+			$(selectedDiv).css("left", "+=30");
+			$(selectedDiv).css("top", "+=30");
 		} else if (column === 3) {
-			$(selectedDiv).css("top", "+=20");
-			$(selectedDiv).css("left", "+=40");
+			$(selectedDiv).css("top", "+=30");
+			$(selectedDiv).css("left", "+=60");
 		} else {
-			$(selectedDiv).css("left", "+=20");
-			$(selectedDiv).css("top", "+=20");
+			$(selectedDiv).css("left", "+=30");
+			$(selectedDiv).css("top", "+=30");
 		}
 		
-		
-		$(selectedDiv).css("width", "-=40");
+		$(selectedDiv).css( "zIndex", 1);
+		$(selectedDiv).css("width", "-=60");
 		if (videoFlag === 'true') {
-			$(selectedDiv).css("height", "200px");
+			$(selectedDiv).css("height", "190px");
 		} else { 
 			$(selectedDiv).css("height", "126px");
 		}
