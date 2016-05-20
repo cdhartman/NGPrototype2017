@@ -2,18 +2,21 @@
 <span id="peNavBarHD" class="peNavBarHD">
 	<div class="navbarTopCategory navbarTopCategory1" id="divNavBarAdult">
 		<a href="javascript:void(0);" class="lineItemsNB lineItemsNBhover" id="aNavBarAdult" tabIndex="97"
-			onfocus="processLeftNavBarOnMouseOver('Adult', 'onfocus');" onmouseover="processLeftNavBarOnMouseOver('Adult', 'onmouseover');"
-			 onblur="leftNavBarOnBlurHandler('aNavBarAdult')" onfocus="adjustLeftNavBarOpacity('aNavBarAdult')">Adult Education</a>
+			onfocus="processLeftNavBarOnEvent('Adult', 'onfocus'); adjustLeftNavBarOpacity('aNavBarAdult');"
+			onclick="processLeftNavBarOnEvent('Adult', 'onclick');"
+			onblur="leftNavBarOnBlurHandler('aNavBarAdult')">Adult Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory2" id="divNavBarPediatric">
 		<a href="javascript:void(0);" class="lineItemsNB" id="aNavBarPediatric" tabIndex="98"
-			onfocus="processLeftNavBarOnMouseOver('Pediatric', 'onfocus');" onmouseover="processLeftNavBarOnMouseOver('Pediatric', 'onmouseover');"
-			onblur="leftNavBarOnBlurHandler('aNavBarPediatric')" onfocus="adjustLeftNavBarOpacity('aNavBarPediatric')">Pediatric Education</a>
+			onfocus="processLeftNavBarOnEvent('Pediatric', 'onfocus'); adjustLeftNavBarOpacity('aNavBarPediatric');"
+			onclick="processLeftNavBarOnEvent('Pediatric', 'onclick');"
+			onblur="leftNavBarOnBlurHandler('aNavBarPediatric')">Pediatric Education</a>
 	</div>
 	<div class="navbarTopCategory navbarTopCategory3" id="divNavBarFV">
 		<a href="javascript:void(0);" class="lineItemsNB" id="aNavBarFV" tabIndex="99"
-			onfocus="processLeftNavBarOnMouseOver('freqViewed', 'onfocus');" onmouseover="processLeftNavBarOnMouseOver('freqViewed', 'onmouseover');"
-			onblur="leftNavBarOnBlurHandler('aNavBarFV')" onfocus="adjustLeftNavBarOpacity('aNavBarFV')">Healthcare Provider</a>
+			onfocus="processLeftNavBarOnEvent('freqViewed', 'onfocus');adjustLeftNavBarOpacity('aNavBarFV'); "
+			onclick="processLeftNavBarOnEvent('freqViewed', 'onclick');"
+			onblur="leftNavBarOnBlurHandler('aNavBarFV')">Healthcare Provider</a>
 		<!-- <br /><span class="">Frequently Viewed (Ch. 993)</span> -->
 	</div>
 </span>
