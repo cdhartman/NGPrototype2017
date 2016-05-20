@@ -33,7 +33,7 @@ opacity:.70; filter: alpha(opacity=70);
 div.lineColumnMainWideMci {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 197px;
 opacity:.70; filter: alpha(opacity=70);
 }
-div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 190px;
+div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 195px;
 opacity:.70; filter: alpha(opacity=70);
 }
 
@@ -49,11 +49,11 @@ div.lineColumnMainWideFolderMci {
 -moz-box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 }
-div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciFolder {width: 510px; overflow: hidden;}
+div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciFolder {width: 530px; overflow: hidden;}
 div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover { opacity:1.00; filter: alpha(opacity=100);}
 div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover, a.lineItemsMainWide { font-size: 52px; }
 
-div.lineColumnMainWidePE{width: 510px; overflow: hidden;}
+div.lineColumnMainWidePE{width: 530px; overflow: hidden;}
 div.lineColumnMainWidePE:hover { opacity:1.00; filter: alpha(opacity=100);}
 div.lineColumnMainWidePE:hover a.lineItemsMainWide { font-size: 58px; }
 div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 50px;}
@@ -382,40 +382,40 @@ div.lineColumnLarge {
 div.lineLarge {position: absolute; left: 15px; width: 900px;}
 div.lineLarge0 {top: 70px;}
 div.lineLarge1 {top: 245px;}
-div.lineLarge2 {top: 440px;}
-div.lineLarge3 {top: 635px;}
-div.lineLarge4 {top: 830px;}
-div.lineLarge5{top: 1025px;}
-div.lineLarge6 {top: 1220px;}
-div.lineLarge7 {top: 1415px;}
-div.lineLarge8 {top: 1610px;}
-div.lineLarge9 {top: 1805px;}
-div.lineLarge10 {top: 2000px;}
-div.lineLarge11 {top: 2195px;}
-div.lineLarge12 {top: 2390px;}
-div.lineLarge13 {top: 2585px;}
-div.lineLarge14 {top: 2780px;}
-div.lineLarge15 {top: 2975px;}
-div.lineLarge16 {top: 3170px;}
-div.lineLarge17 {top: 3365px;}
+div.lineLarge2 {top: 430px;}
+div.lineLarge3 {top: 615px;}
+div.lineLarge4 {top: 800px;}
+div.lineLarge5{top: 975px;}
+div.lineLarge6 {top: 1160px;}
+div.lineLarge7 {top: 1345px;}
+div.lineLarge8 {top: 1530px;}
+div.lineLarge9 {top: 1715px;}
+div.lineLarge10 {top: 1900px;}
+div.lineLarge11 {top: 2085px;}
+div.lineLarge12 {top: 2270px;}
+div.lineLarge13 {top: 2455px;}
+div.lineLarge14 {top: 2640px;}
+div.lineLarge15 {top: 2825px;}
+div.lineLarge16 {top: 3010px;}
+div.lineLarge17 {top: 3195px;}
 
 div.lineLargePE {position: absolute; left: 15px; width: 900px;}
 div.lineLargePE0 {top: 70px;}
 div.lineLargePE1 {top: 245px;}
-div.lineLargePE2 {top: 510px;}
-div.lineLargePE3 {top: 775px;}
-div.lineLargePE4 {top: 1040px;}
-div.lineLargePE5{top: 1305px;}
-div.lineLargePE6 {top: 1570px;}
-div.lineLargePE7 {top: 1835px;}
-div.lineLargePE8 {top: 2100px;}
-div.lineLargePE9 {top: 2365px;}
-div.lineLargePE10 {top: 2630px;}
-div.lineLargePE11 {top: 2895px;}
-div.lineLargePE12 {top: 3160px;}
-div.lineLargePE13 {top: 3425px;}
-div.lineLargePE14 {top: 3690x;}
-div.lineLargePE15 {top: 3955px;}
+div.lineLargePE2 {top: 500px;}
+div.lineLargePE3 {top: 755px;}
+div.lineLargePE4 {top: 1010px;}
+div.lineLargePE5{top: 1265px;}
+div.lineLargePE6 {top: 1520px;}
+div.lineLargePE7 {top: 1775px;}
+div.lineLargePE8 {top: 2030px;}
+div.lineLargePE9 {top: 2285px;}
+div.lineLargePE10 {top: 2550px;}
+div.lineLargePE11 {top: 2805px;}
+div.lineLargePE12 {top: 3060px;}
+div.lineLargePE13 {top: 3315px;}
+div.lineLargePE14 {top: 3570px;}
+div.lineLargePE15 {top: 3815px;}
 
 /* div.line1 {top: 60px;} */
 div.line1, div.linePatEd1, div.linePE1 {top: 95px;}
