@@ -27,11 +27,11 @@
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 		<a href="javascript:void(0);"><img src="../images/icons/launcher/leftArrow.png" style="cursor: pointer; cursor: hand;" width="36" onclick="history.go(-1);" /></a>
 	</div>
-	<span id="playButton">
-		<img src="../images/icons/pePlayButton.png" style="position: absolute; left: 836px; top:421px; cursor: pointer; cursor: hand;"
+	<span>
+		<img src="../images/icons/pePlayButton.png" style="position: absolute; left: 836px; top:421px; cursor: pointer; cursor: hand;" id="playButton"
 		onclick="playVideo('http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/351/155/1_9tqbyar8_1_r52bfyb4_1.mp4/playlist.m3u8')" />
 	</span>
-	<div class="titlePEDetailScreen" id="title" onclick="playVideo('http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/351/155/1_9tqbyar8_1_r52bfyb4_1.mp4/playlist.m3u8')">Patient Education</div>
+	<div class="titlePEDetailScreen" id="title">Patient Education</div>
 	<div id="section1" class="section1">Loading Patient Education Video Information, please wait...</div>
 	<div class="videoMetaData" id="videoMetaData"></div>
 	<img src="../images/screens/pe/peVideoInfo1.png" id="splashScreen" alt="" />
@@ -49,5 +49,6 @@
 	randomPictureNumber = Math.floor(Math.random() * 3) + 1;
 	$("#splashScreen").attr("src", '../images/screens/pe/peVideoInfo' + randomPictureNumber + '.png');
 	$(function () { $(document).keyup(function (e) {  if (e.keyCode === 37) { history.go(-1); } }); });	/* enable remote navigation keys */
+	$('#playButton').focus();
 	// getMovieDBVideoInfoDataSuccess ('49040');
 </script>
