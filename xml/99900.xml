@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generationTime="2016-05-23T02:10:21-05:00" version="57">
+	<service name="OpenStreamSvc" type="mod">
+		<description/>
+	</service>
+	<offering offeringId="1000" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Honoring Our Founders: Mayo Ancestors Statue in Arizona</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:07"/>
+			<metadata name="MOD::Summary_Short" value="Art, history and generosity come together in this story of how a dramatic statue on the Phoenix campus brings the Mayo brothers and their father home to Arizona. The Mayo Ancestors statue is an inspiring example of how art plays a key role in the healing mission of Mayo Clinic."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Honoring Our Founders: The Mayo Ancestors Statue in Arizona"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:07:31"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Honoring Our Founders: Mayo Ancestors Statue in Arizona" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Art, history and generosity come together in this story of how a dramatic statue on the Phoenix campus brings the Mayo brothers and their father home to Arizona. The Mayo Ancestors statue is an inspiring example of how art plays a key role in the healing mission of Mayo Clinic.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1001" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Peregrine Falcons of Mayo Clinic</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:07"/>
+			<metadata name="MOD::Summary_Short" value="Peregrine falcons are a popular sight in the sky above Rochester, Minnesota. Learn how Mayo Clinic is helping this once-endangered bird to flourish."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Heritage Film Series: Peregrine Falcons of Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:06:40"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Peregrine Falcons of Mayo Clinic" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Peregrine falcons are a popular sight in the sky above Rochester, Minnesota. Learn how Mayo Clinic is helping this once-endangered bird to flourish.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1002" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Dr. G and Dr. Will: Collaborating in Care</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:29"/>
+			<metadata name="MOD::Summary_Short" value="This film explores Mayo's collaboration with community-based medical providers."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Heritage Film Series: Peregrine Falcons of Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:28:55"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Dr. G and Dr. Will: Collaborating in Care" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>This film explores Mayo's collaboration with community-based medical providers.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1003" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>To Teach, To Learn, To Serve: the Mayo Brothers in the World</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:13"/>
+			<metadata name="MOD::Summary_Short" value="Dr. Will and Dr. Charlie were global ambassadors of medicine."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Heritage Film Series: Peregrine Falcons of Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:45:20"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Dr. Will and Dr. Charlie were global ambassadors of medicine." shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>This film explores Mayos collaboration with community-based medical providers.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1004" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>How Dr. Will articulated the concept of "the needs of the patient come first."</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:21"/>
+			<metadata name="MOD::Summary_Short" value="Dr. Will and Dr. Charlie were global ambassadors of medicine."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Heritage Film Series: In the Words of Dr. Will: The Primary Value of Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:21:01"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Heritage Film Series: In the Words of Dr. Will: The Primary Value of Mayo Clinic" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>How Dr. Will articulated the concept of "the needs of the patient come first."</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1005" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Long Anticipated, Long Remembered: The Creation of Cortisone</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:14"/>
+			<metadata name="MOD::Summary_Short" value="Dr. Will and Dr. Charlie were global ambassadors of medicine."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Long Anticipated, Long Remembered: The Creation of Cortisone"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:14:01"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Long Anticipated, Long Remembered: The Creation of Cortisone " shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Mayo's discovery won the Nobel Prize. </description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<category name="On Demand" id="0" hasCategories="true" hidden="false" exitAndTune="false">
+		<description/>
+		<category name="MOD" id="2" hasCategories="true" hidden="false" exitAndTune="false">
+			<description/>
+			<category name="Mayo Information" id="24" hasCategories="true" hidden="false" exitAndTune="false">
+				<description/>
+				<category name="Heritage Films" id="99900" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid>1000</offeringid>
+					<offeringid>1001</offeringid>
+					<offeringid>1002</offeringid>
+					<offeringid>1003</offeringid>
+					<offeringid>1004</offeringid>
+					<offeringid>1005</offeringid>
+				</category>
+			</category>
+		</category>
+		<category name="My Rentals" id="1" hasCategories="false" hidden="false" exitAndTune="false">
+			<description/>
+		</category>
+	</category>
+</catalog>
