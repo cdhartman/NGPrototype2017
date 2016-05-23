@@ -59,7 +59,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 	$('#' + targetDiv).html(divContent);
 	// $('#videoMetaData').html(divMetaDataContent);
 
-	if (subGenreId === '99900' && false) {
+	if (subGenreId === '99900') {
 		$('#splashScreen').attr('src', '../images/screens/mci/mciVideoDetail2.png');
 		mciVideoBackdropImage1 = '<img src="../images/icons/mayo/MC_stack_wht.png\" />';
 		$('#mayoTitleLogo').html(mciVideoBackdropImage1);
