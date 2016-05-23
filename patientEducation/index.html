@@ -80,7 +80,7 @@
 	// load CSS and SplashScreen
 	$('#navBarLeft').load('../includes/peNavBarMainHD.html');
 
-	processPatEdView(view);
+	// processPatEdView(view);
 	if (view === 'freqViewed') {
 		tabIndexDefault = 99;
 		// getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
@@ -101,7 +101,7 @@
 	document.getElementById("ajaxLoader").style.display = "none";
 	setTimeout(function () {
 		$('[tabindex=' + tabIndexDefault + ']').focus();
-	}, 2000);
+	}, 1000);
 
 	updateVideoDetailTitleBar(view, '', 'title', view, screenFormat);
 	displayHtmlToolbar('htmlToolbar');
