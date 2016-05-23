@@ -12,7 +12,7 @@ div.oneRowContentHandler {position: absolute; left: 50px; border: 1px solid blac
 
 div.title {top: 32px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
 div.htmlToolbar{position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; }
-div.titleMciDetailScreen, div.titlePEDetailScreen {left: 83px; top: 36px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; }
+div.titleMciDetailScreen, div.titlePEDetailScreen {left: 83px; top: 36px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; z-Index: 100;}
 /*
 -webkit-text-stroke: 1px #ddd;
 	text-shadow:
@@ -30,7 +30,10 @@ opacity:.70; filter: alpha(opacity=70);
 div.lineColumnMainWideMciFolder {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
 opacity:.70; filter: alpha(opacity=70);
 }
-div.lineColumnMainWideMci {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 197px;
+div.lineColumnMainWideMci{position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 197px;
+opacity:.70; filter: alpha(opacity=70);
+}
+div.lineColumnMainWideMciImage {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 527px;
 opacity:.70; filter: alpha(opacity=70);
 }
 div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 195px;
@@ -49,9 +52,9 @@ div.lineColumnMainWideFolderMci {
 -moz-box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 }
-div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciFolder {width: 530px; overflow: hidden;}
-div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover { opacity:1.00; filter: alpha(opacity=100);}
-div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover, a.lineItemsMainWide { font-size: 52px; }
+div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciImage, div.lineColumnMainWideMciFolder {width: 530px; overflow: hidden;}
+div.lineColumnMainWide:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover { opacity:1.00; filter: alpha(opacity=100);}
+div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMciFolder:hover, a.lineItemsMainWide { font-size: 52px; }
 
 div.lineColumnMainWidePE{width: 530px; overflow: hidden;}
 div.lineColumnMainWidePE:hover { opacity:1.00; filter: alpha(opacity=100);}
@@ -106,8 +109,10 @@ span.languageIcon {background-color: #668BC9; font-size: 16px; padding: 1px 2px;
 span.languageIconLarge { color: #eee; font-size: 22px; margin-left: 3px; padding: 2px 4px; }
 span.channelLabel { font-size: 14px;}
 span.videoCount {color:#555; font-size: 13px; padding-left: 6px; vertical-align: middle;}
-span.peDescription {font-size: 42px; font-weight: 300; }
-
+span.peDescription {font-size: 32px; font-weight: 300; }
+.mciVideoBackdropImage1 {opacity: .20; z-Index: 20;}
+#mciVideoBackdropImage1  {position: absolute; left: 0; top: 0;}
+#mciVideoBackdropImage2  {position: absolute; left: 155px; top: 346px;}
 /* search */
 .results {border: none; 
 	left: 10px; top: 160px; width: 940px; min-height: 100px; max-height: 439px; height: 430px;
@@ -170,6 +175,7 @@ div.roomTimeWeatherMain {
 }
 div.boxBlank {position: absolute; width: 290px; height: 230px; background-color: #111;}
 div.boxsideLogo {position: absolute; left: 870px; top: 70px; width: 50px;}
+div.mayoTitleLogo {position: absolute; left: 1780px; top: 50px; width: 50px; z-Index: 100;}
 div.boxsideLogoPE {position: absolute; left: 870px; top: 124px; width: 50px;}
 div.boxsideLogoPEAlwaysDisplay1 {position: absolute; left: 870px; top: 70px; width: 50px;}
 div.box1side {position: absolute; left: 2870px; top: 55px;}
@@ -204,6 +210,7 @@ div.div_backgrndimg
 
 
 div.section1 {position: absolute; left: 822px; top: 520px; padding: 16px; width: 1030px; height: 525px;}
+div.section1Mci {position: absolute; left: 774px; top: 520px; padding: 16px; width: 1030px; height: 525px;}
 
 /* password */
 div.password {position: absolute; top: 248px; left: 300px; padding: 16px; width: 280px; height: 225px; vertical-align: middle; text-align: middle;}
@@ -224,6 +231,7 @@ img.favLegend993 {opacity:.50; filter:alpha(opacity=50);}
 #runTime {position: absolute; top: 315px; left: 20px; font-weight: normal;}
 #creationDate{position: absolute; top: 335px; left: 850px; width: 75px; color: #999; font-weight: normal; font-size: 12pt; text-align: right;}
 .detailVideoTitle {font-size: 64px; font-family: 'Roboto Condensed'; font-weight: 400;}
+.detailVideoTitleMci {font-size: 64px; font-family: 'Roboto Condensed'; font-weight: 400;}
 div.plot {position: absolute; top: 8px; left: 280px; width: 655px; font-size: 18px; font-weight: bold; }
 div.moreDetailsButton { display: none; }
 
@@ -295,8 +303,9 @@ div.navbarTopCategory1 {top: 232px; width: 450px;}
 div.navbarTopCategory2 {top: 332px; width: 490px;}
 div.navbarTopCategory3 {top: 432px; width: 490px;}
 div.navbarTopCategory4 {top: 532px; width: 490px;}
-div.navbarTopCategory5 {top: 682px; width: 450px;}
+div.navbarTopCategory5 {top: 632px; width: 450px;}
 div.navbarTopCategory6 {top: 782px; width: 450px;}
+div.navbarTopCategory7 {top: 882px; width: 450px;}
 a.white { color: white;}
 div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive
 {
@@ -416,6 +425,24 @@ div.lineLargePE12 {top: 3060px;}
 div.lineLargePE13 {top: 3315px;}
 div.lineLargePE14 {top: 3570px;}
 div.lineLargePE15 {top: 3815px;}
+
+div.lineLargeMCI {position: absolute; left: 15px; width: 900px;}
+div.lineLargeMCI0 {top: 70px;}
+div.lineLargeMCI1 {top: 245px;}
+div.lineLargeMCI2 {top: 840px;}
+div.lineLargeMCI3 {top: 755px;}
+div.lineLargeMCI4 {top: 1010px;}
+div.lineLargeMCI5{top: 1265px;}
+div.lineLargeMCI6 {top: 1520px;}
+div.lineLargeMCI7 {top: 1775px;}
+div.lineLargeMCI8 {top: 2030px;}
+div.lineLargeMCI9 {top: 2285px;}
+div.lineLargeMCI10 {top: 2550px;}
+div.lineLargeMCI11 {top: 2805px;}
+div.lineLargeMCI12 {top: 3060px;}
+div.lineLargeMCI13 {top: 3315px;}
+div.lineLargeMCI14 {top: 3570px;}
+div.lineLargeMCI15 {top: 3815px;}
 
 /* div.line1 {top: 60px;} */
 div.line1, div.linePatEd1, div.linePE1 {top: 95px;}
