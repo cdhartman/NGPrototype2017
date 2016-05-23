@@ -344,11 +344,19 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			$(selectedDiv).css("left", "-=30");
 			$(selectedDiv).css("top", "-=30");
 		}
-
+		
+		if (subGenreID === '99900') {
+			$('#videoListImage' + row + column).width(635);
+		}
 		$(selectedDiv).css("width", "+=60"); // alert($(selectedDiv).css("height"))
+		
 		if (videoFlag === 'true') {
-			$(selectedDiv).css("height", "260px");
-		} else {
+			if (subGenreID === '99900') {
+				$(selectedDiv).css("height", "580px");
+			} else {
+				$(selectedDiv).css("height", "260px");
+			}
+		} else { 
 			$(selectedDiv).css("height", "176px");
 		}
 		$(selectedDiv).css('opacity', '1.0');
@@ -374,6 +382,9 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		} else {
 			$(selectedDiv).css("left", "+=30");
 			$(selectedDiv).css("top", "+=30");
+		}
+		if (subGenreID === '99900') {
+			$('.videoListImage').width(575);
 		}
 		
 		$(selectedDiv).css( "zIndex", 1);
