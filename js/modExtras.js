@@ -108,7 +108,7 @@ function getMovieDBVideoInfoDataSuccess (id) {
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
-function offSetFunction(id) {
+function offSetFunction(id, section) {
 	var offset = $('#'+ id).offset();
 	var posY = offset.top - $(window).scrollTop();
 	var y = $(window).scrollTop();  //your current y position on the page
@@ -119,7 +119,11 @@ function offSetFunction(id) {
 		// $(id).scrollTop(300);
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
-		$(window).scrollTop(y + 270);
+		if (section ==='MCI') {
+			$(window).scrollTop(y + 620);
+		} else {
+			$(window).scrollTop(y + 270);
+		}
 		// $(window).scrollTop(posY-200);
 	}
 	// alert(posX + ', y: ' + posY);
