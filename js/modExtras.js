@@ -211,7 +211,7 @@ function launcherHandler(param1) {
 	
 	//$("#launcherBackground").hide();
 	$("#launcherBackground").attr("src",'images/screens/launcher/' + param1 + '.png').fadeIn(400);
-	$('#launcherBackground').width(1900);
+	// $('#launcherBackground').width(1900);
 	// $('#launcherBackground').height(850);
 	// $("#launcherBackground").html('images/screens/launcher/' + '2' + '.png').fadeIn(400);
 	setCookie('launcherState',launcherState,'360')
