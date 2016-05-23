@@ -63,8 +63,8 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 		$('#splashScreen').attr('src', '../images/screens/mci/mciVideoDetail2.png');
 		mciVideoBackdropImage1 = '<img src="../images/icons/mayo/MC_stack_wht.png\" />';
 		$('#mayoTitleLogo').html(mciVideoBackdropImage1);
-		mciVideoBackdropImage1 = '<img src="../images/screens/mci/videoBackdropImages/' + offeringId + 'large.jpg\" class=\"mciVideoBackdropImage1\" />';
-		mciVideoBackdropImage2 = '<img src="../images/screens/mci/videoBackdropImages/' + offeringId + '.jpg\" />';
+		mciVideoBackdropImage1 = '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringId + 'large.jpg\" class=\"mciVideoBackdropImage1\" />';
+		mciVideoBackdropImage2 = '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringId + '.jpg\" />';
 		$('#mciVideoBackdropImage1').html(mciVideoBackdropImage1);
 		$('#mciVideoBackdropImage2').html(mciVideoBackdropImage2);
 	}
