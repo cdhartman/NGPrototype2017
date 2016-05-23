@@ -25,7 +25,8 @@ function getPatientVideo(offeringId, genre, genreId, subGenre, subGenreId, view,
 
 function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, subGenreId, view, targetDiv) {
 	"use strict";
-	var divContent = '', divMetaDataContent = '', videoTitle = '', runTime = '', videoDescription = '', creationDate = '', categories = '', titlePath1 = '', titlePath2 = '', videoBackdropImage1 = '', mciVideoBackdropImage2 = '';
+	var divContent = '', divMetaDataContent = '', videoTitle = '', runTime = '', videoDescription = '', creationDate = '', categories = '', titlePath1 = '', titlePath2 = '', 
+		videoBackdropImage1 = '', mciVideoBackdropImage1 = '', mciVideoBackdropImage2 = '';
 
 	//get video meta data
 	videoTitle = node.find('description:eq(0)').text();
