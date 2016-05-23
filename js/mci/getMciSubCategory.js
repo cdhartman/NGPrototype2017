@@ -4,6 +4,10 @@
 function getMciSubCategory(genre, genreID, subGenre, subGenreID, start, quickPlayFlag, screenFormat, view, titleFormat, section, targetDiv) {
 	"use strict";
 	var xmlURL = '../xml/Catalog.xml', dataType = 'xml', node;
+	// alert(subGenreID);
+	if (subGenreID === '99900') {
+		xmlURL = '../xml/99900.xml';
+	}
 	
 	$.ajax({
 		type: "GET",
@@ -44,7 +48,7 @@ function parseAndDisplayMciSubCategory(result, node, genre, genreID, subGenre, s
         return this.nodeName === name;
       });
     };
-		
+
 	$(node).slice(start).each(function (i,  row) {
 		if ($(this).text() !== 'undefined' && $(this).text() !== '') {
 			count++;
@@ -79,7 +83,7 @@ function parseAndDisplayMciSubCategory(result, node, genre, genreID, subGenre, s
 function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, screenFormat) {
 	"use strict";
 	var divContent = '', constructURL = '', className = 'lineItems', rowNumberPE = rowNumber;
-	// alert(screenFormat);
+	// alert(screenFormat + genreID + subGenreID);
 
 	if (section === 'mci') { rowNumberPE = rowNumber - 1; }
 	if (rating === 'TV-MA') {
@@ -88,14 +92,21 @@ function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGe
 		constructURL = 'mciTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
 	}
 	if (screenFormat === 'HD') {
-		divContent = '<div class=\"lineColumnMainWideMci lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		if (subGenreID === '99900') {
+			divContent = '<div class=\"lineColumnMainWideMciImage lineColumnMainWide' + rowNumber + ' lineLargeMCI' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		} else {
+			divContent = '<div class=\"lineColumnMainWideMci lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		}
+		
 		className = 'lineItemsMainWide';
 	} else {
 		divContent = '<div class=\"line lineWide linePE' + rowNumberPE + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	}
 	divContent += ' onmouseover=\"onHoverDiv(\'onmouseover\', \'divLink' + count + '\',\'left\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\"';
 	divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\',\'right\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\">\n';
-				
+	if (subGenreID === '99900') {
+		divContent += '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
+	}	
 	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumberPE + '); offSetFunction(\'divLink' + count + '\');\"';
 	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\"';
