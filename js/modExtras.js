@@ -357,7 +357,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 				$(selectedDiv).css("height", "260px");
 			}
 		} else { 
-			$(selectedDiv).css("height", "176px");
+			$(selectedDiv).css("height", "166px");
 		}
 		$(selectedDiv).css('opacity', '1.0');
 		$(selectedDiv).css( "zIndex", 100 );
