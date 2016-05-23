@@ -4,9 +4,11 @@ html, body {
 	font-size: 14pt;
 	background-color: #000;
 	margin-right: 40px;
-	 background: url('../images/screens/ic_bg.png');
+	background: url('../images/screens/ic_bg.png');
 }
-
+body.bodyCategories {
+	background: none;
+}
 a {
    outline: 0;
    text-decoration: none;
