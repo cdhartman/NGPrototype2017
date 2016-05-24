@@ -21,7 +21,7 @@
 	</script>
 </head>
 
-<body leftmargin="0" topmargin="0" class="bodyCategories">
+<body leftmargin="0" topmargin="0" class="bodyCategories" id="body">
 	<div class="htmlToolbar" id="htmlToolbar">
 		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
@@ -49,7 +49,7 @@
 	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
 
 	/* load primary content */
-	getPatientVideo(offeringId, genre, genreId, subGenre, subGenreID, '', 'section1Mci');
+	getMCIVideo(offeringId, genre, genreId, subGenre, subGenreID, '', 'section1Mci');
 
 	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
 	setTimeout(function(){
@@ -58,6 +58,8 @@
 	displayHtmlToolbar('htmlToolbar');
 	// $("#playButton").attr("onclick",mciVideoLookup(offeringId));
 	mciVideoLookup(offeringId);
-	document.getElementById('playButton').focus()
-	document.getElementById('playButton').select()
+	
+	document.getElementById('playButton').focus();
+	document.getElementById('playButton').select();
+	
 </script>
