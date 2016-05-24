@@ -63,7 +63,7 @@
 	var genreID = getURLParameter('genreID',''), subGenre = decodeURI(getURLParameter('subGenre','')), section = getURLParameter('section',''),
 		subGenreID = getURLParameter('subGenreID',''), start = getURLParameter('start','1'), quickPlay = getURLParameter('quickPlay','0'),
 		category = getURLParameter('category','Patient Education'), screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), 
-		titleFormat = getURLParameter('titleFormat','short'), site = getSite(), node2;
+		titleFormat = getURLParameter('titleFormat','short'), site = getSite(), node2, view;
 
 	genre = decodeURI(getURLParameter('genre',''));
 	genre = genre.replace(' and ',' & ');
