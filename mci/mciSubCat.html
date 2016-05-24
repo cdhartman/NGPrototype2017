@@ -53,7 +53,7 @@
 		<div id="navBarLeft" class="navBarLeftMci"></div>
 		<div id="oneRowContentHandler" class="oneRowContentHandler" onclick="javascript:void(0);"></div>
 		<div class="title" id="title">Patient Education</div>
-		<div id="genres"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div></div>
+		<div id="categories"><div class="ajaxLoader" id="ajaxLoader">Loading Patient Education Categories, please wait...</div></div>
 		<div class="box1sideMci"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
 	</div>
 </body>
@@ -68,7 +68,7 @@
 	genre = decodeURI(getURLParameter('genre',''));
 
 	/* load primary content */
-	getMciCategory(genreId, genre, subGenreID, subGenre, start, quickPlay, view, 'genres', screenFormat);
+	getMciCategory(genreId, genre, subGenreID, subGenre, start, quickPlay, view, 'categories', screenFormat);
 	$('#navBarLeft').load('../includes/mciNavBarHD.html');
 	
 	updateVideoDetailTitleBar(genre, subGenre, 'title', view, screenFormat);
