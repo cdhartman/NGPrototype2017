@@ -115,7 +115,7 @@ function offSetFunction(id, section, subGenreID) {
 	var posX = offset.left - $(window).scrollLeft();
 	var yOffset = 0;
 	if (subGenreID === '99900') {
-		yOffset = 400
+		yOffset = 200
 	} else {
 		yOffset = 700;
 	}
@@ -126,7 +126,7 @@ function offSetFunction(id, section, subGenreID) {
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
 		if (section ==='MCI') {
-			$(window).scrollTop(y + 320);
+			$(window).scrollTop(y + 200);
 		} else {
 			$(window).scrollTop(y + 270);
 		}
