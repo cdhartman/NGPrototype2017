@@ -18,6 +18,7 @@
 	
 	<script type="text/javascript" src="../js/HEWAlert.js"></script>
 	<script type="text/javascript" src="../js/mci/getMciSubCategory.js"></script>
+	<script type="text/javascript" src="../js/mci/getMciCategory.js"></script>
 	<script type="text/javascript" src="../js/modExtras.js"></script>
 	<script type="text/javascript">
 		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1, 
@@ -71,7 +72,7 @@
 	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
 		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'), view = getURLParameter('view','mci'), site = getSite(), pePreferences = '',
 		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), titleFormat = getURLParameter('titleFormat','short'),
-		section = getURLParameter('section',''), triggerLeftNavFlag = true, subGenreID = 0;
+		section = getURLParameter('section',''), triggerLeftNavFlag = true, subGenre = '', subGenreID = 0;
 	genre = decodeURI(getURLParameter('genre','Chaplain Services'));
 
 	// if STB is unknown, lookup information, store cookies 
