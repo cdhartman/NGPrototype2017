@@ -619,7 +619,7 @@ function loadCSSSplashScreen(screenFormat, settopid, splashSuffix, section) {
 
 function languageIcon(videoName, format, screenFormat) {
 	"use strict";
-	if (videoName.length > 58) {videoName = videoName.substr(0, 58) + '...'; }
+	if (videoName.length > 60) {videoName = videoName.substr(0, 60) + '...'; }
 	if (screenFormat === 'SD') {
 		videoName = videoName.replace(' (AR)', ' <span class=\"languageIcon\">AR</span>')
 		videoName = videoName.replace(' SP', ' <span class=\"languageIcon\">SP</span>');
