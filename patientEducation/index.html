@@ -83,18 +83,18 @@
 	// processPatEdView(view);
 	if (view === 'freqViewed') {
 		tabIndexDefault = 99;
-		// getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		if (!isPhoneGap()) {getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat); }
 	} else if (view === 'GBS') {
 		tabIndexDefault = 100;
-		// getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		if (!isPhoneGap()) {getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat); }
 	} else if (view === 'Pediatric') {
 		tabIndexDefault = 98;
-		// getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		if (!isPhoneGap()) {getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat); }
 	} else if (view === 'Mayo Information') {
-		// getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		if (!isPhoneGap()) {getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat); }
 	} else {
 		tabIndexDefault = 97;
-		// getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		if (!isPhoneGap()) {getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);}
 	}
 
 	$('#ajaxLoader').html("");
