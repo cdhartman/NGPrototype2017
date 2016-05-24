@@ -33,7 +33,7 @@ opacity:.70; filter: alpha(opacity=70);
 div.lineColumnMainWideMci{position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 197px;
 opacity:.70; filter: alpha(opacity=70);
 }
-div.lineColumnMainWideMciImage {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 527px;
+div.lineColumnMainWideMciImage {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 487px;
 opacity:.70; filter: alpha(opacity=70);
 }
 div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 195px;
@@ -111,7 +111,7 @@ span.channelLabel { font-size: 14px;}
 span.videoCount {color:#555; font-size: 13px; padding-left: 6px; vertical-align: middle;}
 span.peDescription {font-size: 32px; font-weight: 300; }
 .mciVideoBackdropImage1 {opacity: .20; z-Index: 20;}
-#mciVideoBackdropImage1  {position: absolute; left: 0; top: 0;}
+#mciVideoBackdropImage1  {position: absolute; left: 0; top: 0; background-color: #333;}
 #mciVideoBackdropImage2  {position: absolute; left: 155px; top: 346px;}
 /* search */
 .results {border: none; 
@@ -429,13 +429,13 @@ div.lineLargePE15 {top: 3815px;}
 div.lineLargeMCI {position: absolute; left: 15px; width: 900px;}
 div.lineLargeMCI0 {top: 70px;}
 div.lineLargeMCI1 {top: 245px;}
-div.lineLargeMCI2 {top: 845px;}
-div.lineLargeMCI3 {top: 1445px;}
-div.lineLargeMCI4 {top: 2045px;}
-div.lineLargeMCI5 {top: 2645px;}
-div.lineLargeMCI6 {top: 3245px;}
-div.lineLargeMCI7 {top: 3845px;}
-div.lineLargeMCI8 {top: 4445px;}
+div.lineLargeMCI2 {top: 805px;}
+div.lineLargeMCI3 {top: 1365px;}
+div.lineLargeMCI4 {top: 1925px;}
+div.lineLargeMCI5 {top: 2485px;}
+div.lineLargeMCI6 {top: 3045px;}
+div.lineLargeMCI7 {top: 3605px;}
+div.lineLargeMCI8 {top: 4165px;}
 div.lineLargeMCI9 {top: 2285px;}
 div.lineLargeMCI10 {top: 2550px;}
 div.lineLargeMCI11 {top: 2805px;}
