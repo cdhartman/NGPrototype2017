@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, parseAndDisplayPatEdVideo, convertRuntimePE, handleAjaxError, document */
 
-function getPatientVideo(offeringId, genre, genreId, subGenre, subGenreId, view, targetDiv) {
+function getMCIVideo(offeringId, genre, genreId, subGenre, subGenreId, view, targetDiv) {
 	"use strict";
 	var xmlURL = '../xml/Catalog.xml', dataType = 'xml', a, node;
 	if (subGenreId === '99900') {
@@ -62,6 +62,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 
 	if (subGenreId === '99900') {
 		$('#splashScreen').attr('src', '../images/screens/mci/mciVideoDetail2.png');
+		// $('#body').css('background-image', 'url('')');
 		mciVideoBackdropImage1 = '<img src="../images/icons/mayo/MC_stack_wht.png\" />';
 		$('#mayoTitleLogo').html(mciVideoBackdropImage1);
 		mciVideoBackdropImage1 = '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringId + 'large.jpg\" class=\"mciVideoBackdropImage1\" />';
