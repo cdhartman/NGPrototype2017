@@ -116,7 +116,7 @@
 			<metadata name="AMS::Version_Minor" value="0"/>
 			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
 			<metadata name="MOD::Display_Run_Time" value="00:34"/>
-			<metadata name="MOD::Summary_Short" value="Discover how a tornado brought the Mayos and Franciscan Sisters together as unlikely partners in healing."/>
+			<metadata name="MOD::Summary_Short" value="Discover how a tornado brought the Mayo's and Franciscan Sisters together as unlikely partners in healing."/>
 			<metadata name="MOD::Billing_ID" value="00001"/>
 			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
 			<metadata name="MOD::Title" value="A Leap Of Faith: The Founding Of Saint Marys Hospital"/>
@@ -129,7 +129,7 @@
 			<metadata name="MOD::Preview_Period" value="30"/>
 		</title>
 		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="A Cheerful Heart: The Dave Madden Story" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
-			<description>Discover how a tornado brought the Mayos and Franciscan Sisters together as unlikely partners in healing.</description>
+			<description>Discover how a tornado brought the Mayo's and Franciscan Sisters together as unlikely partners in healing.</description>
 			<metadata name="AMS::Asset_Class" value="movie"/>
 			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
 			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
