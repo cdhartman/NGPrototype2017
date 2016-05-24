@@ -56,10 +56,12 @@
 		/* highlight Patient Education nav bar */
 		}, 1000);
 	displayHtmlToolbar('htmlToolbar');
-	// $("#playButton").attr("onclick",mciVideoLookup(offeringId));
-	mciVideoLookup(offeringId);
+	videoPlayBackString = mciVideoLookup(offeringId);
+	// alert(videoPlayBackString);
+	$("#playButton").attr("onclick",videoPlayBackString);
+	// mciVideoLookup(offeringId);
 	
 	document.getElementById('playButton').focus();
-	document.getElementById('playButton').select();
+	// document.getElementById('playButton').select();
 	
 </script>
