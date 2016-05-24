@@ -59,14 +59,36 @@ function processPatEdView(view) {
 // alert(view);
 	if (view === 'freqViewed') {
 		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		updateVideoDetailTitleBar('Healthcare Provider', '', 'title', '', 'HD');
 	} else if (view === 'GBS') {
 		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		updateVideoDetailTitleBar('Healthcare Provider', '', 'title', '', 'HD');
 	} else if (view === 'Pediatric') {
 		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		updateVideoDetailTitleBar('Pediatric Education', '', 'title', '', 'HD');
 	} else if (view === 'Mayo Information') {
 		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		updateVideoDetailTitleBar('Mayo Information', '', 'title', 'mci', 'HD');
+	} else if (view === 'aNavBarChaplin') {
+		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		updateVideoDetailTitleBar('Chaplain Services', '', 'title', 'mci', 'HD');
+	} else if (view === 'aNavBarEntertainment') {
+		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+	} else if (view === 'aNavBarEntertainment') {
+		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+	} else if (view === 'aNavBarHistory') {
+		getMciSubCategory('History', '24', 'History', '118', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+	} else if (view === 'aNavBarHIM') {
+		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreId, subGenre, start, quickPlay, 'mci', 'genres', screenFormat);
+	} else if (view === 'aNavBarHF') {
+		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+	} else if (view === 'aNavBarInformation') {
+		getMciSubCategory('Information', '122', 'Information', '122', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+	} else if (view === 'aNavBarPatientStories') {
+		getMciCategory('28435', 'Patient Stories', subGenreId, subGenre, start, quickPlay, 'mci', 'genres', screenFormat);
 	} else {
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
+		updateVideoDetailTitleBar('Adult Education', '', 'title', '', 'HD');
 	}
 	processLeftNavBarFocus('', view);
 }
@@ -438,6 +460,20 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 					$('[tabindex=98]').focus();
 				} else if (genre === 'Patient Stories') {
 					$('[tabindex=99]').focus();
+				}  else if (genre === 'Chaplain Services') {
+					$('[tabindex=94]').focus();
+				} else if (genre === 'Entertainment') {
+					$('[tabindex=95]').focus();
+				} else if (genre === 'History') {
+					$('[tabindex=96]').focus();
+				} else if (genre === 'Heritage Films') {
+					$('[tabindex=97]').focus();
+				} else if (genre === 'Humanities in Medicine') {
+					$('[tabindex=98]').focus();
+				} else if (genre === 'Information') {
+					$('[tabindex=99]').focus();
+				} else if (genre === 'Patient Stories') {
+					$('[tabindex=99]').focus();
 				}
 			} else {
 				$('[tabindex=97]').focus();
@@ -714,7 +750,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
     "use strict";
 	var titleString = '';
 	if (view === 'freqViewed') { view = 'Healthcare Provider'}
-	// alert(genre + ' | ' + subGenre);
+	
 	if (view === 'mci') {
 		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
 		titleString += genre;
