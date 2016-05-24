@@ -17,6 +17,18 @@ function mciVideoLookup(id) {
 	return constructURL;
 }
 
+// 2062
+// 5004 http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/488/568/0_n412z4xo_0_lfx21obx_2.mp4/manifest.f4m
+// 5004 http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/488/568/0_n412z4xo_0_vh3mmels_2.mp4/manifest.f4m
+
+// 2943
+// 2942
+
+// A Conversation With Dr. Hugh Butt
+// 2955 http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/452/159/0_pl8cdorx_0_hand7e0o_2.mp4/manifest.f4m
+// 2955 http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/452/159/0_pl8cdorx_0_kxaxrjzd_2.mp4/manifest.f4m
+
+
 function mciVideoURLLookup(id) {
 	"use strict";
 	switch (id) {
