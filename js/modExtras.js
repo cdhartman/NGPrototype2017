@@ -108,19 +108,25 @@ function getMovieDBVideoInfoDataSuccess (id) {
 function displayHtmlToolbar(id) {
 	if (navigator.userAgent.indexOf('Android') > 0) { document.getElementById(id).style.display = "none"; } else {  }
 }
-function offSetFunction(id, section) {
+function offSetFunction(id, section, subGenreID) {
 	var offset = $('#'+ id).offset();
 	var posY = offset.top - $(window).scrollTop();
 	var y = $(window).scrollTop();  //your current y position on the page
 	var posX = offset.left - $(window).scrollLeft();
-	// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
-	if( posY > 700) { // alert('lkj');
+	var yOffset = 0;
+	if (subGenreID === '99900') {
+		yOffset = 400
+	} else {
+		yOffset = 700;
+	}
+	// alert('subGenreID: ' + subGenreID + ', id: ' + id + ', section: ' + section + ', posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
+	if( posY > yOffset) { // alert('lkj');
 		// $.scrollTo('+=100px', 800, { axis:'y' });
 		// $(id).scrollTop(300);
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
 		if (section ==='MCI') {
-			$(window).scrollTop(y + 620);
+			$(window).scrollTop(y + 320);
 		} else {
 			$(window).scrollTop(y + 270);
 		}
