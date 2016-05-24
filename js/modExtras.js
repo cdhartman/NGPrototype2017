@@ -66,9 +66,6 @@ function processPatEdView(view) {
 	} else if (view === 'Pediatric') {
 		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Pediatric Education', '', 'title', '', 'HD');
-	} else if (view === 'Mayo Information') {
-		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
-		updateVideoDetailTitleBar('Mayo Information', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarChaplin') {
 		subGenreID = '435';
 		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
@@ -452,6 +449,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			navBarLeftFunction('expand');
 			$("html, body").animate({ scrollTop: 0 }, "fast");
 			// $('#title').trigger('click');
+			// alert(view);
 			if (view === 'Adult') {
 				$('[tabindex=97]').focus();
 			} else if (view === 'Pediatric'){
@@ -460,29 +458,17 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 				$('[tabindex=99]').focus();
 			} else if (view === 'mci') {
 				if (genre === 'Chaplain Services') {
-					$('[tabindex=94]').focus();
+					$('[tabindex=93]').focus();
 				} else if (genre === 'Entertainment') {
-					$('[tabindex=95]').focus();
-				} else if (genre === 'History') {
-					$('[tabindex=96]').focus();
-				} else if (genre === 'Humanities in Medicine') {
-					$('[tabindex=97]').focus();
-				} else if (genre === 'Information') {
-					$('[tabindex=98]').focus();
-				} else if (genre === 'Patient Stories') {
-					$('[tabindex=99]').focus();
-				}  else if (genre === 'Chaplain Services') {
 					$('[tabindex=94]').focus();
-				} else if (genre === 'Entertainment') {
-					$('[tabindex=95]').focus();
 				} else if (genre === 'History') {
-					$('[tabindex=96]').focus();
+					$('[tabindex=95]').focus();
 				} else if (genre === 'Heritage Films') {
-					$('[tabindex=97]').focus();
+					$('[tabindex=96]').focus();
 				} else if (genre === 'Humanities in Medicine') {
-					$('[tabindex=98]').focus();
+					$('[tabindex=97]').focus();
 				} else if (genre === 'Information') {
-					$('[tabindex=99]').focus();
+					$('[tabindex=98]').focus();
 				} else if (genre === 'Patient Stories') {
 					$('[tabindex=99]').focus();
 				}
