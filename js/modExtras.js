@@ -70,22 +70,30 @@ function processPatEdView(view) {
 		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Mayo Information', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarChaplin') {
+		subGenreID = '435';
 		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Chaplain Services', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarEntertainment') {
+		subGenreID = '119';
 		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
-	} else if (view === 'aNavBarEntertainment') {
-		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Entertainment', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHistory') {
+		subGenreID = '118';
 		getMciSubCategory('History', '24', 'History', '118', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('History', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHIM') {
 		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
+		updateVideoDetailTitleBar('Humanities in Medicine', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHF') {
 		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Heritage Films', '', 'title', 'mci', 'HD');
+		subGenreID = '99900';
 	} else if (view === 'aNavBarInformation') {
 		getMciSubCategory('Information', '122', 'Information', '122', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Information', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarPatientStories') {
 		getMciCategory('28435', 'Patient Stories', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
+		updateVideoDetailTitleBar('Patient Stories', '', 'title', 'mci', 'HD');
 	} else {
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Adult Education', '', 'title', '', 'HD');
@@ -289,7 +297,7 @@ function goFullscreen(id) {
   
 function navBarLeftFunction(adjustLeftPane) {
 	"use strict";
-
+	// alert('navBarLeftFunction');
 	if (adjustLeftPane == '') {
 		if ( $('#navBarLeft').width() === 45 ) {
 			adjustLeftPane = 'expand';
@@ -318,22 +326,25 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('#mciNavBarHD').css('display','block');
 	}
 	
-	if (adjustLeftPane === 'collapse') {
-		// alert('collapse branch');
-		$('#navBarLeft').width("45px");
-		$('#peNavBarHD').css('display','none');
-		$('#mciNavBarHD').css('display','none');
-		$('.navbarTopCategory').css('display','none');
-		$('.navBarLeftMciTrigger').css("left", "+=-505");
-		$('.lineColumnMainWide1').css("left", "+=-505");
-		$('.lineColumnMainWide2').css("left", "+=-505");
-		$('.lineColumnMainWide3').css("left", "+=-505");
-		$('.lineColumnMainWide4').css("left", "+=-505");
-		$('.lineColumnMainWide5').css("left", "+=-505");
-		// $('#title').css("left", "+=-505");
-		// $('.box1sidePE').css("left", "+=-505");
-		// $('.box1sideMci').css("left", "+=-505");
-		$('.searchPE').css('display','none');
+	if (adjustLeftPane === 'collapse') { 
+		// alert($("#divLink1").css("left") );
+		if ( $('#navBarLeft').width() !== 45 ) {
+			$('#navBarLeft').width("45px");
+			// alert('collapse branch' + $('#navBarLeft').width());
+			$('#peNavBarHD').css('display','none');
+			$('#mciNavBarHD').css('display','none');
+			$('.navbarTopCategory').css('display','none');
+			$('.navBarLeftMciTrigger').css("left", "+=-505");
+			$('.lineColumnMainWide1').css("left", "+=-505");
+			$('.lineColumnMainWide2').css("left", "+=-505");
+			$('.lineColumnMainWide3').css("left", "+=-505");
+			$('.lineColumnMainWide4').css("left", "+=-505");
+			$('.lineColumnMainWide5').css("left", "+=-505");
+			// $('#title').css("left", "+=-505");
+			// $('.box1sidePE').css("left", "+=-505");
+			// $('.box1sideMci').css("left", "+=-505");
+			$('.searchPE').css('display','none');
+		}
 	}
 	// alert($(document).height());
 	adjustScreenHeightWidth();
@@ -376,7 +387,7 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			$(selectedDiv).css("left", "-=30");
 			$(selectedDiv).css("top", "-=30");
 		}
-		
+
 		if (subGenreID === '99900') {
 			$('#videoListImage' + row + column).width(635);
 		}
