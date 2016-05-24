@@ -108,7 +108,7 @@ function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGe
 		divContent += '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
 	}	
 	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
-	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumberPE + '); offSetFunction(\'divLink' + count + '\', \'MCI\');\"';
+	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumberPE + '); offSetFunction(\'divLink' + count + '\', \'MCI\',\'' + subGenreID + '\');\"';
 	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\"';
 	divContent += '>' + languageIcon(title, 'short', screenFormat) + '</a>\n';
 	divContent += '</div>';
