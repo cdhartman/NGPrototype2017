@@ -472,8 +472,6 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 				} else if (genre === 'Patient Stories') {
 					$('[tabindex=99]').focus();
 				}
-			} else {
-				$('[tabindex=97]').focus();
 			}
 		}
 	}
