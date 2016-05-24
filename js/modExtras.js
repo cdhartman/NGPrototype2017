@@ -70,22 +70,22 @@ function processPatEdView(view) {
 		getPatientEdCategories('../xml/Catalog.xml', '24', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Mayo Information', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarChaplin') {
-		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Chaplain Services', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarEntertainment') {
-		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 	} else if (view === 'aNavBarEntertainment') {
-		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 	} else if (view === 'aNavBarHistory') {
-		getMciSubCategory('History', '24', 'History', '118', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('History', '24', 'History', '118', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 	} else if (view === 'aNavBarHIM') {
-		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreId, subGenre, start, quickPlay, 'mci', 'genres', screenFormat);
+		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 	} else if (view === 'aNavBarHF') {
-		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 	} else if (view === 'aNavBarInformation') {
-		getMciSubCategory('Information', '122', 'Information', '122', start, quickPlay, screenFormat, 'mci', titleFormat, section, 'genres');
+		getMciSubCategory('Information', '122', 'Information', '122', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 	} else if (view === 'aNavBarPatientStories') {
-		getMciCategory('28435', 'Patient Stories', subGenreId, subGenre, start, quickPlay, 'mci', 'genres', screenFormat);
+		getMciCategory('28435', 'Patient Stories', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 	} else {
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Adult Education', '', 'title', '', 'HD');
