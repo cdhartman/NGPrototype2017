@@ -154,8 +154,10 @@ function offSetFunction(id, section, subGenreID) {
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
 		if (section ==='MCI') {
 			$(window).scrollTop(y + 200);
+			$('.oneRowContentHandler.').css("top", "+=200");
 		} else {
 			$(window).scrollTop(y + 270);
+			$('.oneRowContentHandler.').css("top", "+=270");
 		}
 		// $(window).scrollTop(posY-200);
 	}
