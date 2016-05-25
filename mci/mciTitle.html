@@ -27,7 +27,7 @@
 	</div>
 	<div class="container" id="container">
 		<img src="../images/screens/mci/mciVideoDetail1.png" id="splashScreen" alt="" />
-		<div class="titleMciDetailScreen" id="title">Patient Education</div>
+		<div class="titleMciDetailScreen" id="title">Mayo Information</div>
 		<span>
 			<img src="../images/icons/playButtonMCI.png" style="position: absolute; left: 788px; top:421px; cursor: pointer; cursor: hand;" id="playButton"
 			onclick="playVideo('http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/561/245/0_1jpv6e0i_0_95qjmzw3_2.mp4/playlist.m3u8')" />
@@ -42,7 +42,7 @@
 </html>
 
 <script type="text/javascript">
-	var offeringId = getURLParameter('offeringId',''), screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''),
+	var offeringId = getURLParameter('offeringId',''), screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), view = getURLParameter('view','mci'),
 		genre = decodeURI(getURLParameter('genre','')), genreId = getURLParameter('genre_id',''), subGenre = decodeURI(getURLParameter('subGenre','')), subGenreID = getURLParameter('subGenreID','');
 
 	// load appropriate screen background and css
