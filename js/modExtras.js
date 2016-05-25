@@ -154,14 +154,15 @@ function offSetFunction(id, section, subGenreID) {
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
 		if (section ==='MCI') {
 			$(window).scrollTop(y + 200);
-			$('.oneRowContentHandler.').css("top", "+=200");
+			// $('#oneRowContentHandler').css("top", posY);
 		} else {
 			$(window).scrollTop(y + 270);
-			$('.oneRowContentHandler.').css("top", "+=270");
+			// $('#oneRowContentHandler').css("top", posY);
 		}
 		// $(window).scrollTop(posY-200);
 	}
 	// alert(posX + ', y: ' + posY);
+	$('#oneRowContentHandler').css("top", $(window).scrollTop() + posY);
 }
 
 function centerItFixedWidth(target, outer){
