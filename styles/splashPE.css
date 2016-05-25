@@ -18,7 +18,7 @@ a.buttonsPE:active, a.buttonsPE:focus {
 	background-color: #f2f2f2;
 }
 a.lineItemsNB:active > span.channelLabel { color: #f2f2f2; }
-div.title, div.titleMciDetailScreen, div.titlePEDetailScreen {font-weight: 300; color: #eee;}
+div.title, div.titleMciDetailScreen, div.titlePEDetailScreen {font-weight: 400; color: #eee;}
 span.timeTempSeperator {color: #cad5e9;}
 span.languageIcon, span.languageIconLarge {background-color: #1E4E00;}
 /* div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive {background-color: white;} */
