@@ -43,7 +43,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 	// divMetaDataContent = runTime;
 	if (genre === 'Frequently Viewed') {genre = 'Healthcare Provider';}
 	if (view === 'freqViewed') {view = 'Healthcare Provider';}
-	titlePath1 = 'Patient Education<br />';
+	titlePath1 = 'Mayo Information<br />';
 	if (view !== '') {
 		titlePath2 += decodeURIComponent(view);
 	}
