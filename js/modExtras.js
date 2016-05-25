@@ -142,7 +142,7 @@ function offSetFunction(id, section, subGenreID) {
 	var posX = offset.left - $(window).scrollLeft();
 	var yOffset = 0;
 	if (subGenreID === '99900') {
-		yOffset = 400
+		yOffset = 200
 	} else {
 		yOffset = 700;
 	}
