@@ -392,12 +392,12 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		
 		if (videoFlag === 'true') {
 			if (subGenreID === '99900') {
-				$(selectedDiv).css("height", "580px");
+				$(selectedDiv).css("height", "544px");
 			} else {
 				$(selectedDiv).css("height", "260px");
 			}
 		} else { 
-			$(selectedDiv).css("height", "166px");
+			$(selectedDiv).css("height", "186px");
 		}
 		$(selectedDiv).css('opacity', '1.0');
 		$(selectedDiv).css( "zIndex", 100 );
@@ -745,7 +745,7 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
     "use strict";
 	var titleString = '';
 	if (view === 'freqViewed') { view = 'Healthcare Provider'}
-	
+	// alert(view);
 	if (view === 'mci') {
 		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
 		titleString += genre;
