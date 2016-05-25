@@ -61,7 +61,7 @@ div.lineColumnMainWidePE:hover { opacity:1.00; filter: alpha(opacity=100);}
 div.lineColumnMainWidePE:hover a.lineItemsMainWide { font-size: 58px; }
 div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 50px;}
 a.lineItemsNB {font-size: 42px;}
-a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus, a.lineItemsNBhover {font-size: 52px; font-weight: 600;}
+a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus, a.lineItemsNBhover {font-size: 52px; font-weight: 700;}
 
 a.lineItemsMainWide {
 	font-size: 48px;
