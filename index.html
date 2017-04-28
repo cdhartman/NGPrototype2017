@@ -9,8 +9,8 @@
 <link href="favicon.ico" rel="shortcut icon" />
 <style>
 	body {margin: 0; padding: 0; font-family: 'Roboto';}
-	div.timeMain {position: absolute; top: 110px; left: 1400px; color: #eee; z-Index: 140; font-weight: bold; font-size: 40px; width: 400px; text-align: right;}
-	div.dateMain {position: absolute; top: 162px; left: 1400px; color: #eee; z-Index: 140; font-weight: 300; font-size: 22px; width: 400px; text-align: right;}
+	div.timeMain {position: absolute; top: 104px; left: 1600px; color: #eee; z-Index: 140; font-weight: 400; font-size: 48px; width: 400px; text-align: left;}
+	div.dateMain {position: absolute; top: 162px; left: 1600px; color: #eee; z-Index: 140; font-weight: 300; font-size: 22px; width: 400px; text-align: left;}
 	.amPM {font-size: 26px; font-weight: 400;}
 	::-webkit-scrollbar { 
 		display: none; 
@@ -53,8 +53,10 @@
 
         <area href="javascript:void(0);" shape="rect" coords="1789,293,1929,791" alt="5" title="5" onclick="launcherHandler('5');">
 
-		<area href="javascript:void(0);" shape="rect" coords="560,880,660,990" alt="8" title="8" id="" onclick="launcherHandler('2');">
-		<area href="javascript:void(0);" shape="rect" coords="1260,880,1360,990" alt="9" title="9" id="" onclick="launcherHandler('4');">
+		<area href="javascript:void(0);" shape="rect" coords="1789,293,1929,791" alt="6" title="6" onclick="launcherHandler('6');">
+		
+		<area href="javascript:void(0);" shape="rect" coords="400,940,500,1050" alt="8" title="8" id="" onclick="launcherHandler('2');">
+		<area href="javascript:void(0);" shape="rect" coords="1420,940,1520,1050" alt="9" title="9" id="" onclick="launcherHandler('4');">
 	</map>
 	<img src="images/screens/launcher/3.png" usemap="#launcherMap" id="launcherBackground" style="position: absolute; left: 0; top: 0;" />
 	<div class="timeMain" id="timeMain"></div><div class="dateMain" id="dateMain"></div>
