@@ -60,38 +60,62 @@ function processPatEdView(view) {
 	if (view === 'freqViewed') {
 		getPatientEdCategories('../xml/993.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Healthcare Provider', '', 'title', '', 'HD');
+		
 	} else if (view === 'GBS') {
 		getPatientEdCategories('../xml/GBS.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Healthcare Provider', '', 'title', '', 'HD');
 	} else if (view === 'Pediatric') {
 		getPatientEdCategories('../xml/Catalog.xml', '4711', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Pediatric Education', '', 'title', '', 'HD');
+	} else if (view === 'aNavBarMayoTV') {
+		tabindex = '91';
+		subGenreID = '99909';
+		getMciSubCategory('MayoTV', '24', 'Mayo TV', '99909', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Mayo TV', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarChaplin') {
+		tabindex = '92';
 		subGenreID = '435';
 		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Chaplain Services', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarEntertainment') {
+		tabindex = '93';
 		subGenreID = '119';
 		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Entertainment', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHistory') {
+		tabindex = '94';
 		subGenreID = '118';
 		getMciSubCategory('History', '24', 'History', '118', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('History', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHIM') {
+		tabindex = '95';
 		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 		updateVideoDetailTitleBar('Humanities in Medicine', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHF') {
+		tabindex = '96';
 		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Heritage Films', '', 'title', 'mci', 'HD');
 		subGenreID = '99900';
 	} else if (view === 'aNavBarInformation') {
+		tabindex = '97';
 		getMciSubCategory('Information', '122', 'Information', '122', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Information', '', 'title', 'mci', 'HD');
+	} else if (view === 'aNavBarKids') {
+		tabindex = '98';
+		getMciSubCategory('Kids', '24', 'Kids', '99901', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Kids', '', 'title', 'Kids', 'HD');
+		subGenreID = '99901';
 	} else if (view === 'aNavBarPatientStories') {
+		tabindex = '99';
 		getMciCategory('28435', 'Patient Stories', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 		updateVideoDetailTitleBar('Patient Stories', '', 'title', 'mci', 'HD');
+	} else if (view === 'aNavBarCare' || view === 'Care') {
+		tabindex = '91';
+		subGenreID = '99919';
+		getMciSubCategory('Care', '99919', 'CARE Channel', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('C.A.R.E. Channel', '', 'title', 'relaxation', 'HD');
 	} else {
+		tabindex = '92';
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
 		updateVideoDetailTitleBar('Adult Education', '', 'title', '', 'HD');
 	}
@@ -141,7 +165,7 @@ function offSetFunction(id, section, subGenreID) {
 	var y = $(window).scrollTop();  //your current y position on the page
 	var posX = offset.left - $(window).scrollLeft();
 	var yOffset = 0;
-	if (subGenreID === '99900') {
+	if (subGenreID.indexOf("999") >= 0) {
 		yOffset = 200
 	} else {
 		yOffset = 700;
@@ -153,7 +177,7 @@ function offSetFunction(id, section, subGenreID) {
 		// alert('posX: ' + posX + ', posY: ' + posY + ', lastColumnSelected ='  + lastColumnSelected + ', previousColumnSelected=' +  previousColumnSelected + ', previousRowSelected=' + previousRowSelected + ', lastRowSelected=' + lastRowSelected)
 		// $('#'+ id).animate({scrollTop: '+=280px'}, 800);
 		if (section ==='MCI') {
-			$(window).scrollTop(y + 200);
+			$(window).scrollTop(y + 190);
 			// $('#oneRowContentHandler').css("top", posY);
 		} else {
 			$(window).scrollTop(y + 270);
@@ -185,11 +209,13 @@ function leftNavBarCatSubCatHandler(id, tabIndexPosition) {
 		$('[tabindex=' + tabIndexPosition + ']').focus();
 		adjustLeftNavBarOpacity('navBarLeft');
 		adjustLeftNavBarOpacity('navBarLeftMci');
+		adjustLeftNavBarOpacity('navBarLeftMovies');
 	} else {
 		if ( $('#'+ id).width() !== 45 ) {
 			navBarLeftFunction();
 			adjustLeftNavBarOpacity('navBarLeft');
 			adjustLeftNavBarOpacity('navBarLeftMci');
+			adjustLeftNavBarOpacity('navBarLeftMovies');
 		}
 	}
 }
@@ -211,12 +237,12 @@ function launcherHandler(param1) {
 	param1 = param1 - offset;
 	param1 = String(param1);
 	if (param1 === '0') {
-		param1 = '5';
+		param1 = '6';
 	} else if (param1 === '-1') {
 		param1 = '4';
-	} else if (param1 === '6') {
-		param1 = '1';
 	} else if (param1 === '7') {
+		param1 = '1';
+	} else if (param1 === '8') {
 		param1 = '2';
 	}
 	
@@ -240,6 +266,10 @@ function launcherHandler(param1) {
 		case '5':
 			$("#activeLauncherSelectionHREF").attr("href",'tv/index.html');
 			launcherState = 5;
+		break;
+		case '6':
+			$("#activeLauncherSelectionHREF").attr("href",'welcome/index.html');
+			launcherState = 6;
 		break;
 		default:
 			$("#activeLauncherSelectionHREF").attr("href",'patientEducation/index.html');
@@ -313,17 +343,31 @@ function navBarLeftFunction(adjustLeftPane) {
 		$('#navBarLeft').css('display','block');
 		$('.navbarTopCategory').css('display','block');
 		$('.navBarLeftMciTrigger').css("left", "+=505");
+		$('.navBarLeftMoviesTrigger').css("left", "+=505");
 		$('.lineColumnMainWide1').css("left", "+=505");
 		$('.lineColumnMainWide2').css("left", "+=505");
 		$('.lineColumnMainWide3').css("left", "+=505");
 		$('.lineColumnMainWide4').css("left", "+=505");
 		$('.lineColumnMainWide5').css("left", "+=505");
+		
+		$('.movieBox').css("left", "+=505");
+		$('.movieBox').css("width", "+=-50");
+		$('.movieBox').css("height", "+=-80");
+			
+		// $('.movieBox1').css("left", "+=505");
+		// $('.movieBox2').css("left", "+=505");
+		// $('.movieBox3').css("left", "+=505");
+		// $('.movieBox4').css("left", "+=505");
+		// $('.movieBox5').css("left", "+=505");
+		
 		// $('#title').css("left", "+=505");
 		// $('.box1sidePE').css("left", "+=505");
 		// $('.box1sideMci').css("left", "+=505");
+		// $('.box1sideMovies').css("left", "+=505");
 		$('.searchPE').css('display','block');
 		$('#peNavBarHD').css('display','block');
 		$('#mciNavBarHD').css('display','block');
+		$('#moviesNavBarHD').css('display','block');
 	}
 	
 	if (adjustLeftPane === 'collapse') { 
@@ -335,19 +379,35 @@ function navBarLeftFunction(adjustLeftPane) {
 			$('#mciNavBarHD').css('display','none');
 			$('.navbarTopCategory').css('display','none');
 			$('.navBarLeftMciTrigger').css("left", "+=-505");
+			$('.navBarLeftMoviesTrigger').css("left", "+=-505");
 			$('.lineColumnMainWide1').css("left", "+=-505");
 			$('.lineColumnMainWide2').css("left", "+=-505");
 			$('.lineColumnMainWide3').css("left", "+=-505");
 			$('.lineColumnMainWide4').css("left", "+=-505");
 			$('.lineColumnMainWide5').css("left", "+=-505");
+			
+			$('.movieBox').css("left", "+=-505");
+			$('.movieBox').css("width", "+=50");
+			$('.movieBox').css("height", "+=80");
+			
+			// $('.movieBox1').css("left", "+=-505");
+			// $('.movieBox2').css("left", "+=-425");
+			// $('.movieBox3').css("left", "+=-345");
+			// $('.movieBox4').css("left", "+=-265");
+			// $('.movieBox5').css("left", "+=-185");
+			// $('.movieBox5').css("left", "+=-185");
+			
+			
 			// $('#title').css("left", "+=-505");
 			// $('.box1sidePE').css("left", "+=-505");
 			// $('.box1sideMci').css("left", "+=-505");
+			// $('.box1sideMovies').css("left", "+=-505");
 			$('.searchPE').css('display','none');
 		}
 	}
 	// alert($(document).height());
 	adjustScreenHeightWidth();
+	navBarLeftCategorySelectFunction();
 	
 	// alert($(document).height());
 	// $('#container').css({paddingBottom: '45px'});;
@@ -358,16 +418,19 @@ function adjustScreenHeightWidth() {
 	// alert($(document).height());
 	if ( $(document).height() > 1280) {
 		$('#navBarLeft').height($(document).height() + 45);
+		$('#navBarLeftMoviesTrigger').height($(document).height() + 45);
 	} else if ( $(document).height() > 1080) {
 		$('#navBarLeft').height($(document).height());
+		$('#navBarLeftMoviesTrigger').height($(document).height());
 	} else {
 		$('#navBarLeft').height($(document).height());
+		$('#navBarLeftMoviesTrigger').height($(document).height())
 	}
 }
 
 function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, column) {
 	// "use strict";
-	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag);
+	// alert('llkj' + ' | ' + selectedDiv + ' | ' + direction + ' | ' + videoFlag + ' | subGenreID=' + subGenreID + ' | row=' + row + ' | column' + column );
 	// column = '4';
 	// alert(selectedDiv);
 	
@@ -376,31 +439,34 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 	if ( direction === 'left' ) {
 
 		if (column === 1) { // alert('here1');
-			$(selectedDiv).css("top", "-=30");
+			$(selectedDiv).css("top", "-=20");
 		} else if (column === 2) {
-			$(selectedDiv).css("left", "-=30");
-			$(selectedDiv).css("top", "-=30");
+			$(selectedDiv).css("left", "-=20");
+			$(selectedDiv).css("top", "-=20");
 		} else if (column === 3) {
-			$(selectedDiv).css("top", "-=30");
-			$(selectedDiv).css("left", "-=60");
+			$(selectedDiv).css("top", "-=20");
+			$(selectedDiv).css("left", "-=40");
 		} else {
-			$(selectedDiv).css("left", "-=30");
-			$(selectedDiv).css("top", "-=30");
+			$(selectedDiv).css("left", "-=20");
+			$(selectedDiv).css("top", "-=20");
 		}
 
-		if (subGenreID === '99900') {
+		if (subGenreID.indexOf("999") >= 0 || subGenreID === 99919 || subGenreID === "99919") { 
+			// alert('ffffrf' + subGenreID);
 			$('#videoListImage' + row + column).width(635);
 		}
-		$(selectedDiv).css("width", "+=60"); // alert($(selectedDiv).css("height"))
+		$(selectedDiv).css("width", "+=40"); // alert($(selectedDiv).css("height"))
 		
 		if (videoFlag === 'true') {
-			if (subGenreID === '99900') {
-				$(selectedDiv).css("height", "544px");
+			if (subGenreID === "99919") {
+				$(selectedDiv).css("height", "348px");
+			} else if (subGenreID.indexOf("999") >= 0) {
+				$(selectedDiv).css("height", "528px");
 			} else {
-				$(selectedDiv).css("height", "260px");
+				$(selectedDiv).css("height", "240px");
 			}
 		} else { 
-			$(selectedDiv).css("height", "186px");
+			$(selectedDiv).css("height", "166px");
 		}
 		$(selectedDiv).css('opacity', '1.0');
 		$(selectedDiv).css( "zIndex", 100 );
@@ -415,31 +481,32 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 			lastRowSelected = row;
 		}
 		if (column === 1) {
-			$(selectedDiv).css("top", "+=30");
+			$(selectedDiv).css("top", "+=20");
 		} else if (column === 2) {
-			$(selectedDiv).css("left", "+=30");
-			$(selectedDiv).css("top", "+=30");
+			$(selectedDiv).css("left", "+=20");
+			$(selectedDiv).css("top", "+=20");
 		} else if (column === 3) {
-			$(selectedDiv).css("top", "+=30");
-			$(selectedDiv).css("left", "+=60");
+			$(selectedDiv).css("top", "+=20");
+			$(selectedDiv).css("left", "+=40");
 		} else {
-			$(selectedDiv).css("left", "+=30");
-			$(selectedDiv).css("top", "+=30");
+			$(selectedDiv).css("left", "+=40");
+			$(selectedDiv).css("top", "+=20");
 		}
-		if (subGenreID === '99900') {
+		if (subGenreID.indexOf("999") >= 0) {
 			$('.videoListImage').width(575);
 		}
 		
 		$(selectedDiv).css( "zIndex", 1);
-		$(selectedDiv).css("width", "-=60");
-		if (videoFlag === 'true') {
-			$(selectedDiv).css("height", "190px");
+		$(selectedDiv).css("width", "-=40");
+		if (videoFlag === 'true') { 
+			$(selectedDiv).css("height", "170px");
 		} else { 
 			$(selectedDiv).css("height", "126px");
 		}
 		$(selectedDiv).css('opacity', '0.7');
 	}
-	if ( $('#navBarLeft').width() !== 45) { // alert($('#navBarLeft').width());
+	if ( $('#navBarLeft').width() !== 45) { 
+		// alert('navBarLeft width: ' + $('#navBarLeft').width());
 		navBarLeftFunction('collapse');
 		// $('#navBarLeft').fadeTo( "fast" , 0.7)
 	}
@@ -479,6 +546,34 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 		}
 	}
 
+}
+
+function navBarLeftCategorySelectFunction(id) {
+	"use strict";
+	// alert('hereyyy' + view + genre);
+	if ( $('#navBarLeft').width() !== 45) {
+		if (view === 'Adult') {
+			$('[tabindex=97]').focus();
+		} else if (view === 'Pediatric'){
+			$('[tabindex=98]').focus();
+		} else if (view === 'freqViewed' || view === 'Healthcare Provider') {
+			$('[tabindex=99]').focus();
+		} else if (view === 'aNavBarChaplin') {
+			$('[tabindex=93]').focus();
+		} else if (view === 'aNavBarEntertainment') {
+			$('[tabindex=94]').focus();
+		} else if (view === 'aNavBarHistory') {
+			$('[tabindex=95]').focus();
+		} else if (view === 'aNavBarHF') {
+			$('[tabindex=96]').focus();
+		} else if (view === 'aNavBarHIM') {
+			$('[tabindex=97]').focus();
+		} else if (view === 'aNavBarInformation') {
+			$('[tabindex=98]').focus();
+		} else if (view === 'aNavBarPatientStories') {
+			$('[tabindex=99]').focus();
+		}
+	}
 }
 
 function searchPE(sParam) {
@@ -749,8 +844,14 @@ function updateVideoDetailTitleBar(genre, subGenre, targetDiv, view, screenForma
 	var titleString = '';
 	if (view === 'freqViewed') { view = 'Healthcare Provider'}
 	// alert(view);
-	if (view === 'mci') {
+	if (view === 'movies') {
+		titleString = 'Movies<br><span style=\"font-size: 38px;\">';
+		if (genre !== 'All') { titleString += genre; }
+	} else if (genre === 'Mayo Information' || view === 'mci') {
 		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
+		titleString += genre;
+	} else if (genre === 'relaxation' || view === 'relaxation') {
+		titleString = 'Music & Relaxation<br><span style=\"font-size: 38px;\">';
 		titleString += genre;
 	} else if (genre === 'Mayo Information') {
 		titleString = 'Mayo Information<br><span style=\"font-size: 38px;\">';
