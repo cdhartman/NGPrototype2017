@@ -110,10 +110,30 @@ function processPatEdView(view) {
 		getMciCategory('28435', 'Patient Stories', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 		updateVideoDetailTitleBar('Patient Stories', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarCare' || view === 'Care') {
-		tabindex = '91';
+		tabindex = '92';
 		subGenreID = '99919';
 		getMciSubCategory('Care', '99919', 'CARE Channel', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('C.A.R.E. Channel', '', 'title', 'relaxation', 'HD');
+	} else if (view === 'aNavBarHealthyAmbience' || view === 'Healthy Ambience') {
+		tabindex = '91';
+		subGenreID = '99919';
+		getMciSubCategory('Healthy Ambience', '99919', 'Healthy Ambience', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Healthy Ambience', '', 'title', 'relaxation', 'HD');
+	} else if (view === 'aNavBarMusicByGenre' || view === 'Music By Genre') {
+		tabindex = '93';
+		subGenreID = '99919';
+		getMciSubCategory('Music By Genre', '99919', 'Music By Genre', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Music By Genre', '', 'title', 'relaxation', 'HD');
+	} else if (view === 'aNavBarRelaxationTechniques' || view === 'Relaxation Techniques') {
+		tabindex = '94';
+		subGenreID = '99919';
+		getMciSubCategory('Relaxation Techniques', '99919', 'Relaxation Techniques', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Relaxation Techniques', '', 'title', 'relaxation', 'HD');
+	} else if (view === 'aNavBarSleep' || view === 'Sleep') {
+		tabindex = '95';
+		subGenreID = '99919';
+		getMciSubCategory('Sleep', '99919', 'Sleep', '99919', start, '', screenFormat, 'relaxation', titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Sleep', '', 'title', 'relaxation', 'HD');
 	} else {
 		tabindex = '92';
 		getPatientEdCategories('../xml/Catalog.xml', '3', start, numOfColumns, numOfRows, classFormat, 'categories', view, titleLength, site, screenFormat);
