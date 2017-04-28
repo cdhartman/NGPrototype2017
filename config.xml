@@ -58,7 +58,7 @@
 	<gap:plugin name="org.apache.cordova.media-capture" source="npm" />
 	<gap:plugin name="org.apache.cordova.network-information" source="npm" />
 	<gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
-	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" source="npm" />
+	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
 
 	<icon src="icon.png" />
 	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
