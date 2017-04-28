@@ -73,40 +73,40 @@ function processPatEdView(view) {
 		getMciSubCategory('MayoTV', '24', 'Mayo TV', '99909', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Mayo TV', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarChaplin') {
-		tabindex = '92';
+		tabindex = '91';
 		subGenreID = '435';
 		getMciSubCategory('Chaplain Services', '24', 'Chaplain%20Services', '435', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Chaplain Services', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarEntertainment') {
-		tabindex = '93';
+		tabindex = '92';
 		subGenreID = '119';
 		getMciSubCategory('Entertainment', '24', 'Entertainment', '119', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Entertainment', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHistory') {
-		tabindex = '94';
+		tabindex = '93';
 		subGenreID = '118';
 		getMciSubCategory('History', '24', 'History', '118', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('History', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHIM') {
-		tabindex = '95';
+		tabindex = '94';
 		getMciCategory('14031', 'Humanities%20in%20Medicine', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 		updateVideoDetailTitleBar('Humanities in Medicine', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarHF') {
-		tabindex = '96';
+		tabindex = '95';
 		getMciSubCategory('Heritage%20Films', '24', 'Heritage%20Films', '99900', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Heritage Films', '', 'title', 'mci', 'HD');
 		subGenreID = '99900';
 	} else if (view === 'aNavBarInformation') {
-		tabindex = '97';
+		tabindex = '96';
 		getMciSubCategory('Information', '122', 'Information', '122', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Information', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarKids') {
-		tabindex = '98';
+		tabindex = '97';
 		getMciSubCategory('Kids', '24', 'Kids', '99901', start, '', screenFormat, 'mci', titleFormat, section, 'categories');
 		updateVideoDetailTitleBar('Kids', '', 'title', 'Kids', 'HD');
 		subGenreID = '99901';
 	} else if (view === 'aNavBarPatientStories') {
-		tabindex = '99';
+		tabindex = '98';
 		getMciCategory('28435', 'Patient Stories', subGenreID, subGenre, start, '', 'mci', 'categories', screenFormat);
 		updateVideoDetailTitleBar('Patient Stories', '', 'title', 'mci', 'HD');
 	} else if (view === 'aNavBarCare' || view === 'Care') {
