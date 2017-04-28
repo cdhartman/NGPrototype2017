@@ -6,11 +6,14 @@ div.navBarLeft {position: absolute; top: 0px; left: 0; height: 1200px; min-heigh
 div.navBarLeftCollpase {position: absolute; width: 45px; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #2e841A; display: block; opacity:.70; filter: alpha(opacity=70);}
 div.navBarLeft:hover {opacity:1.0; filter: alpha(opacity=100);}
 div.navBarLeftMCI {position: absolute; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #403EBE; display: block; opacity:.70; filter: alpha(opacity=70);}
+div.navBarLeftMovies {position: absolute; top: 0px; left: 0; height: 1200px; min-height: 1080px; float: left; background-color: #f93807; display: block; opacity:.70; filter: alpha(opacity=70);}
 div.navBarLeftMciTrigger {position: absolute; top: 0px; height: 1080px; min-height: 1080px; float: left; cursor: pointer; cursor: hand;  display: block;}
-div.navBarLeftMCI:hover {opacity:1.0; filter: alpha(opacity=100);}
+div.navBarLeftMoviesTrigger {position: absolute; top: 0px; height: 1080px; min-height: 1080px; float: left; cursor: pointer; cursor: hand;  display: block;}
+div.navBarLeftMCI:hover, div.navBarLeftMovies:hover  {opacity:1.0; filter: alpha(opacity=100);}
+div.navBarLeftMovies:hover, div.navBarLeftMovies:hover  {opacity:1.0; filter: alpha(opacity=100);}
 div.oneRowContentHandler {position: absolute; left: 50px; width: 1px; height: 1px; border: 1px solid #111;}
 
-div.title {top: 32px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 400; }
+div.title {top: 32px; font-size: 52px; width: 1160px; padding: 4px; text-align: right; font-weight: 400; }
 div.htmlToolbar{position: absolute; left: 10px; top: 10px; width: 48px; height: 50px; background-color: black; z-index: 100; opacity: .20; border-radius: 10px; }
 div.titleMciDetailScreen, div.titlePEDetailScreen {left: 83px; top: 36px; font-size: 52px; width: 1670px; padding: 4px; text-align: right; font-weight: 300; z-Index: 100;}
 /*
@@ -23,6 +26,7 @@ div.titleMciDetailScreen, div.titlePEDetailScreen {left: 83px; top: 36px; font-s
        1px 1px 0 #ddd;*/
 div.box1sidePE {position: absolute; top: 42px;}
 div.box1sideMci {position: absolute; top: 42px;}
+div.box1sideMovies {position: absolute; left: 1780px; top: 50px;}
 div.searchPE {position: absolute; left: 30px; top: 50px; display: none;}
 div.lineColumnMainWide {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 126px;
 opacity:.70; filter: alpha(opacity=70);
@@ -34,6 +38,9 @@ div.lineColumnMainWideMci{position: absolute; color: #111; font-size: 48px; back
 opacity:.70; filter: alpha(opacity=70);
 }
 div.lineColumnMainWideMciImage {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 487px;
+opacity:.70; filter: alpha(opacity=70);
+}
+div.lineColumnMainWideRelaxationImage {position: absolute; color: #111; font-size: 48px; background-color: #403EBE; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 300px;
 opacity:.70; filter: alpha(opacity=70);
 }
 div.lineColumnMainWidePE {position: absolute; color: #111; font-size: 48px; background-color: #2e841A; cursor: pointer; cursor: hand; padding: 18px 22px; min-height: 195px;
@@ -52,16 +59,17 @@ div.lineColumnMainWideFolderMci {
 -moz-box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 box-shadow: 7px -7px 0px 0px rgba(36,36,168,1);
 }
-div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciImage, div.lineColumnMainWideMciFolder {width: 530px; overflow: hidden;}
-div.lineColumnMainWide:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover { opacity:1.00; filter: alpha(opacity=100);}
-div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMciFolder:hover, a.lineItemsMainWide { font-size: 52px; }
+div.lineColumnMainWide, div.lineColumnMainWideMci, div.lineColumnMainWideMciImage, div.lineColumnMainWideMciFolder, 
+	div.lineColumnMainWideRelaxation, div.lineColumnMainWideRelaxationImage, div.lineColumnMainWideRelaxationFolder {width: 530px; overflow: hidden;}
+div.lineColumnMainWide:hover, div.lineColumnMainWideRelaxationImage:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideMciFolder:hover { opacity:1.00; filter: alpha(opacity=100);}
+div.lineColumnMainWide:hover, div.lineColumnMainWideMci:hover, div.lineColumnMainWideRelaxation:hover, div.lineColumnMainWideMciImage:hover, div.lineColumnMainWideMciFolder:hover, a.lineItemsMainWide { font-size: 52px; }
 
 div.lineColumnMainWidePE{width: 530px; overflow: hidden;}
 div.lineColumnMainWidePE:hover { opacity:1.00; filter: alpha(opacity=100);}
 div.lineColumnMainWidePE:hover a.lineItemsMainWide { font-size: 58px; }
-div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 50px;}
-a.lineItemsNB {font-size: 42px;}
-a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus, a.lineItemsNBhover {font-size: 52px; font-weight: 700;}
+div.navbarTopCategory {position: absolute; color: #eee; font-size: 14px; text-align: left; float: left; padding: 0; height: 53px; left: 45px;}
+a.lineItemsNB {font-size: 40px;}
+a.lineItemsNB:hover, a.lineItemsNB:active, a.lineItemsNB:focus, a.lineItemsNBhover {font-size: 42px; font-weight: 700;}
 
 a.lineItemsMainWide {
 	font-size: 48px;
@@ -179,6 +187,7 @@ div.mayoTitleLogo {position: absolute; left: 1780px; top: 50px; width: 50px; z-I
 div.boxsideLogoPE {position: absolute; left: 870px; top: 124px; width: 50px;}
 div.boxsideLogoPEAlwaysDisplay1 {position: absolute; left: 870px; top: 70px; width: 50px;}
 div.box1side {position: absolute; left: 2870px; top: 55px;}
+
 div.box1sidePEAlwaysDisplay1 {position: absolute; left: 870px; top: 150px;}
 
 
@@ -211,6 +220,7 @@ div.div_backgrndimg
 
 div.section1 {position: absolute; left: 822px; top: 520px; padding: 16px; width: 1030px; height: 525px;}
 div.section1Mci {position: absolute; left: 774px; top: 520px; padding: 16px; width: 1030px; height: 525px;}
+div.section1Movies {position: absolute; left: 574px; top: 620px; padding: 16px; width: 1230px; height: 525px; font-size: 28px; z-index: 2;}
 
 /* password */
 div.password {position: absolute; top: 248px; left: 300px; padding: 16px; width: 280px; height: 225px; vertical-align: middle; text-align: middle;}
@@ -230,7 +240,7 @@ img.favLegend993 {opacity:.50; filter:alpha(opacity=50);}
 #category {position: absolute; top: 335px; left: 20px; font-weight: normal;}
 #runTime {position: absolute; top: 315px; left: 20px; font-weight: normal;}
 #creationDate{position: absolute; top: 335px; left: 850px; width: 75px; color: #999; font-weight: normal; font-size: 12pt; text-align: right;}
-.detailVideoTitle {font-size: 64px; font-family: 'Roboto Condensed'; font-weight: 400;}
+.detailVideoTitle {font-size: 54px; font-family: 'Roboto Condensed'; font-weight: 400;}
 .detailVideoTitleMci {font-size: 64px; font-family: 'Roboto Condensed'; font-weight: 400;}
 div.plot {position: absolute; top: 8px; left: 280px; width: 655px; font-size: 18px; font-weight: bold; }
 div.moreDetailsButton { display: none; }
@@ -239,7 +249,7 @@ div.movieDetailBlock {position: absolute; top: 330px; left: 280px; width: 220px;
 div.movieDetailBlockDirector {position: absolute; top: 330px; left: 512px; width: 212px; font-size: 15px; font-weight: bold;}
 div.movieDetailBlockCast {position: absolute; top: 330px; left: 737px; width: 210px; font-size: 15px; font-weight: bold;}
 div.movieDetailBlockSingle {position: absolute; top: 404px; left: 15px; float: left; padding: 0; font-size: 15px; font-weight: bold;}
-span.studio {font-size: 12px; font-weight: normal; color: #999;}
+span.studio {font-size: 18px; font-weight: normal;}
 #categoryTitlePhotos {margin-bottom: 4px; color: #aaa; font-size: 15px; }
 #Tomatoes {position: absolute; top: 566px; left: 10px; float: left; padding: 0 4px; font-size: 15px;}
 
@@ -250,30 +260,63 @@ div.col-xs-3-photo3 {position: absolute; left: 455px;}
 span.movieDetailBlockHeader {color: #888; font-weight: bold;}
 p.description {font-size: 22px; font-weight: normal;}
 
-img.posterArt {padding: 3px;}
+img.poster {position: absolute; top: 480px; left: 300px;}
+img.splashScreenMoviesImages { opacity: .50;}
+div.splashScreenMovies { position: absolute; top: -20px; left: 0; width: 1920px; height: 544px;  padding: 0; z-index: -1; }
+div.moviesVideoDetail {position: absolute; left: 0; top: 520px;}
+div.moviesVideoDetail, img.moviesVideoDetailImage {}
+
+img.posterArt {padding: 0;}
 img.posterArtHighlight {padding: 0; border: 3px solid #bbb;}
 div.movieDetailPoster {position: absolute; top: 15px; left: 15px;}
-div.movieBox {position: absolute; width: 150px; height: 210px; margin: auto; font-size: 17px; text-align: center; font-weight: bold;}
+div.movieBox {position: relative; width: 286px; margin: auto; font-size: 22px; text-align: center; font-weight: bold; float: left; padding: 15px; display: inline-block;}
 div.movieBox:hover, div.movieBox:active , div.movieBox:focus {cursor: pointer;}
-div.movieTitle {height: 10px; padding-top: 5px;color: #e6e6e6; }
-div.movieBoxRow1 {top: 10px;}
-div.movieBoxRow2 {top: 260px;}
-div.movieBoxRow3 {top: 510px;}
-div.movieBoxRow4 {top: 760px;}
-div.movieBoxRow5 {top: 1010px;}
-div.movieBoxRow6 {top: 1260px;}
-div.movieBoxRow7 {top: 1510px;}
-div.movieBoxRow8 {top: 1760px;}
-div.movieBoxRow9 {top: 2010px;}
-div.movieBox1 {left: 20px;}
-div.movieBox2 {left: 205px;}
-div.movieBox3{left: 400px;}
-div.movieBox4 {left: 595px;}
-div.movieBox5 {left: 790px;}
-div.movieBox6 {left: 795px;}
-div.movieBox7 {left: 833px;}
-div.movieBox8 {left: 971px;}
-.movieDetailTitle {font-size: 20pt; color: #ddd;}
+div.movieTitle {height: 50px; padding: 8px; color: #e6e6e6; text-align: left; background-color: #212121;}
+
+/*
+div.movieBoxRow2 {top: 690px;}
+div.movieBoxRow3 {top: 1170px;}
+div.movieBoxRow4 {top: 1650px;}
+div.movieBoxRow5 {top: 2130px;}
+div.movieBoxRow6 {top: 2610px;}
+div.movieBoxRow7 {top: 3090px;}
+div.movieBoxRow8 {top: 3570px;}
+div.movieBoxRow9 {top: 4050px;}
+div.movieBoxRow10 {top: 4540px;}
+div.movieBoxRow11 {top: 5020px;}
+div.movieBoxRow12 {top: 5500px;}
+div.movieBoxRow13 {top: 5980px;}
+div.movieBoxRow14 {top: 6460px;}
+div.movieBoxRow15 {top: 6940px;}
+div.movieBoxRow16 {top: 7420px;}
+div.movieBoxRow17 {top: 7900px;}
+div.movieBoxRow18 {top: 8380px;}
+div.movieBoxRow19 {top: 8860px;}
+div.movieBoxRow20 {top: 9340px;}
+div.movieBoxRow21 {top: 9820px;}
+div.movieBoxRow22 {top: 10300px;}
+div.movieBoxRow23 {top: 10780px;}
+div.movieBoxRow24 {top: 11260px;}
+div.movieBoxRow25 {top: 11740px;}
+div.movieBoxRow26 {top: 12220px;}
+div.movieBoxRow27 {top: 12700px;}
+div.movieBoxRow28 {top: 13180px;}
+div.movieBoxRow29 {top: 13660px;}
+div.movieBoxRow30 {top: 14140px;}
+div.movieBoxRow31 {top: 14620px;}
+*/
+
+div.movieBox1 {position: relative; }
+div.movieBox2 {position: relative;}
+div.movieBox3 {position: relative;}
+div.movieBox4 {position: relative;}
+div.movieBox5 {position: relative;}
+
+.movieBox a img {
+    width: 100%;
+ }
+ 
+.movieDetailTitle {font-size: 50px; color: #ddd; font-weight: bold;}
 #tagline {position: absolute; top: 150px; left: 135px; width: 400px; height: 100px;}
 div.section2 {position: absolute; top: 480px; left: 280px; width: 545px; font-size: 16px; font-weight: bold; color: #ccc;}
 
@@ -296,16 +339,28 @@ div.titlePE {
 
 
 div.categories {left: 550px; width: 1857px; height: 1080px;}
+div.categoriesMovies {position: absolute; left: 550px; top: 210px; width: 1857px; height: 1080px;}
 div.favoritesTop {position: absolute; width: 956px; top: 92px; left: 0; background-color: #dae7f2; height: 36px;}
 div.fvBottom {width: 956px; top: 564px; left: 0; height: 44px;}
 
 div.navbarTopCategory1 {top: 232px; width: 450px;}
-div.navbarTopCategory2 {top: 332px; width: 490px;}
-div.navbarTopCategory3 {top: 432px; width: 490px;}
-div.navbarTopCategory4 {top: 532px; width: 490px;}
-div.navbarTopCategory5 {top: 632px; width: 450px;}
-div.navbarTopCategory6 {top: 782px; width: 450px;}
-div.navbarTopCategory7 {top: 882px; width: 450px;}
+div.navbarTopCategory2 {top: 332px; width: 450px;}
+div.navbarTopCategory3 {top: 432px; width: 450px;}
+div.navbarTopCategory4 {top: 532px; width: 450px;}
+div.navbarTopCategory5 {top: 632px; width: 465px;}
+div.navbarTopCategory6 {top: 732px; width: 450px;}
+div.navbarTopCategory7 {top: 832px; width: 450px;}
+
+div.navbarTopMovieMciCategory1 {top: 100px; width: 450px;}
+div.navbarTopMovieMciCategory2 {top: 200px; width: 450px;}
+div.navbarTopMovieMciCategory3 {top: 300px; width: 450px;}
+div.navbarTopMovieMciCategory4 {top: 400px; width: 450px;}
+div.navbarTopMovieMciCategory5 {top: 500px; width: 450px;}
+div.navbarTopMovieMciCategory6 {top: 600px; width: 450px;}
+div.navbarTopMovieMciCategory7 {top: 700px; width: 450px;}
+div.navbarTopMovieMciCategory8 {top: 800px; width: 450px;}
+div.navbarTopMovieMciCategory9 {top: 900px; width: 450px;}
+
 a.white { color: white;}
 div.navbarTopCategory:hover, div.navbarTopCategory:active, div.navbarTopCategory:focus, div.navbarTopCategoryActive
 {
@@ -443,6 +498,24 @@ div.lineLargeMCI12 {top: 3060px;}
 div.lineLargeMCI13 {top: 3315px;}
 div.lineLargeMCI14 {top: 3570px;}
 div.lineLargeMCI15 {top: 3815px;}
+
+div.lineLargeRelaxation{position: absolute; left: 15px; width: 900px;}
+div.lineLargeRelaxation0 {top: 70px;}
+div.lineLargeRelaxation1 {top: 245px;}
+div.lineLargeRelaxation2 {top: 605px;}
+div.lineLargeRelaxation3 {top: 965px;}
+div.lineLargeRelaxation4 {top: 1325px;}
+div.lineLargeRelaxation5 {top: 1685px;}
+div.lineLargeRelaxation6 {top: 2045px;}
+div.lineLargeRelaxation7 {top: 2405px;}
+div.lineLargeRelaxation8 {top: 2765px;}
+div.lineLargeRelaxation9 {top: 2285px;}
+div.lineLargMRelaxation10 {top: 2550px;}
+div.lineLargeRelaxation11 {top: 2805px;}
+div.lineLargeRelaxation12 {top: 3060px;}
+div.lineLargeRelaxation13 {top: 3315px;}
+div.lineLargeRelaxation14 {top: 3570px;}
+div.lineLargeRelaxation15 {top: 3815px;}
 
 /* div.line1 {top: 60px;} */
 div.line1, div.linePatEd1, div.linePE1 {top: 95px;}
