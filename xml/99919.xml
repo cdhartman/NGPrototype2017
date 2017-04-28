@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generationTime="2016-05-23T02:10:21-05:00" version="57">
+	<service name="OpenStreamSvc" type="mod">
+		<description/>
+	</service>
+	
+	<offering offeringId="1000" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Cape Cod Waves</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:09"/>
+			<metadata name="MOD::Summary_Short" value="Includes views of Cape Cod shoreline, coastline and waves. Also has nature sounds of wind and waves. May be used for relaxation."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Call Of The West: The Mayo Family In Arizona"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:05:35"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Cape Cod Waves" shortTitle="Cape Cod Waves" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Includes views of Cape Cod shoreline, coastline and waves. Also has nature sounds of wind and waves. May be used for relaxation.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1001" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Evening Prayers: Nature</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:35"/>
+			<metadata name="MOD::Summary_Short" value="He lived for 16 years in an iron lung, inspiring others with his optimism and courage."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="A Cheerful Heart: The Dave Madden Story"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:34:40"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Evening Prayers: Nature" shortTitle="Evening Prayers: Nature" runTime="2720" rating="TVG" releaseYear="0">
+			<description>He lived for 16 years in an iron lung, inspiring others with his optimism and courage.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1002" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Evening Sky</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:34"/>
+			<metadata name="MOD::Summary_Short" value="Relaxation video that utilizes scenery. Nature sounds and a solo piano accompany the views."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Evening Sky"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:33:52"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="A Cheerful Heart: The Dave Madden Story" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Relaxation video that utilizes scenery. Nature sounds and a solo piano accompany the views.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1003" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Finger Lakes Waterfalls</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="Relaxation video that utilizes scenery from New York's Finger Lakes and Niagra regions. Nature sounds and a solo piano accompany the views."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Christmas Greetings From Mrs. Mayo, 1947"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:02:50"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Christmas Greetings From Mrs. Mayo, 1947" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Relaxation video that utilizes scenery from New York's Finger Lakes and Niagra regions. Nature sounds and a solo piano accompany the views.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1004" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Strength From Stress</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:43"/>
+			<metadata name="MOD::Summary_Short" value="Includes views of Arizona landscape including deserts and canyons. Nature sounds and light jazz accompany the images."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Healing Hands: The Sisters Of St. Francis And Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:43:02"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Healing Hands: The Sisters Of St. Francis And Mayo Clinic" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Includes views of Arizona landscape including deserts and canyons. Nature sounds and light jazz accompany the images.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	<offering offeringId="1005" price="0" rentalDuration="86400" expirationDate="2017-06-30T00:00:00-05:00" createTime="2007-06-29T16:39:35-05:00" modifiedTime="2007-06-29T16:39:35-05:00" serviceName="OpenStreamSvc" packageName="ThetisBreezeCaribbeanReef">
+		<description>Vortex Arizona</description>
+		<title assetName="mayoclinic.org::Mayo0000000000010936">
+			<metadata name="AMS::Asset_Class" value="title"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000000010936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Title"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Provider_QA_Contact" value="Rick Andresen"/>
+			<metadata name="MOD::Display_Run_Time" value="00:43"/>
+			<metadata name="MOD::Summary_Short" value="Displays scenic Arizona views matched with music to assist with relaxation."/>
+			<metadata name="MOD::Billing_ID" value="00001"/>
+			<metadata name="MOD::Title_Brief" value="Thetis Breeze"/>
+			<metadata name="MOD::Title" value="Healing Hands: The Sisters Of St. Francis And Mayo Clinic"/>
+			<metadata name="MOD::Type" value="title"/>
+			<metadata name="MOD::Licensing_Window_End" value="2017-06-29"/>
+			<metadata name="MOD::Category" value="MOD/Mayo Information/Entertainment"/>
+			<metadata name="MOD::Licensing_Window_Start" value="2007-06-29"/>
+			<metadata name="MOD::Run_Time" value="00:43:02"/>
+			<metadata name="MOD::Rating" value="TV-G"/>
+			<metadata name="MOD::Preview_Period" value="30"/>
+		</title>
+		<movie assetName="mayoclinic.org::Mayo0000000001000936" title="Healing Hands: The Sisters Of St. Francis And Mayo Clinic" shortTitle="Thetis Breeze" runTime="2720" rating="TVG" releaseYear="0">
+			<description>Displays scenic Arizona views matched with music to assist with relaxation.</description>
+			<metadata name="AMS::Asset_Class" value="movie"/>
+			<metadata name="AMS::Asset_ID" value="Mayo0000000001000936"/>
+			<metadata name="AMS::Asset_Name" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Creation_Date" value="2007-06-29"/>
+			<metadata name="AMS::Description" value="ThetisBreezeCaribbeanReef_Movie"/>
+			<metadata name="AMS::Product" value="MI_VOD"/>
+			<metadata name="AMS::Provider" value="MCR"/>
+			<metadata name="AMS::Provider_ID" value="mayoclinic.org"/>
+			<metadata name="AMS::Verb" value=""/>
+			<metadata name="AMS::Version_Major" value="1"/>
+			<metadata name="AMS::Version_Minor" value="0"/>
+			<metadata name="MOD::Type" value="movie"/>
+			<metadata name="MOD::Audio_Type" value="Mono"/>
+			<metadata name="MOD::Content_FileSize" value="1274916924"/>
+			<metadata name="MOD::Content_CheckSum" value="472bf22c56bc2b0e375bf8317dd11b7c"/>
+		</movie>
+	</offering>
+	
+	
+	
+	
+	<category name="On Demand" id="0" hasCategories="true" hidden="false" exitAndTune="false">
+		<description/>
+		<category name="MOD" id="2" hasCategories="true" hidden="false" exitAndTune="false">
+			<description/>
+			<category name="Mayo Information" id="24" hasCategories="true" hidden="false" exitAndTune="false">
+				<description/>
+				<category name="C.A.R.E. Channel" id="99919" hasCategories="false" hidden="false" exitAndTune="false">
+					<description/>
+					<offeringid>1000</offeringid>
+					<offeringid>1001</offeringid>
+					<offeringid>1002</offeringid>
+					<offeringid>1003</offeringid>
+					<offeringid>1004</offeringid>
+					<offeringid>1005</offeringid>
+				</category>
+			</category>
+		</category>
+		<category name="My Rentals" id="1" hasCategories="false" hidden="false" exitAndTune="false">
+			<description/>
+		</category>
+	</category>
+</catalog>
