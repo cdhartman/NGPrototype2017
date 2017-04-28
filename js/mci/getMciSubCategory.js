@@ -96,7 +96,11 @@ function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGe
 	if (rating === 'TV-MA') {
 		constructURL = 'mciPassword.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
 	} else {
-		constructURL = 'relaxationTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		if (subGenreID === '99919') {
+			constructURL = 'relaxationTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		} else {
+			constructURL = 'mciTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		}
 	}
 	if (screenFormat === 'HD') {
 		if (subGenreID === '99919') {
