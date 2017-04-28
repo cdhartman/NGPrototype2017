@@ -581,19 +581,21 @@ function navBarLeftCategorySelectFunction(id) {
 		} else if (view === 'freqViewed' || view === 'Healthcare Provider') {
 			$('[tabindex=99]').focus();
 		} else if (view === 'aNavBarChaplin') {
-			$('[tabindex=93]').focus();
+			$('[tabindex=91]').focus();
 		} else if (view === 'aNavBarEntertainment') {
-			$('[tabindex=94]').focus();
+			$('[tabindex=92]').focus();
 		} else if (view === 'aNavBarHistory') {
-			$('[tabindex=95]').focus();
+			$('[tabindex=93]').focus();
 		} else if (view === 'aNavBarHF') {
-			$('[tabindex=96]').focus();
+			$('[tabindex=94]').focus();
 		} else if (view === 'aNavBarHIM') {
-			$('[tabindex=97]').focus();
+			$('[tabindex=95]').focus();
 		} else if (view === 'aNavBarInformation') {
-			$('[tabindex=98]').focus();
+			$('[tabindex=96]').focus();
+		} else if (view === 'aNavBarKids') {
+			$('[tabindex=97]').focus();
 		} else if (view === 'aNavBarPatientStories') {
-			$('[tabindex=99]').focus();
+			$('[tabindex=98]').focus();
 		}
 	}
 }
