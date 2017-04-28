@@ -548,19 +548,21 @@ function onHoverDiv(javaScriptAction, selectedDiv, direction, videoFlag, row, co
 				$('[tabindex=99]').focus();
 			} else if (view === 'mci') {
 				if (genre === 'Chaplain Services') {
-					$('[tabindex=93]').focus();
+					$('[tabindex=91]').focus();
 				} else if (genre === 'Entertainment') {
-					$('[tabindex=94]').focus();
+					$('[tabindex=92]').focus();
 				} else if (genre === 'History') {
-					$('[tabindex=95]').focus();
+					$('[tabindex=93]').focus();
 				} else if (genre === 'Heritage Films') {
-					$('[tabindex=96]').focus();
+					$('[tabindex=94]').focus();
 				} else if (genre === 'Humanities in Medicine') {
-					$('[tabindex=97]').focus();
+					$('[tabindex=95]').focus();
 				} else if (genre === 'Information') {
-					$('[tabindex=98]').focus();
+					$('[tabindex=96]').focus();
+				} else if (genre === 'Kids') {
+					$('[tabindex=97]').focus();
 				} else if (genre === 'Patient Stories') {
-					$('[tabindex=99]').focus();
+					$('[tabindex=98]').focus();
 				}
 			}
 		}
