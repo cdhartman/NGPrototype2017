@@ -7,8 +7,14 @@ function getMciSubCategory(genre, genreID, subGenre, subGenreID, start, quickPla
 	// alert(subGenreID);
 	if (subGenreID === '99900') {
 		xmlURL = '../xml/99900.xml';
+	} else if (subGenreID === '99901') {
+		xmlURL = '../xml/99901.xml';
+	} else if (subGenreID === '99909') {
+		xmlURL = '../xml/99909.xml';
+	}else if (subGenreID === '99919') {
+		xmlURL = '../xml/99919.xml';
 	}
-	
+	// alert(xmlURL);
 	$.ajax({
 		type: "GET",
 		url: xmlURL,
@@ -32,7 +38,7 @@ function parseAndDisplayMciSubCategory(result, node, genre, genreID, subGenre, s
 		nextStart = parseInt(start, 10) + videosPerScreen, currentScreen = 1, nextURL = '', screenCount, nextStartTemp, i, numberOfColumns = 3;
 	
 	// var startTime = new Date().getTime();
-	
+	// alert('kkklll');
 	if (screenFormat === 'HD') {
 		videosPerScreen = 21;
 	}
@@ -83,16 +89,19 @@ function parseAndDisplayMciSubCategory(result, node, genre, genreID, subGenre, s
 function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGenre, subGenreID, columnNumber, rowNumber, count, section, screenFormat) {
 	"use strict";
 	var divContent = '', constructURL = '', className = 'lineItems', rowNumberPE = rowNumber;
-	// alert(screenFormat + genreID + subGenreID);
+	// alert(screenFormat + genre + genreID + subGenre + subGenreID);
 
+	// alert(subGenreID);
 	if (section === 'mci') { rowNumberPE = rowNumber - 1; }
 	if (rating === 'TV-MA') {
 		constructURL = 'mciPassword.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
 	} else {
-		constructURL = 'mciTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
+		constructURL = 'relaxationTitle.html?genre=' + encodeURIComponent(genre) + '&genreID=' + genreID + '&subGenre=' + encodeURIComponent(subGenre) + '&subGenreID=' + subGenreID + '&offeringId=' + offeringid;
 	}
 	if (screenFormat === 'HD') {
-		if (subGenreID === '99900') {
+		if (subGenreID === '99919') {
+			divContent = '<div class=\"lineColumnMainWideRelaxationImage lineColumnMainWide' + rowNumber + ' lineLargeRelaxation' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
+		} else if (subGenreID.indexOf("999") >= 0) {
 			divContent = '<div class=\"lineColumnMainWideMciImage lineColumnMainWide' + rowNumber + ' lineLargeMCI' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 		} else {
 			divContent = '<div class=\"lineColumnMainWideMci lineColumnMainWide' + rowNumber + ' lineLargePE' + columnNumber + '\" id=\"divLink' + count + '\" onclick=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
@@ -106,7 +115,13 @@ function getMciSubCategoryVideo(offeringid, title, rating, genre, genreID, subGe
 	divContent += ' onmouseout=\"onHoverDiv(\'onmouseout\', \'divLink' + count + '\',\'right\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\">\n';
 	if (subGenreID === '99900') {
 		divContent += '<img src=\"../images/screens/mci/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
-	}	
+	} else if (subGenreID === '99919') {
+		divContent += '<img src=\"../images/screens/relaxation/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
+	} else if (subGenreID === '99901') {
+		divContent += '<img src=\"../images/screens/mci/kids/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
+	} else if (subGenreID === '99909') {
+		divContent += '<img src=\"../images/screens/mci/mayoTV/videoBackdropImages/' + offeringid + '.jpg\" id=\"videoListImage' + columnNumber + rowNumber + '\" class=\"videoListImage\" style=\"position: relative; left: -22px; top: -20px;\"/>';
+	}
 	divContent += '<a tabIndex=\"' + count + '\" class=\"' + className + '\" id=\"link' + rowNumber + '\" href=\"javascript:ForwardWithIDAndQuery(\'' + constructURL + '\')\"';
 	divContent += ' onFocus=\"onHoverDiv(\'onFocus\', \'divLink' + count + '\' ,\'left\',\'true\',' + columnNumber + ',' + rowNumberPE + '); offSetFunction(\'divLink' + count + '\', \'MCI\',\'' + subGenreID + '\');\"';
 	divContent += ' onBlur=\"onHoverDiv(\'onBlur\', \'divLink' + count + '\' ,\'right\',\'true\',' + columnNumber + ',' + rowNumberPE + ');\"';

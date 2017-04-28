@@ -7,7 +7,12 @@ function getMCIVideo(offeringId, genre, genreId, subGenre, subGenreId, view, tar
 	if (subGenreId === '99900') {
 		xmlURL = '../xml/99900.xml';
 	}
-
+	if (subGenreId === '99901') {
+		xmlURL = '../xml/99901.xml';
+	}
+	if (subGenreId === '99919') {
+		xmlURL = '../xml/99919.xml';
+	}
 	a = $.ajax({
 		type: "GET",
 		url: xmlURL,
@@ -27,7 +32,7 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 	"use strict";
 	var divContent = '', divMetaDataContent = '', videoTitle = '', runTime = '', videoDescription = '', creationDate = '', categories = '', titlePath1 = '', titlePath2 = '', 
 		videoBackdropImage1 = '', mciVideoBackdropImage1 = '', mciVideoBackdropImage2 = '';
-
+	// alert(subGenre);
 	//get video meta data
 	videoTitle = node.find('description:eq(0)').text();
 
@@ -43,7 +48,13 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 	// divMetaDataContent = runTime;
 	if (genre === 'Frequently Viewed') {genre = 'Healthcare Provider';}
 	if (view === 'freqViewed') {view = 'Healthcare Provider';}
-	titlePath1 = 'Mayo Information<br />';
+	
+	if (subGenre === 'Healthy Ambience') {
+		titlePath1 = 'Music & Relaxation<br />';
+	} else {
+		titlePath1 = 'Mayo Information<br />';
+	}
+	
 	if (view !== '') {
 		titlePath2 += decodeURIComponent(view);
 	}
@@ -70,5 +81,25 @@ function parseAndDisplayPatEdVideo(node, offeringId, genre, genreId, subGenre, s
 		$('#mciVideoBackdropImage1').html(mciVideoBackdropImage1);
 		$('#mciVideoBackdropImage2').html(mciVideoBackdropImage2);
 	}
-
+	if (subGenreId === '99919') {
+			$('#splashScreen').attr('src', '../images/screens/relaxation/relaxationVideoDetail2.png');
+			// $('#body').css('background-image', 'url('')');
+			// mciVideoBackdropImage1 = '<img src="../images/icons/mayo/MC_stack_wht.png\" />';
+			$('#mayoTitleLogo').html(mciVideoBackdropImage1);
+			// mciVideoBackdropImage1 = '<img src=\"../images/screens/relaxation/videoBackdropImages/' + offeringId + 'large.jpg\" class=\"mciVideoBackdropImage1\" />';
+			mciVideoBackdropImage2 = '<img src=\"../images/screens/relaxation/videoBackdropImages/' + offeringId + '.jpg\" />';
+			// $('#mciVideoBackdropImage1').html(mciVideoBackdropImage1);
+			$('#mciVideoBackdropImage2').html(mciVideoBackdropImage2);
+	}
+	if (subGenreId === '99901') {
+		$('#splashScreen').attr('src', '../images/screens/mci/mciVideoDetail2.png');
+		// $('#body').css('background-image', 'url('')');
+		mciVideoBackdropImage1 = '<img src="../images/icons/mayo/MC_stack_wht.png\" />';
+		$('#mayoTitleLogo').html(mciVideoBackdropImage1);
+		mciVideoBackdropImage1 = '<img src=\"../images/screens/mci/kids/videoBackdropImages/' + offeringId + 'large.jpg\" class=\"mciVideoBackdropImage1\" />';
+		mciVideoBackdropImage2 = '<img src=\"../images/screens/mci/kids/videoBackdropImages/' + offeringId + '.jpg\" />';
+		$('#mciVideoBackdropImage1').html(mciVideoBackdropImage1);
+		$('#mciVideoBackdropImage2').html(mciVideoBackdropImage2);
+	}
+	
 }

@@ -51,6 +51,7 @@ function mciVideoURLLookup(id) {
 	case '1015': return 'http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/527/822/0_n9fuaem3_0_8egnd59k_2.mp4';
 	case '1016': return 'http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/477/514/0_114y9m8i_0_c3jf6mr6_2.mp4';
 	case '1017': return 'http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/355/591/0_19erjhfu_0_zy8jcrzq_2.mp4';
+	case '1018': return 'http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/355/591/0_19erjhfu_0_zy8jcrzq_2.mp4';
 	
 		default:
 			return 'http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/561/245/0_1jpv6e0i_0_95qjmzw3_2.mp4';
