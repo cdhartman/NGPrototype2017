@@ -59,7 +59,10 @@
 	<gap:plugin name="org.apache.cordova.network-information" source="npm" />
 	<gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
 	
-
+	<feature name="VideoPlayer" >
+		<param name="android-package" value="com.dawsonloudon.videoplayer"/>
+	</feature>
+	
 	<icon src="icon.png" />
 	<icon src="res/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
 	<icon src="res/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
