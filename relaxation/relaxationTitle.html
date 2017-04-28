@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>MCTN | Music & Relaxation</title>
+	<link href="../favicon.ico" rel="shortcut icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
+	<script type="text/javascript" src="../js/HEWAlert.js"></script>
+	<script type="text/javascript" src="../js/modExtras.js"></script>
+	<script type="text/javascript" src="../js/mci/getMCIVideo.js"></script>
+	<script type="text/javascript" src="../js/mci/mciIDLookup.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../js/cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../js/android/video.js"></script>
+	<script type="text/javascript">
+		function playVideo(vidUrl)
+		{
+			window.plugins.videoPlayer.play(vidUrl);
+		}
+	</script>
+</head>
+
+<body leftmargin="0" topmargin="0" class="bodyCategories" id="body">
+	<div class="htmlToolbar" id="htmlToolbar">
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
+	</div>
+	<div class="container" id="container">
+		<img src="../images/screens/mci/mciVideoDetail1.png" id="splashScreen" alt="" />
+		<div class="titleMciDetailScreen" id="title">Music & Relaxation</div>
+		<span>
+			<img src="../images/icons/playButtonMCI.png" style="position: absolute; left: 788px; top:421px; cursor: pointer; cursor: hand;" id="playButton"
+			onclick="playVideo('http://roqiww002a.mayo.edu:1935/vod/_definst_/library/content/r71v1/entry/data/561/245/0_1jpv6e0i_0_95qjmzw3_2.mp4/playlist.m3u8')" />
+		</span>
+		<div id="section1Mci" class="section1Mci">Loading Relaxation Video Information, please wait...</div>
+		<div class="videoMetaData" id="videoMetaData"></div>
+		<div class="mayoTitleLogo" id="mayoTitleLogo"></div>
+		<div id="mciVideoBackdropImage1"></div><div id="mciVideoBackdropImage2"></div>
+		
+		<div id="navBar"></div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	var offeringId = getURLParameter('offeringId',''), screenFormat = getURLParameter('screenFormat','HD'), settopid = getURLParameter('settopid',''), view = getURLParameter('view','mci'),
+		genre = decodeURI(getURLParameter('genre','')), genreId = getURLParameter('genre_id',''), subGenre = decodeURI(getURLParameter('subGenre','')), subGenreID = getURLParameter('subGenreID','');
+
+	// load appropriate screen background and css
+	loadCSSSplashScreen(screenFormat, settopid, '', 'PE');
+
+	/* load primary content */
+	getMCIVideo(offeringId, genre, genreId, subGenre, subGenreID, '', 'section1Mci');
+
+	$(function () { $(document).keyup(function (e) { navigationKeys(e, 'pe', screenFormat, settopid) }); });	/* enable remote navigation keys */
+	setTimeout(function(){
+		/* highlight Patient Education nav bar */
+		}, 1000);
+	displayHtmlToolbar('htmlToolbar');
+	videoPlayBackString = mciVideoLookup(offeringId);
+	// alert(videoPlayBackString);
+	$("#playButton").attr("onclick",videoPlayBackString);
+	// mciVideoLookup(offeringId);
+	
+	document.getElementById('playButton').focus();
+	// document.getElementById('playButton').select();
+	
+</script>

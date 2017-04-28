@@ -1,47 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-
 <head>
-<title>MCTN</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link href="../favicon.ico" rel="shortcut icon" />
-<style>
-	a, a:visited {color : #fff;} 
-	a:hover, a:active {color : #fff ;text-decoration : none;}
-	body {margin: 0; padding: 0; background-color: #111; font-family: verdana; font-size: 13px; color: #fff; text-align: center;}
-</style>
+	<title>MCTN | Music & Relaxation</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<link href="favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
-<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
-<script type="text/javascript" src="../js/modExtras.js"></script>
-<script>
-	screenNumber = 1;
-	numberOfScreens = 3;
-	document.onkeydown = function(e) { // alert(e.keyCode);
-    switch (e.keyCode) {
-			case 37:
-				sectionNextStaticScreen('sectionStaticScreenID', '-')
-				break;
-			case 39:
-				sectionNextStaticScreen('sectionStaticScreenID', '+')
-				break;
-			case 13:
-				sectionNextStaticScreen('sectionStaticScreenID', '+')
-				break;
-		}
-	};
-</script>
+	<link rel="stylesheet" type="text/css" href="../styles/splash.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashHD.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/splashPE.css"/ >
+	<link rel="stylesheet" type="text/css" href="../styles/splashHDNavBarExpand.css" />
+
+	<script type="text/javascript" src="../js/jQuery/jquery-2.min.js"></script>
+	
+	<script type="text/javascript" src="../js/HEWAlert.js"></script>
+	<script type="text/javascript" src="../js/mci/getMciSubCategory.js"></script>
+	<script type="text/javascript" src="../js/mci/getMciCategory.js"></script>
+	<script type="text/javascript" src="../js/modExtras.js"></script>
+	<script type="text/javascript">
+		var lastKeyPressed = 0, previousKeyPressed = 0, lastColumnSelected = 1, previousColumnSelected = 0, previousRowSelected = 0, lastRowSelected = 1, 
+			view = 'mci', genre = '';
+		document.onkeydown = function(e) { 
+			previousKeyPressed = lastKeyPressed;
+			switch (e.keyCode) {
+					case 37:
+						// left
+						lastKeyPressed = 37;
+						break;
+					case 38:
+						// up
+						lastKeyPressed = 38;
+						break;
+					case 39:
+						// right
+						lastKeyPressed = 39;
+						break;
+					case 40:
+						// down
+						lastKeyPressed = 40;
+						break;
+					case 13:
+						// OK
+						lastKeyPressed = 13;
+						break;
+				}
+		};
+	</script>
 </head>
 
-<body>
-	<div style="position: absolute; left: 10px; top: 10px; width: 34px; height: 30px; background-color: black; z-index: 100; opacity: .30; border-radius: 6px; padding: 4px;">
-		<a href="../index.html"><img src="../images/icons/launcher/home.png" width="30" style="cursor: pointer; cursor: hand; vertical-align:middle;" /></a>
+<body leftmargin="0" topmargin="0">
+	<div class="htmlToolbar" id="htmlToolbar">
+		<a href="../index.html"><img src="../images/icons/launcher/home.png" style="cursor: pointer; cursor: hand;" /></a>
 	</div>
-	<div style="position: absolute; left: 60px; top: 10px; width: 120px; height: 32px; background-color: black; z-index: 100; opacity: .40; border-radius: 6px; padding-top: 6px;">
-		<img src="../images/icons/left.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '-');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
-		<span id="currentScreenIndicator">1</span> of 4
-		<img src="../images/icons/right.png" onclick="sectionNextStaticScreen('sectionStaticScreenID', '+');" style="cursor: pointer; cursor: hand; vertical-align:middle;" />
+	
+	<div id="navBarLeft" class="navBarLeftMci"></div>
+	<div class="title" id="title">Music & Relaxation<br><span id="catalogName"><span></div>
+	<div id="oneRowContentHandler" class="oneRowContentHandler" onclick="javascript:void(0);"></div>
+	<div id="categories" class="categories">
+		<div class="ajaxLoader" id="ajaxLoader">Loading Mayo Information Categories, please wait...</div>
 	</div>
-	<img src="images/1.png" id="sectionStaticScreenID" onclick="sectionNextStaticScreen('sectionStaticScreenID', '+')"
-		style="position: absolute; left: 0; top: 0;" />
+
+	<div class="box1sideMci"><img src="../images/icons/mayo/MC_stack_wht.png" id="mayoSplashImage" width="95" /></div>
+	
 </body>
 </html>
+
+<script type="text/javascript">
+	var screenFormat = getURLParameter('screenFormat', 'HD'), settopid = getURLParameter('settopid', 'Guest'), numOfColumns = 3, numOfRows = 20, classFormat = 'Main', tabIndexDefault = 1,
+		titleLength = getURLParameter('titleLength', ''), start = getURLParameter('start', '1'), view = getURLParameter('view','mci'), site = getSite(), pePreferences = '',
+		navBarLeftParam = getURLParameter('navBarLeft', 'expand'), titleFormat = getURLParameter('titleFormat','short'),
+		section = getURLParameter('section',''), triggerLeftNavFlag = true, subGenre = '', subGenreID = "99919", tabindex = getURLParameter('view','91');
+	genre = decodeURI(getURLParameter('genre','CARE'));
+
+	// if STB is unknown, lookup information, store cookies 
+	if (settopid === '' && site === 'RO') {settopid = getMacAddress(); getSTBTier(settopid, '../'); }
+	pePreferences = getCookie('pePreferences');
+
+	// alert(view);
+	// view = 'Adult';
+	$('#navBarLeft').load('../includes/relaxationNavBarMainHD.html');
+	classFormat = 'MainWide';
+
+	// alert($(location).attr('hash'));
+	if ($(location).attr('hash') !== '') {
+		anchor = $(location).attr('hash').slice(1);
+		// alert(anchor);
+		genre = anchor;
+		subGenreID = '99919';
+		processPatEdView('aNavBar' + anchor);
+	} else {
+		getMciSubCategory('Healthy Ambience', '99919', 'Health\y Ambience', '99919', start, 0, screenFormat, view, titleFormat, section, 'categories');
+		updateVideoDetailTitleBar('Healthy Ambience', '', 'title', 'relaxation', screenFormat);
+	}
+
+	$('#navBarLeft').html("");
+	
+	setTimeout(function () {
+		if (triggerLeftNavFlag) { 
+			// navBarLeftFunction(navBarLeftParam); 
+			} else { 
+			// adjustScreenHeightWidth();
+			}
+			adjustScreenHeightWidth();
+			$('[tabindex=' + tabindex + ']').focus();
+	}, 2000);
+	
+	
+
+	displayHtmlToolbar('htmlToolbar');
+</script>
